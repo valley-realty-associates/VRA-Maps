@@ -1,0 +1,2143 @@
+{
+  "generated_from": "WAYNESBORO-PUBLIC-ROSTER-FROZEN-2026-09-13.csv",
+  "subdivision_count": 146,
+  "polygon_count": 149,
+  "group_count": 59,
+  "crosswalk": {
+    "Ana Marie Estates": {
+      "subdivision_family": "Ana Marie Estates",
+      "residential_parcels": 212,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Blue Ridge Court": {
+      "subdivision_family": "Blue Ridge Court",
+      "residential_parcels": 180,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Bookerdale": {
+      "subdivision_family": "Bookerdale",
+      "residential_parcels": 43,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Brandon Court": {
+      "subdivision_family": "Brandon Court",
+      "residential_parcels": 87,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Brandon Farms": {
+      "subdivision_family": "Brandon Farms",
+      "residential_parcels": 102,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Brandon Gate": {
+      "subdivision_family": "Brandon Gate",
+      "residential_parcels": 52,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Brandon Hills": {
+      "subdivision_family": "Brandon Hills",
+      "residential_parcels": 98,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Cameron Hills": {
+      "subdivision_family": "Cameron Hills",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Cedar Ridge": {
+      "subdivision_family": "Cedar Ridge",
+      "residential_parcels": 33,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Charleston Park": {
+      "subdivision_family": "Charleston Park",
+      "residential_parcels": 110,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Claybrook": {
+      "subdivision_family": "Claybrook",
+      "residential_parcels": 107,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Club Court": {
+      "subdivision_family": "Club Court",
+      "residential_parcels": 157,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Country Lodge": {
+      "subdivision_family": "Country Lodge",
+      "residential_parcels": 37,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Creekwood": {
+      "subdivision_family": "Creekwood",
+      "residential_parcels": 167,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Dewitt Crossing": {
+      "subdivision_family": "Dewitt Crossing",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Evershire": {
+      "subdivision_family": "Evershire",
+      "residential_parcels": 341,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Fairway Hills": {
+      "subdivision_family": "Fairway Hills",
+      "residential_parcels": 128,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Gallaher Heights": {
+      "subdivision_family": "Gallaher Heights",
+      "residential_parcels": 92,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Glendale": {
+      "subdivision_family": "Glendale",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Harvard Estates": {
+      "subdivision_family": "Harvard Estates",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Hilandale": {
+      "subdivision_family": "Hilandale",
+      "residential_parcels": 141,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Hill Crest": {
+      "subdivision_family": "Hill Crest",
+      "residential_parcels": 52,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Hillcrest Forest": {
+      "subdivision_family": "Hillcrest Forest",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Hopeman Station": {
+      "subdivision_family": "Hopeman Station",
+      "residential_parcels": 196,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Ivy Commons": {
+      "subdivision_family": "Ivy Commons",
+      "residential_parcels": 168,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Jefferson Park": {
+      "subdivision_family": "Jefferson Park",
+      "residential_parcels": 784,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Joshua Hill": {
+      "subdivision_family": "Joshua Hill",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Kenmore": {
+      "subdivision_family": "Kenmore",
+      "residential_parcels": 107,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Kira Heights": {
+      "subdivision_family": "Kira Heights",
+      "residential_parcels": 61,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Lyndon Terrace": {
+      "subdivision_family": "Lyndon Terrace",
+      "residential_parcels": 60,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Mondomaine": {
+      "subdivision_family": "Mondomaine",
+      "residential_parcels": 349,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Monte Bleu Manor": {
+      "subdivision_family": "Monte Bleu Manor",
+      "residential_parcels": 184,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Noland Heights": {
+      "subdivision_family": "Noland Heights",
+      "residential_parcels": 22,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Nottingham Estates": {
+      "subdivision_family": "Nottingham Estates",
+      "residential_parcels": 39,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Oakhurst": {
+      "subdivision_family": "Oakhurst",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Orchard Hills": {
+      "subdivision_family": "Orchard Hills",
+      "residential_parcels": 76,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Parker Heights": {
+      "subdivision_family": "Parker Heights",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Pelham": {
+      "subdivision_family": "Pelham",
+      "residential_parcels": 232,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Ridgewood": {
+      "subdivision_family": "Ridgewood",
+      "residential_parcels": 29,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "River Shores": {
+      "subdivision_family": "River Shores",
+      "residential_parcels": 103,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Shenandoah Heights": {
+      "subdivision_family": "Shenandoah Heights",
+      "residential_parcels": 117,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Shenandoah Village": {
+      "subdivision_family": "Shenandoah Village",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Sherwood Hills": {
+      "subdivision_family": "Sherwood Hills",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Skyline View": {
+      "subdivision_family": "Skyline View",
+      "residential_parcels": 78,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Stratford Farms": {
+      "subdivision_family": "Stratford Farms",
+      "residential_parcels": 129,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Suffield": {
+      "subdivision_family": "Suffield",
+      "residential_parcels": 27,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Sunrise Hill": {
+      "subdivision_family": "Sunrise Hill",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Virginia Village": {
+      "subdivision_family": "Virginia Village",
+      "residential_parcels": 83,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Walnut Grove Farm": {
+      "subdivision_family": "Walnut Grove Farm",
+      "residential_parcels": 69,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Wayne Hills": {
+      "subdivision_family": "Wayne Hills",
+      "residential_parcels": 453,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Wayne View": {
+      "subdivision_family": "Wayne View",
+      "residential_parcels": 31,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Waynesboro Place": {
+      "subdivision_family": "Waynesboro Place",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Westwood Hills": {
+      "subdivision_family": "Westwood Hills",
+      "residential_parcels": 88,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Whetstone Heights": {
+      "subdivision_family": "Whetstone Heights",
+      "residential_parcels": 23,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Winchester Heights": {
+      "subdivision_family": "Winchester Heights",
+      "residential_parcels": 85,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Winchester Hgts Rev": {
+      "subdivision_family": "Winchester Hgts Rev",
+      "residential_parcels": 55,
+      "parent_neighborhood": "",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "Frozen PUBLIC MAP family",
+      "owner_review_role": "",
+      "notes": "No independently evidenced broader neighborhood parent."
+    },
+    "Acend 2002 Llc Property": {
+      "subdivision_family": "Acend 2002 Llc Property",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Acreage": {
+      "subdivision_family": "Acreage",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "ASSESSMENT / TAX LABEL ONLY",
+      "owner_review_role": "",
+      "notes": "INVALID / NOT ACTUALLY A SUBDIVISION"
+    },
+    "Alva Niday Land": {
+      "subdivision_family": "Alva Niday Land",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Apple Acres": {
+      "subdivision_family": "Apple Acres",
+      "residential_parcels": 65,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Applewood": {
+      "subdivision_family": "Applewood",
+      "residential_parcels": 69,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Armentrout Property": {
+      "subdivision_family": "Armentrout Property",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Aspen Grove": {
+      "subdivision_family": "Aspen Grove",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Avis I Phorr Plat": {
+      "subdivision_family": "Avis I Phorr Plat",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Baker Spring Tract": {
+      "subdivision_family": "Baker Spring Tract",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Bcmm&l": {
+      "subdivision_family": "Bcmm&l",
+      "residential_parcels": 2408,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Betty Lewis Plat": {
+      "subdivision_family": "Betty Lewis Plat",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Blackwell Mills": {
+      "subdivision_family": "Blackwell Mills",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Brandywine": {
+      "subdivision_family": "Brandywine",
+      "residential_parcels": 18,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Bush Farm": {
+      "subdivision_family": "Bush Farm",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "C E Bush": {
+      "subdivision_family": "C E Bush",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "C E Bush Subdivision": {
+      "subdivision_family": "C E Bush Subdivision",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "C G Quesenbery": {
+      "subdivision_family": "C G Quesenbery",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "C G Quesenbery Subdivision": {
+      "subdivision_family": "C G Quesenbery Subdivision",
+      "residential_parcels": 16,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "C M Meadows Property": {
+      "subdivision_family": "C M Meadows Property",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "C&b Associates Ltd Property": {
+      "subdivision_family": "C&b Associates Ltd Property",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Charles P Gaw Jr Property": {
+      "subdivision_family": "Charles P Gaw Jr Property",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Charles Plumb - Sec 2": {
+      "subdivision_family": "Charles Plumb - Sec 2",
+      "residential_parcels": 15,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Charles Plumb Subdivision": {
+      "subdivision_family": "Charles Plumb Subdivision",
+      "residential_parcels": 40,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Chew Addition": {
+      "subdivision_family": "Chew Addition",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "City Well": {
+      "subdivision_family": "City Well",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Cliff Gardens": {
+      "subdivision_family": "Cliff Gardens",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Coyner Commercial Park": {
+      "subdivision_family": "Coyner Commercial Park",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Coyner Subdivision - Sec 1": {
+      "subdivision_family": "Coyner Subdivision - Sec 1",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Div Of Oliver P Tolley Property": {
+      "subdivision_family": "Div Of Oliver P Tolley Property",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Div Of Virginia Village Inc Prop": {
+      "subdivision_family": "Div Of Virginia Village Inc Prop",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Division Of W A Stickley Estate": {
+      "subdivision_family": "Division Of W A Stickley Estate",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Dorcliff": {
+      "subdivision_family": "Dorcliff",
+      "residential_parcels": 53,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Dorcliffe Addition - Unit 2": {
+      "subdivision_family": "Dorcliffe Addition - Unit 2",
+      "residential_parcels": 31,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Earehart Land": {
+      "subdivision_family": "Earehart Land",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Ellison & Noland Subdiv": {
+      "subdivision_family": "Ellison & Noland Subdiv",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Estill Plat": {
+      "subdivision_family": "Estill Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Fishburne Adt": {
+      "subdivision_family": "Fishburne Adt",
+      "residential_parcels": 52,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Flack Plat": {
+      "subdivision_family": "Flack Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Fox & Fishburne Adt": {
+      "subdivision_family": "Fox & Fishburne Adt",
+      "residential_parcels": 15,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Foxfire Court": {
+      "subdivision_family": "Foxfire Court",
+      "residential_parcels": 34,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Gardner Frye Adt": {
+      "subdivision_family": "Gardner Frye Adt",
+      "residential_parcels": 152,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Gordon H & H H Fry Plat": {
+      "subdivision_family": "Gordon H & H H Fry Plat",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Greiner Adt": {
+      "subdivision_family": "Greiner Adt",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "H T Ritchie Plat": {
+      "subdivision_family": "H T Ritchie Plat",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Hatcher & Tomchin": {
+      "subdivision_family": "Hatcher & Tomchin",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Imboden Plat": {
+      "subdivision_family": "Imboden Plat",
+      "residential_parcels": 48,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Industrial Park": {
+      "subdivision_family": "Industrial Park",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "J W Clark": {
+      "subdivision_family": "J W Clark",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "J W Crum Land": {
+      "subdivision_family": "J W Crum Land",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "James & Alma Harris Land": {
+      "subdivision_family": "James & Alma Harris Land",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Jones & Jones Plat": {
+      "subdivision_family": "Jones & Jones Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Jordan Adt - Ut 1": {
+      "subdivision_family": "Jordan Adt - Ut 1",
+      "residential_parcels": 37,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Jos B Yount Plat": {
+      "subdivision_family": "Jos B Yount Plat",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Kidd Land Subdivision": {
+      "subdivision_family": "Kidd Land Subdivision",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lavell Adt": {
+      "subdivision_family": "Lavell Adt",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lb&b Plat": {
+      "subdivision_family": "Lb&b Plat",
+      "residential_parcels": 20,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lillie Pratt Plat": {
+      "subdivision_family": "Lillie Pratt Plat",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lindsey & Miller Addition": {
+      "subdivision_family": "Lindsey & Miller Addition",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lowes Plat": {
+      "subdivision_family": "Lowes Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Lucinda Clark Plat": {
+      "subdivision_family": "Lucinda Clark Plat",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lucinda F Clark Plat": {
+      "subdivision_family": "Lucinda F Clark Plat",
+      "residential_parcels": 1,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lyndberg Heights": {
+      "subdivision_family": "Lyndberg Heights",
+      "residential_parcels": 114,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Lyndon Acres": {
+      "subdivision_family": "Lyndon Acres",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Mason & Brown Plat": {
+      "subdivision_family": "Mason & Brown Plat",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Mathis Subdivision": {
+      "subdivision_family": "Mathis Subdivision",
+      "residential_parcels": 19,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Maupintown": {
+      "subdivision_family": "Maupintown",
+      "residential_parcels": 54,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Moses Subdivision": {
+      "subdivision_family": "Moses Subdivision",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Mt View Terrace": {
+      "subdivision_family": "Mt View Terrace",
+      "residential_parcels": 55,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Newberry Tract": {
+      "subdivision_family": "Newberry Tract",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Noland Hgts": {
+      "subdivision_family": "Noland Hgts",
+      "residential_parcels": 40,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Orchard Road Plaza": {
+      "subdivision_family": "Orchard Road Plaza",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Pangle Plat": {
+      "subdivision_family": "Pangle Plat",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Parcel Of Dupont Land": {
+      "subdivision_family": "Parcel Of Dupont Land",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Parkview": {
+      "subdivision_family": "Parkview",
+      "residential_parcels": 22,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Portion Of P R Dodd Land": {
+      "subdivision_family": "Portion Of P R Dodd Land",
+      "residential_parcels": 1,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Pratt Estate": {
+      "subdivision_family": "Pratt Estate",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Pratt'S Run": {
+      "subdivision_family": "Pratt'S Run",
+      "residential_parcels": 92,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Pratts Run - Sec 5": {
+      "subdivision_family": "Pratts Run - Sec 5",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Pt Davis Land & Pt W F Moses Land": {
+      "subdivision_family": "Pt Davis Land & Pt W F Moses Land",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Pt Of Ritchie Farm": {
+      "subdivision_family": "Pt Of Ritchie Farm",
+      "residential_parcels": 91,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Quesenbery Adt": {
+      "subdivision_family": "Quesenbery Adt",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Quesenbery Land": {
+      "subdivision_family": "Quesenbery Land",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "R H Clemmer Plat": {
+      "subdivision_family": "R H Clemmer Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "R Lee Frye Subdivision": {
+      "subdivision_family": "R Lee Frye Subdivision",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Redevelopment & Housing Auth Plat": {
+      "subdivision_family": "Redevelopment & Housing Auth Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Rena Coyner Land": {
+      "subdivision_family": "Rena Coyner Land",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Riverside": {
+      "subdivision_family": "Riverside",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Robert W Gray Builder Inc Property": {
+      "subdivision_family": "Robert W Gray Builder Inc Property",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Rose Cliff": {
+      "subdivision_family": "Rose Cliff",
+      "residential_parcels": 156,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Shipp Addition": {
+      "subdivision_family": "Shipp Addition",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Silver Creek": {
+      "subdivision_family": "Silver Creek",
+      "residential_parcels": 34,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Small Acreage": {
+      "subdivision_family": "Small Acreage",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "ASSESSMENT / TAX LABEL ONLY",
+      "owner_review_role": "",
+      "notes": "INVALID / NOT ACTUALLY A SUBDIVISION"
+    },
+    "Smith & Harner Adt": {
+      "subdivision_family": "Smith & Harner Adt",
+      "residential_parcels": 91,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Smith Plat": {
+      "subdivision_family": "Smith Plat",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Spring Valley": {
+      "subdivision_family": "Spring Valley",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Stone Subdivision - Sec 1": {
+      "subdivision_family": "Stone Subdivision - Sec 1",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Stratford Commons": {
+      "subdivision_family": "Stratford Commons",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Tablenacle Presbyterian Church Prop": {
+      "subdivision_family": "Tablenacle Presbyterian Church Prop",
+      "residential_parcels": 8,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Tomasville": {
+      "subdivision_family": "Tomasville",
+      "residential_parcels": 48,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W F Landes/essers Land": {
+      "subdivision_family": "W F Landes/essers Land",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W F Moses Land": {
+      "subdivision_family": "W F Moses Land",
+      "residential_parcels": 1,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "W H Harmon Plat": {
+      "subdivision_family": "W H Harmon Plat",
+      "residential_parcels": 51,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W L Duncan Plat": {
+      "subdivision_family": "W L Duncan Plat",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W W Alexander Plat": {
+      "subdivision_family": "W W Alexander Plat",
+      "residential_parcels": 4,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W Waynesboro Land Co": {
+      "subdivision_family": "W Waynesboro Land Co",
+      "residential_parcels": 500,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "W'boro Housing Development Subdiv": {
+      "subdivision_family": "W'boro Housing Development Subdiv",
+      "residential_parcels": 10,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Warren Moses Land": {
+      "subdivision_family": "Warren Moses Land",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Warren Moses Subdivision": {
+      "subdivision_family": "Warren Moses Subdivision",
+      "residential_parcels": 76,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Waverley Subdivision": {
+      "subdivision_family": "Waverley Subdivision",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Wayne Hills School": {
+      "subdivision_family": "Wayne Hills School",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Waynesboro Co Adt": {
+      "subdivision_family": "Waynesboro Co Adt",
+      "residential_parcels": 1050,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Waynesboro Tc Llc Land": {
+      "subdivision_family": "Waynesboro Tc Llc Land",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Waynesboro/industrial Pk": {
+      "subdivision_family": "Waynesboro/industrial Pk",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "VERIFIED NONRESIDENTIAL PLAT",
+      "owner_review_role": "",
+      "notes": "NONRESIDENTIAL / EXCLUDE FROM RESIDENTIAL MAP"
+    },
+    "Waynona Adt": {
+      "subdivision_family": "Waynona Adt",
+      "residential_parcels": 436,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "William A Pratt": {
+      "subdivision_family": "William A Pratt",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "William A Pratt Subdiv": {
+      "subdivision_family": "William A Pratt Subdiv",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "William S & Bettie C White Land": {
+      "subdivision_family": "William S & Bettie C White Land",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Willowbrook": {
+      "subdivision_family": "Willowbrook",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Winetown": {
+      "subdivision_family": "Winetown",
+      "residential_parcels": 22,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Wm A & Peggy Garvey Prop": {
+      "subdivision_family": "Wm A & Peggy Garvey Prop",
+      "residential_parcels": 2,
+      "parent_neighborhood": "",
+      "grouping_status": "EXCLUDED_FROM_RESIDENTIAL_MAP",
+      "grouping_source": "2026-09-15 tiny-family residential display policy",
+      "owner_review_role": "",
+      "notes": "MASTER INVENTORY ONLY \u2014 EXCLUDED FROM RESIDENTIAL MAP"
+    },
+    "Wm F Landes Subdivision": {
+      "subdivision_family": "Wm F Landes Subdivision",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    },
+    "Woodland Circle": {
+      "subdivision_family": "Woodland Circle",
+      "residential_parcels": 18,
+      "parent_neighborhood": "",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "Recorded legal subdivision; no independently evidenced neighborhood parent.",
+      "owner_review_role": "",
+      "notes": "Legal subdivision retained in Subdivision view; not a neighborhood."
+    }
+  },
+  "groups": [
+    {
+      "neighborhood": "Ana Marie Estates",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Ana Marie Estates"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Blue Ridge Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Blue Ridge Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Bookerdale",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Bookerdale"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Brandon Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Brandon Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Brandon Farms",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Brandon Farms"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Brandon Gate",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Brandon Gate"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Brandon Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Brandon Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Cameron Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Cameron Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Cedar Ridge",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Cedar Ridge"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Charleston Park",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Charleston Park"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Claybrook",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Claybrook"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Club Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Club Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Country Lodge",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Country Lodge"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Creekwood",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Creekwood"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Dewitt Crossing",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Dewitt Crossing"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Evershire",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Evershire"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Fairway Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Fairway Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Gallaher Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Gallaher Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Glendale",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Glendale"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Harvard Estates",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Harvard Estates"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Hilandale",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Hilandale"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Hill Crest",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Hill Crest"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Hillcrest Forest",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Hillcrest Forest"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Hopeman Station",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Hopeman Station"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Ivy Commons",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Ivy Commons"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Jefferson Park",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Jefferson Park"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Joshua Hill",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Joshua Hill"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Kenmore",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Kenmore"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Kira Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Kira Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Lyndon Terrace",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Lyndon Terrace"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Mondomaine",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Mondomaine"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Monte Bleu Manor",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Monte Bleu Manor"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Noland Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Noland Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Nottingham Estates",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Nottingham Estates"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Oakhurst",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Oakhurst"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Orchard Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Orchard Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Parker Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Parker Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Pelham",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Pelham"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Ridgewood",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Ridgewood"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "River Shores",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "River Shores"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Shenandoah Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Shenandoah Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Shenandoah Village",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Shenandoah Village"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Sherwood Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Sherwood Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Skyline View",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Skyline View"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Stratford Farms",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Stratford Farms"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Suffield",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Suffield"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Sunrise Hill",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Sunrise Hill"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Virginia Village",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Virginia Village"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Walnut Grove Farm",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Walnut Grove Farm"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Wayne Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Wayne Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Wayne View",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Wayne View"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Waynesboro Place",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Waynesboro Place"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Westwood Hills",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Westwood Hills"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Whetstone Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Whetstone Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Winchester Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Winchester Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Winchester Hgts Rev",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Winchester Hgts Rev"
+      ],
+      "member_count": 1,
+      "grouping_source": "Frozen PUBLIC MAP family; no independently evidenced parent neighborhood."
+    },
+    {
+      "neighborhood": "Tree Streets",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Owner-approved N identity. City Land Use Guide and 2019 Transportation Plan draft use Tree Streets as a neighborhood identity."
+    },
+    {
+      "neighborhood": "Port Republic",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Owner-approved N identity. 2022 Port Republic Road Action Plan repeatedly calls Port Republic a neighborhood; 2019 Transportation Plan lists it with Tree Streets and Basic City."
+    },
+    {
+      "neighborhood": "Basic City",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Owner-approved N identity. City Land Use Guide and 2019 Transportation Plan repeatedly identify former Basic City alongside Tree Streets and Port Republic."
+    }
+  ],
+  "summary": {
+    "verified_groups": 0,
+    "standalone": 56,
+    "identity_only": 3,
+    "unresolved": 0
+  }
+}

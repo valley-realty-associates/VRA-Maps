@@ -1,0 +1,2476 @@
+{
+  "generated_from": "review-only/2026-09-14/STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv",
+  "subdivision_count": 163,
+  "group_count": 104,
+  "crosswalk": {
+    "Anothony Plat": {
+      "subdivision_family": "Anothony Plat",
+      "residential_parcels": 5,
+      "parent_neighborhood": "Anothony Plat",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Ast Estate": {
+      "subdivision_family": "Ast Estate",
+      "residential_parcels": 8,
+      "parent_neighborhood": "Ast Estate",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Atlantic Reality": {
+      "subdivision_family": "Atlantic Reality",
+      "residential_parcels": "10",
+      "parent_neighborhood": "Dogwood",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Dogwood per owner-review subdivision relationship."
+    },
+    "Augusta Terrace": {
+      "subdivision_family": "Augusta Terrace",
+      "residential_parcels": "16",
+      "parent_neighborhood": "Augusta Terrace",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Baber Plat": {
+      "subdivision_family": "Baber Plat",
+      "residential_parcels": 3,
+      "parent_neighborhood": "Baber Plat",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Bagby Add": {
+      "subdivision_family": "Bagby Add",
+      "residential_parcels": "24",
+      "parent_neighborhood": "Sunnyside",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Sunnyside per owner-review subdivision relationship."
+    },
+    "Bagby Add.": {
+      "subdivision_family": "Bagby Add.",
+      "residential_parcels": "25",
+      "parent_neighborhood": "New Town",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of New Town per owner-review subdivision relationship."
+    },
+    "Bagby Plat": {
+      "subdivision_family": "Bagby Plat",
+      "residential_parcels": "36",
+      "parent_neighborhood": "West End",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of West End per owner-review subdivision relationship."
+    },
+    "Baldwin Acres": {
+      "subdivision_family": "Baldwin Acres",
+      "residential_parcels": "217",
+      "parent_neighborhood": "Baldwin Acres",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Baldwin Place": {
+      "subdivision_family": "Baldwin Place",
+      "residential_parcels": "45",
+      "parent_neighborhood": "Baldwin Place",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Bell & Higgs": {
+      "subdivision_family": "Bell & Higgs",
+      "residential_parcels": 1,
+      "parent_neighborhood": "Bell & Higgs",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Bell Creek": {
+      "subdivision_family": "Bell Creek",
+      "residential_parcels": "27",
+      "parent_neighborhood": "Bell Creek",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Bellview": {
+      "subdivision_family": "Bellview",
+      "residential_parcels": "59",
+      "parent_neighborhood": "Beverley Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Beverley Court per owner-review subdivision relationship."
+    },
+    "Belmont Terrace": {
+      "subdivision_family": "Belmont Terrace",
+      "residential_parcels": "59",
+      "parent_neighborhood": "Terry Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Terry Court per owner-review subdivision relationship."
+    },
+    "Belmore": {
+      "subdivision_family": "Belmore",
+      "residential_parcels": "69",
+      "parent_neighborhood": "Belmore",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Betsy Bell": {
+      "subdivision_family": "Betsy Bell",
+      "residential_parcels": "12",
+      "parent_neighborhood": "Betsy Bell",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "DIRECTORY / REFERENCE ONLY",
+      "notes": "Plat/directory reference only; no verified broader neighborhood grouping."
+    },
+    "Beulah Park": {
+      "subdivision_family": "Beulah Park",
+      "residential_parcels": "43",
+      "parent_neighborhood": "Basic Witz",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Basic Witz per owner-review subdivision relationship."
+    },
+    "Beverley Court": {
+      "subdivision_family": "Beverley Court",
+      "residential_parcels": "49",
+      "parent_neighborhood": "Beverley Court",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Beverley Grove": {
+      "subdivision_family": "Beverley Grove",
+      "residential_parcels": "135",
+      "parent_neighborhood": "Beverley Grove",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Beverley Hills": {
+      "subdivision_family": "Beverley Hills",
+      "residential_parcels": "20",
+      "parent_neighborhood": "Forest Hills",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Forest Hills per owner-review subdivision relationship."
+    },
+    "Big Sky": {
+      "subdivision_family": "Big Sky",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Big Sky",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Blackburn & Lohr": {
+      "subdivision_family": "Blackburn & Lohr",
+      "residential_parcels": "47",
+      "parent_neighborhood": "Blackburn & Lohr",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Bolt": {
+      "subdivision_family": "Bolt",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Bolt",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Brae Burn": {
+      "subdivision_family": "Brae Burn",
+      "residential_parcels": "70",
+      "parent_neighborhood": "Brae Burn",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Brandon Ralston": {
+      "subdivision_family": "Brandon Ralston",
+      "residential_parcels": 6,
+      "parent_neighborhood": "Brandon Ralston",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Burress": {
+      "subdivision_family": "Burress",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Burress",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Carrsbrook": {
+      "subdivision_family": "Carrsbrook",
+      "residential_parcels": "19",
+      "parent_neighborhood": "Baldwin Acres",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Baldwin Acres per owner-review subdivision relationship."
+    },
+    "Cease Plat": {
+      "subdivision_family": "Cease Plat",
+      "residential_parcels": "31",
+      "parent_neighborhood": "Farrier Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Farrier Court per owner-review subdivision relationship."
+    },
+    "Cherry Hill": {
+      "subdivision_family": "Cherry Hill",
+      "residential_parcels": "211",
+      "parent_neighborhood": "Cherry Hill",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Cherry Vale": {
+      "subdivision_family": "Cherry Vale",
+      "residential_parcels": "35",
+      "parent_neighborhood": "Skymont",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Skymont per owner-review subdivision relationship."
+    },
+    "Clark, Rs": {
+      "subdivision_family": "Clark, Rs",
+      "residential_parcels": "18",
+      "parent_neighborhood": "Beverley Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Beverley Court per owner-review subdivision relationship."
+    },
+    "Clem, Hm": {
+      "subdivision_family": "Clem, Hm",
+      "residential_parcels": 5,
+      "parent_neighborhood": "Clem, Hm",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "College Park": {
+      "subdivision_family": "College Park",
+      "residential_parcels": "215",
+      "parent_neighborhood": "College Park",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Collinswood": {
+      "subdivision_family": "Collinswood",
+      "residential_parcels": "50",
+      "parent_neighborhood": "Shutterlee Mill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Shutterlee Mill per owner-review subdivision relationship."
+    },
+    "Cox, Sj": {
+      "subdivision_family": "Cox, Sj",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Cox, Sj",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Crestwood": {
+      "subdivision_family": "Crestwood",
+      "residential_parcels": "27",
+      "parent_neighborhood": "Shutterlee Mill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Shutterlee Mill per owner-review subdivision relationship."
+    },
+    "Crosscrest": {
+      "subdivision_family": "Crosscrest",
+      "residential_parcels": "76",
+      "parent_neighborhood": "Crosscrest",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Crouch, Em": {
+      "subdivision_family": "Crouch, Em",
+      "residential_parcels": 3,
+      "parent_neighborhood": "Crouch, Em",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Daisy Brent": {
+      "subdivision_family": "Daisy Brent",
+      "residential_parcels": 2,
+      "parent_neighborhood": "Daisy Brent",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Donaghe Plat": {
+      "subdivision_family": "Donaghe Plat",
+      "residential_parcels": "27",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "E.C. Partlow": {
+      "subdivision_family": "E.C. Partlow",
+      "residential_parcels": "10",
+      "parent_neighborhood": "Terry Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Terry Court per owner-review subdivision relationship."
+    },
+    "Earman & Bagby": {
+      "subdivision_family": "Earman & Bagby",
+      "residential_parcels": "15",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Eastside": {
+      "subdivision_family": "Eastside",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Eastside",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Eastview": {
+      "subdivision_family": "Eastview",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Eastview",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Edgewood Park": {
+      "subdivision_family": "Edgewood Park",
+      "residential_parcels": "71",
+      "parent_neighborhood": "Edgewood Park",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Englewood Place": {
+      "subdivision_family": "Englewood Place",
+      "residential_parcels": 7,
+      "parent_neighborhood": "Englewood Place",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Evergreen Acres": {
+      "subdivision_family": "Evergreen Acres",
+      "residential_parcels": "15",
+      "parent_neighborhood": "Park Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Park Hill per owner-review subdivision relationship."
+    },
+    "Fairview": {
+      "subdivision_family": "Fairview",
+      "residential_parcels": 3,
+      "parent_neighborhood": "Fairview",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Forest Grove": {
+      "subdivision_family": "Forest Grove",
+      "residential_parcels": "67",
+      "parent_neighborhood": "Forest Grove",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Forest Hills": {
+      "subdivision_family": "Forest Hills",
+      "residential_parcels": "63",
+      "parent_neighborhood": "Forest Hills",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Forest Ridge": {
+      "subdivision_family": "Forest Ridge",
+      "residential_parcels": "13",
+      "parent_neighborhood": "Ridgemont",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Ridgemont per owner-review subdivision relationship."
+    },
+    "Fox Hill": {
+      "subdivision_family": "Fox Hill",
+      "residential_parcels": "60",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Hillcrest per owner-review subdivision relationship."
+    },
+    "Foxcrest": {
+      "subdivision_family": "Foxcrest",
+      "residential_parcels": "16",
+      "parent_neighborhood": "New Hope",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of New Hope per owner-review subdivision relationship."
+    },
+    "Franklin Hill": {
+      "subdivision_family": "Franklin Hill",
+      "residential_parcels": "17",
+      "parent_neighborhood": "Locust Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Locust Hill per owner-review subdivision relationship."
+    },
+    "Freegrove Manor": {
+      "subdivision_family": "Freegrove Manor",
+      "residential_parcels": "58",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Hillcrest per owner-review subdivision relationship."
+    },
+    "Gardner Addition": {
+      "subdivision_family": "Gardner Addition",
+      "residential_parcels": "175",
+      "parent_neighborhood": "Gardner Addition",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Gaymont Homes": {
+      "subdivision_family": "Gaymont Homes",
+      "residential_parcels": "26",
+      "parent_neighborhood": "Greenspring",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Greenspring per owner-review subdivision relationship."
+    },
+    "Gibbs Hill": {
+      "subdivision_family": "Gibbs Hill",
+      "residential_parcels": "10",
+      "parent_neighborhood": "Gibbs Hill",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Gospel Hill": {
+      "subdivision_family": "Gospel Hill",
+      "residential_parcels": "21",
+      "parent_neighborhood": "Gospel Hill",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Grandview Add": {
+      "subdivision_family": "Grandview Add",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Grandview Add",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Grant Land, T.A. & J.L.": {
+      "subdivision_family": "Grant Land, T.A. & J.L.",
+      "residential_parcels": 2,
+      "parent_neighborhood": "Grant Land, T.A. & J.L.",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Gray Addition": {
+      "subdivision_family": "Gray Addition",
+      "residential_parcels": "219",
+      "parent_neighborhood": "Staunton Park",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Staunton Park per owner-review subdivision relationship."
+    },
+    "Greenspring": {
+      "subdivision_family": "Greenspring",
+      "residential_parcels": "273",
+      "parent_neighborhood": "Greenspring",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Hanger, A.W.": {
+      "subdivision_family": "Hanger, A.W.",
+      "residential_parcels": "19",
+      "parent_neighborhood": "Tannehill & Wheat",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Tannehill & Wheat per owner-review subdivision relationship."
+    },
+    "Hanger, Aw": {
+      "subdivision_family": "Hanger, Aw",
+      "residential_parcels": "12",
+      "parent_neighborhood": "Basic Witz",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Basic Witz per owner-review subdivision relationship."
+    },
+    "Harper'S Court": {
+      "subdivision_family": "Harper'S Court",
+      "residential_parcels": 8,
+      "parent_neighborhood": "Harper'S Court",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Harper, C.F.": {
+      "subdivision_family": "Harper, C.F.",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Harper, C.F.",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Harrington Place": {
+      "subdivision_family": "Harrington Place",
+      "residential_parcels": "20",
+      "parent_neighborhood": "Greenspring",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Greenspring per owner-review subdivision relationship."
+    },
+    "Harris, C.F.": {
+      "subdivision_family": "Harris, C.F.",
+      "residential_parcels": 6,
+      "parent_neighborhood": "Harris, C.F.",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Harrison": {
+      "subdivision_family": "Harrison",
+      "residential_parcels": "21",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Highland Hts": {
+      "subdivision_family": "Highland Hts",
+      "residential_parcels": "61",
+      "parent_neighborhood": "Highland Hts",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Hillcrest": {
+      "subdivision_family": "Hillcrest",
+      "residential_parcels": "170",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Hilton Heights": {
+      "subdivision_family": "Hilton Heights",
+      "residential_parcels": "32",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Hillcrest per owner-review subdivision relationship."
+    },
+    "Houlihan & Bosserman": {
+      "subdivision_family": "Houlihan & Bosserman",
+      "residential_parcels": "15",
+      "parent_neighborhood": "Tannehill & Wheat",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Tannehill & Wheat per owner-review subdivision relationship."
+    },
+    "Ingleside": {
+      "subdivision_family": "Ingleside",
+      "residential_parcels": 6,
+      "parent_neighborhood": "Ingleside",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "K-West": {
+      "subdivision_family": "K-West",
+      "residential_parcels": 2,
+      "parent_neighborhood": "K-West",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Kennedy, J.A.": {
+      "subdivision_family": "Kennedy, J.A.",
+      "residential_parcels": "73",
+      "parent_neighborhood": "Basic Witz",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Basic Witz per owner-review subdivision relationship."
+    },
+    "Kenva Heights": {
+      "subdivision_family": "Kenva Heights",
+      "residential_parcels": "36",
+      "parent_neighborhood": "Kenva Heights",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Kenwood": {
+      "subdivision_family": "Kenwood",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Kenwood",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Kinzley Court": {
+      "subdivision_family": "Kinzley Court",
+      "residential_parcels": "36",
+      "parent_neighborhood": "Kinzley Court",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Kivlighan": {
+      "subdivision_family": "Kivlighan",
+      "residential_parcels": 7,
+      "parent_neighborhood": "Kivlighan",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Knolwood Acres": {
+      "subdivision_family": "Knolwood Acres",
+      "residential_parcels": "55",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Hillcrest per owner-review subdivision relationship."
+    },
+    "Lakeview": {
+      "subdivision_family": "Lakeview",
+      "residential_parcels": "179",
+      "parent_neighborhood": "Lakeview",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Lamb & Stout": {
+      "subdivision_family": "Lamb & Stout",
+      "residential_parcels": 3,
+      "parent_neighborhood": "Lamb & Stout",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Lancelot": {
+      "subdivision_family": "Lancelot",
+      "residential_parcels": 6,
+      "parent_neighborhood": "Lancelot",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Lee High Court": {
+      "subdivision_family": "Lee High Court",
+      "residential_parcels": "35",
+      "parent_neighborhood": "Lee High Court",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Lewiston": {
+      "subdivision_family": "Lewiston",
+      "residential_parcels": "176",
+      "parent_neighborhood": "Lewiston",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Linden Heights": {
+      "subdivision_family": "Linden Heights",
+      "residential_parcels": "83",
+      "parent_neighborhood": "Linden Heights",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Locust Hill": {
+      "subdivision_family": "Locust Hill",
+      "residential_parcels": "73",
+      "parent_neighborhood": "Locust Hill",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Long Ridge": {
+      "subdivision_family": "Long Ridge",
+      "residential_parcels": "22",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Lyle Add": {
+      "subdivision_family": "Lyle Add",
+      "residential_parcels": "65",
+      "parent_neighborhood": "Skymont",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Skymont per owner-review subdivision relationship."
+    },
+    "Lynnhaven": {
+      "subdivision_family": "Lynnhaven",
+      "residential_parcels": "51",
+      "parent_neighborhood": "Gibbs Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Gibbs Hill per owner-review subdivision relationship."
+    },
+    "Mactanly": {
+      "subdivision_family": "Mactanly",
+      "residential_parcels": "10",
+      "parent_neighborhood": "College Park",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of College Park per owner-review subdivision relationship."
+    },
+    "Madison Sq": {
+      "subdivision_family": "Madison Sq",
+      "residential_parcels": "19",
+      "parent_neighborhood": "New Town",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of New Town per owner-review subdivision relationship."
+    },
+    "Marquis Addition": {
+      "subdivision_family": "Marquis Addition",
+      "residential_parcels": "51",
+      "parent_neighborhood": "Sears Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Sears Hill per owner-review subdivision relationship."
+    },
+    "Mary Grey Court": {
+      "subdivision_family": "Mary Grey Court",
+      "residential_parcels": "55",
+      "parent_neighborhood": "Mary Grey Court",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Middlebrook Park": {
+      "subdivision_family": "Middlebrook Park",
+      "residential_parcels": 2,
+      "parent_neighborhood": "Middlebrook Park",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Montgomery Heights": {
+      "subdivision_family": "Montgomery Heights",
+      "residential_parcels": "194",
+      "parent_neighborhood": "Basic Witz",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Basic Witz per owner-review subdivision relationship."
+    },
+    "Moore Add": {
+      "subdivision_family": "Moore Add",
+      "residential_parcels": "20",
+      "parent_neighborhood": "Farrier Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Farrier Court per owner-review subdivision relationship."
+    },
+    "Morrison Land": {
+      "subdivision_family": "Morrison Land",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Morrison Land",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Mountain View": {
+      "subdivision_family": "Mountain View",
+      "residential_parcels": "42",
+      "parent_neighborhood": "Locust Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Locust Hill per owner-review subdivision relationship."
+    },
+    "Noon Addition": {
+      "subdivision_family": "Noon Addition",
+      "residential_parcels": "44",
+      "parent_neighborhood": "Locust Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Locust Hill per owner-review subdivision relationship."
+    },
+    "Oak Gardens": {
+      "subdivision_family": "Oak Gardens",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Oak Gardens",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Oak Hill": {
+      "subdivision_family": "Oak Hill",
+      "residential_parcels": "47",
+      "parent_neighborhood": "Sears Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Sears Hill per owner-review subdivision relationship."
+    },
+    "Oakenwold": {
+      "subdivision_family": "Oakenwold",
+      "residential_parcels": "16",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Olde South Village": {
+      "subdivision_family": "Olde South Village",
+      "residential_parcels": "181",
+      "parent_neighborhood": "Ingleside",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Ingleside per owner-review subdivision relationship."
+    },
+    "Orchard Grove": {
+      "subdivision_family": "Orchard Grove",
+      "residential_parcels": "21",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Orchard Place": {
+      "subdivision_family": "Orchard Place",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Orchard Place",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Overbrook": {
+      "subdivision_family": "Overbrook",
+      "residential_parcels": "266",
+      "parent_neighborhood": "Overbrook",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Overlook": {
+      "subdivision_family": "Overlook",
+      "residential_parcels": "39",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Palmer Plat": {
+      "subdivision_family": "Palmer Plat",
+      "residential_parcels": 7,
+      "parent_neighborhood": "Palmer Plat",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Park Hill": {
+      "subdivision_family": "Park Hill",
+      "residential_parcels": "97",
+      "parent_neighborhood": "Park Hill",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Parklee": {
+      "subdivision_family": "Parklee",
+      "residential_parcels": "14",
+      "parent_neighborhood": "Parklee",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Parkview": {
+      "subdivision_family": "Parkview",
+      "residential_parcels": "107",
+      "parent_neighborhood": "Parkview",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Parkwood Manor": {
+      "subdivision_family": "Parkwood Manor",
+      "residential_parcels": 5,
+      "parent_neighborhood": "Parkwood Manor",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Partlow": {
+      "subdivision_family": "Partlow",
+      "residential_parcels": "37",
+      "parent_neighborhood": "Sears Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Sears Hill per owner-review subdivision relationship."
+    },
+    "Partlow, Bw": {
+      "subdivision_family": "Partlow, Bw",
+      "residential_parcels": 6,
+      "parent_neighborhood": "Partlow, Bw",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Peaceful Valley": {
+      "subdivision_family": "Peaceful Valley",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Peaceful Valley",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Pinehurst": {
+      "subdivision_family": "Pinehurst",
+      "residential_parcels": "37",
+      "parent_neighborhood": "Skymont",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Skymont per owner-review subdivision relationship."
+    },
+    "Ramsey": {
+      "subdivision_family": "Ramsey",
+      "residential_parcels": "12",
+      "parent_neighborhood": "Ramsey",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "DIRECTORY / REFERENCE ONLY",
+      "notes": "Plat/directory reference only; no verified broader neighborhood grouping."
+    },
+    "Red Oaks": {
+      "subdivision_family": "Red Oaks",
+      "residential_parcels": "29",
+      "parent_neighborhood": "Red Oaks",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Reid, Wa": {
+      "subdivision_family": "Reid, Wa",
+      "residential_parcels": "11",
+      "parent_neighborhood": "Farrier Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Farrier Court per owner-review subdivision relationship."
+    },
+    "Reynolds": {
+      "subdivision_family": "Reynolds",
+      "residential_parcels": "77",
+      "parent_neighborhood": "New Hope",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of New Hope per owner-review subdivision relationship."
+    },
+    "Richardson Ext.": {
+      "subdivision_family": "Richardson Ext.",
+      "residential_parcels": "89",
+      "parent_neighborhood": "West End",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of West End per owner-review subdivision relationship."
+    },
+    "Ridgecrest": {
+      "subdivision_family": "Ridgecrest",
+      "residential_parcels": "86",
+      "parent_neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Hillcrest per owner-review subdivision relationship."
+    },
+    "Ridgemont": {
+      "subdivision_family": "Ridgemont",
+      "residential_parcels": "39",
+      "parent_neighborhood": "Ridgemont",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Ridgewood Hgts": {
+      "subdivision_family": "Ridgewood Hgts",
+      "residential_parcels": "18",
+      "parent_neighborhood": "Dogwood",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Dogwood per owner-review subdivision relationship."
+    },
+    "Rosecrest": {
+      "subdivision_family": "Rosecrest",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Rosecrest",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Selma": {
+      "subdivision_family": "Selma",
+      "residential_parcels": "224",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Selma Heights": {
+      "subdivision_family": "Selma Heights",
+      "residential_parcels": "54",
+      "parent_neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Selma per owner-review subdivision relationship."
+    },
+    "Shannon Hill": {
+      "subdivision_family": "Shannon Hill",
+      "residential_parcels": "32",
+      "parent_neighborhood": "College Park",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of College Park per owner-review subdivision relationship."
+    },
+    "Shenandoah Heights": {
+      "subdivision_family": "Shenandoah Heights",
+      "residential_parcels": "60",
+      "parent_neighborhood": "Vista Heights",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Vista Heights per owner-review subdivision relationship."
+    },
+    "Sherwood Estate": {
+      "subdivision_family": "Sherwood Estate",
+      "residential_parcels": "65",
+      "parent_neighborhood": "Virginia Place",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Virginia Place per owner-review subdivision relationship."
+    },
+    "Sherwood Forest": {
+      "subdivision_family": "Sherwood Forest",
+      "residential_parcels": "81",
+      "parent_neighborhood": "Skymont",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Skymont per owner-review subdivision relationship."
+    },
+    "Shultz Plat": {
+      "subdivision_family": "Shultz Plat",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Shultz Plat",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Shumate": {
+      "subdivision_family": "Shumate",
+      "residential_parcels": "66",
+      "parent_neighborhood": "Kinzley Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Kinzley Court per owner-review subdivision relationship."
+    },
+    "Shutterlee Mill": {
+      "subdivision_family": "Shutterlee Mill",
+      "residential_parcels": 7,
+      "parent_neighborhood": "Shutterlee Mill",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Skymont": {
+      "subdivision_family": "Skymont",
+      "residential_parcels": "163",
+      "parent_neighborhood": "Skymont",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Smart & Byers": {
+      "subdivision_family": "Smart & Byers",
+      "residential_parcels": "10",
+      "parent_neighborhood": "Smart & Byers",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Springhill Farms": {
+      "subdivision_family": "Springhill Farms",
+      "residential_parcels": "46",
+      "parent_neighborhood": "Springhill Farms",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Stafford Plat": {
+      "subdivision_family": "Stafford Plat",
+      "residential_parcels": 8,
+      "parent_neighborhood": "Stafford Plat",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Staunton Dev. Co.": {
+      "subdivision_family": "Staunton Dev. Co.",
+      "residential_parcels": 9,
+      "parent_neighborhood": "Staunton Dev. Co.",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Staunton Park": {
+      "subdivision_family": "Staunton Park",
+      "residential_parcels": "372",
+      "parent_neighborhood": "Staunton Park",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Stuart Heights": {
+      "subdivision_family": "Stuart Heights",
+      "residential_parcels": "98",
+      "parent_neighborhood": "Sears Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Sears Hill per owner-review subdivision relationship."
+    },
+    "Swecker": {
+      "subdivision_family": "Swecker",
+      "residential_parcels": 2,
+      "parent_neighborhood": "Swecker",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Sweetbriar Court": {
+      "subdivision_family": "Sweetbriar Court",
+      "residential_parcels": "35",
+      "parent_neighborhood": "Sweetbriar Court",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Tannehill & Wheat": {
+      "subdivision_family": "Tannehill & Wheat",
+      "residential_parcels": "41",
+      "parent_neighborhood": "Tannehill & Wheat",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Subdivision name matches verified public neighborhood identity."
+    },
+    "Tannehill Terrace": {
+      "subdivision_family": "Tannehill Terrace",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Tannehill Terrace",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "The Trace": {
+      "subdivision_family": "The Trace",
+      "residential_parcels": 6,
+      "parent_neighborhood": "The Trace",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Trout, P.H.": {
+      "subdivision_family": "Trout, P.H.",
+      "residential_parcels": "20",
+      "parent_neighborhood": "Kinzley Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Kinzley Court per owner-review subdivision relationship."
+    },
+    "Va Land Co.": {
+      "subdivision_family": "Va Land Co.",
+      "residential_parcels": "10",
+      "parent_neighborhood": "Gospel Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Gospel Hill per owner-review subdivision relationship."
+    },
+    "Virginia Place": {
+      "subdivision_family": "Virginia Place",
+      "residential_parcels": "113",
+      "parent_neighborhood": "Virginia Place",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "FULL NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Vista Heights": {
+      "subdivision_family": "Vista Heights",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Vista Heights",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Waverley Farm": {
+      "subdivision_family": "Waverley Farm",
+      "residential_parcels": "47",
+      "parent_neighborhood": "Mountain View",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Mountain View per owner-review subdivision relationship."
+    },
+    "Waverly Green": {
+      "subdivision_family": "Waverly Green",
+      "residential_parcels": "28",
+      "parent_neighborhood": "Gospel Hill",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Gospel Hill per owner-review subdivision relationship."
+    },
+    "Weston": {
+      "subdivision_family": "Weston",
+      "residential_parcels": "11",
+      "parent_neighborhood": "Farrier Court",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Farrier Court per owner-review subdivision relationship."
+    },
+    "Westside": {
+      "subdivision_family": "Westside",
+      "residential_parcels": "15",
+      "parent_neighborhood": "Westside",
+      "grouping_status": "STANDALONE",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "MICRO-NEIGHBORHOOD",
+      "notes": "Verified public identity stands alone in neighborhood view."
+    },
+    "Westwood": {
+      "subdivision_family": "Westwood",
+      "residential_parcels": 0,
+      "parent_neighborhood": "Westwood",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Weyanoke Heights": {
+      "subdivision_family": "Weyanoke Heights",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Weyanoke Heights",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Wilson, Pg": {
+      "subdivision_family": "Wilson, Pg",
+      "residential_parcels": 3,
+      "parent_neighborhood": "Wilson, Pg",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Winnbrook": {
+      "subdivision_family": "Winnbrook",
+      "residential_parcels": "19",
+      "parent_neighborhood": "New Hope",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of New Hope per owner-review subdivision relationship."
+    },
+    "Woodland": {
+      "subdivision_family": "Woodland",
+      "residential_parcels": 4,
+      "parent_neighborhood": "Woodland",
+      "grouping_status": "UNRESOLVED",
+      "grouping_source": "subdivision truth data only",
+      "owner_review_role": "\u2014",
+      "notes": "Not in owner-review ledger; left separate pending verification."
+    },
+    "Woodlawn": {
+      "subdivision_family": "Woodlawn",
+      "residential_parcels": "21",
+      "parent_neighborhood": "Mountain View",
+      "grouping_status": "VERIFIED",
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)",
+      "owner_review_role": "SUBDIVISION WITHIN BROADER NEIGHBORHOOD",
+      "notes": "Verified member of Mountain View per owner-review subdivision relationship."
+    }
+  },
+  "groups": [
+    {
+      "neighborhood": "Anothony Plat",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Anothony Plat"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Ast Estate",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Ast Estate"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Augusta Terrace",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Augusta Terrace"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Baber Plat",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Baber Plat"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Baldwin Acres",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Baldwin Acres",
+        "Carrsbrook"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Baldwin Place",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Baldwin Place"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Basic Witz",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Beulah Park",
+        "Hanger, Aw",
+        "Kennedy, J.A.",
+        "Montgomery Heights"
+      ],
+      "member_count": 4,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Bell & Higgs",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Bell & Higgs"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Bell Creek",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Bell Creek"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Belmore",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Belmore"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Betsy Bell",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Betsy Bell"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Beverley Court",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Bellview",
+        "Beverley Court",
+        "Clark, Rs"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Beverley Grove",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Beverley Grove"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Big Sky",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Big Sky"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Blackburn & Lohr",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Blackburn & Lohr"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Bolt",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Bolt"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Brae Burn",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Brae Burn"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Brandon Ralston",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Brandon Ralston"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Burress",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Burress"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Cherry Hill",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Cherry Hill"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Clem, Hm",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Clem, Hm"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "College Park",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "College Park",
+        "Mactanly",
+        "Shannon Hill"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Cox, Sj",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Cox, Sj"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Crosscrest",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Crosscrest"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Crouch, Em",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Crouch, Em"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Daisy Brent",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Daisy Brent"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Dogwood",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Atlantic Reality",
+        "Ridgewood Hgts"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Eastside",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Eastside"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Eastview",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Eastview"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Edgewood Park",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Edgewood Park"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Englewood Place",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Englewood Place"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Fairview",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Fairview"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Farrier Court",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Cease Plat",
+        "Moore Add",
+        "Reid, Wa",
+        "Weston"
+      ],
+      "member_count": 4,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Forest Grove",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Forest Grove"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Forest Hills",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Beverley Hills",
+        "Forest Hills"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Gardner Addition",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Gardner Addition"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Gibbs Hill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Gibbs Hill",
+        "Lynnhaven"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Gospel Hill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Gospel Hill",
+        "Va Land Co.",
+        "Waverly Green"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Grandview Add",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Grandview Add"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Grant Land, T.A. & J.L.",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Grant Land, T.A. & J.L."
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Greenspring",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Gaymont Homes",
+        "Greenspring",
+        "Harrington Place"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Harper'S Court",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Harper'S Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Harper, C.F.",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Harper, C.F."
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Harris, C.F.",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Harris, C.F."
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Highland Hts",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Highland Hts"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Hillcrest",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Fox Hill",
+        "Freegrove Manor",
+        "Hillcrest",
+        "Hilton Heights",
+        "Knolwood Acres",
+        "Ridgecrest"
+      ],
+      "member_count": 6,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Ingleside",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Ingleside",
+        "Olde South Village"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "K-West",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "K-West"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Kenva Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Kenva Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Kenwood",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Kenwood"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Kinzley Court",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Kinzley Court",
+        "Shumate",
+        "Trout, P.H."
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Kivlighan",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Kivlighan"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Lakeview",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Lakeview"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Lamb & Stout",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Lamb & Stout"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Lancelot",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Lancelot"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Lee High Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Lee High Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Lewiston",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Lewiston"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Linden Heights",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Linden Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Locust Hill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Franklin Hill",
+        "Locust Hill",
+        "Mountain View",
+        "Noon Addition"
+      ],
+      "member_count": 4,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Mary Grey Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Mary Grey Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Middlebrook Park",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Middlebrook Park"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Morrison Land",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Morrison Land"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Mountain View",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Waverley Farm",
+        "Woodlawn"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "New Hope",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Foxcrest",
+        "Reynolds",
+        "Winnbrook"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "New Town",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Bagby Add.",
+        "Madison Sq"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Oak Gardens",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Oak Gardens"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Orchard Place",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Orchard Place"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Overbrook",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Overbrook"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Palmer Plat",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Palmer Plat"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Park Hill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Evergreen Acres",
+        "Park Hill"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Parklee",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Parklee"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Parkview",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Parkview"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Parkwood Manor",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Parkwood Manor"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Partlow, Bw",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Partlow, Bw"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Peaceful Valley",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Peaceful Valley"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Ramsey",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Ramsey"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Red Oaks",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Red Oaks"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Ridgemont",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Forest Ridge",
+        "Ridgemont"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Rosecrest",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Rosecrest"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Sears Hill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Marquis Addition",
+        "Oak Hill",
+        "Partlow",
+        "Stuart Heights"
+      ],
+      "member_count": 4,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Selma",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Donaghe Plat",
+        "Earman & Bagby",
+        "Harrison",
+        "Long Ridge",
+        "Oakenwold",
+        "Orchard Grove",
+        "Overlook",
+        "Selma",
+        "Selma Heights"
+      ],
+      "member_count": 9,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Shultz Plat",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Shultz Plat"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Shutterlee Mill",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Collinswood",
+        "Crestwood",
+        "Shutterlee Mill"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Skymont",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Cherry Vale",
+        "Lyle Add",
+        "Pinehurst",
+        "Sherwood Forest",
+        "Skymont"
+      ],
+      "member_count": 5,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Smart & Byers",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Smart & Byers"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Springhill Farms",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Springhill Farms"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Stafford Plat",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Stafford Plat"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Staunton Dev. Co.",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Staunton Dev. Co."
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Staunton Park",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Gray Addition",
+        "Staunton Park"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Sunnyside",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Bagby Add"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Swecker",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Swecker"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Sweetbriar Court",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Sweetbriar Court"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Tannehill & Wheat",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Hanger, A.W.",
+        "Houlihan & Bosserman",
+        "Tannehill & Wheat"
+      ],
+      "member_count": 3,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Tannehill Terrace",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Tannehill Terrace"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Terry Court",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Belmont Terrace",
+        "E.C. Partlow"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "The Trace",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "The Trace"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Virginia Place",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Sherwood Estate",
+        "Virginia Place"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Vista Heights",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Shenandoah Heights",
+        "Vista Heights"
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "West End",
+      "grouping_status": "VERIFIED",
+      "members": [
+        "Bagby Plat",
+        "Richardson Ext."
+      ],
+      "member_count": 2,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Westside",
+      "grouping_status": "STANDALONE",
+      "members": [
+        "Westside"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Westwood",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Westwood"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Weyanoke Heights",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Weyanoke Heights"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Wilson, Pg",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Wilson, Pg"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    },
+    {
+      "neighborhood": "Woodland",
+      "grouping_status": "UNRESOLVED",
+      "members": [
+        "Woodland"
+      ],
+      "member_count": 1,
+      "grouping_source": "STAUNTON-SUBDIVISION-PUBLIC-ROLE-OWNER-REVIEW.csv (2026-09-14)"
+    }
+  ],
+  "summary": {
+    "verified_groups": 29,
+    "standalone": 27,
+    "unresolved": 47
+  }
+}

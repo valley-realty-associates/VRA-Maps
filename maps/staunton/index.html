@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Staunton subdivisions map — Valley Realty Associates</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root {
+    --green: #2f5a3f; --vra-green: #0B4636; --gold: #FECD2A; --parchment: #f4f1e8; --ink: #1e2a22;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 system-ui, sans-serif; background: var(--parchment); color: var(--ink); }
+  header { padding: 12px 16px; background: var(--vra-green); color: #fff; }
+  header strong { color: var(--gold); }
+  .wrap { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 52px); }
+  .map-col { display: flex; flex-direction: column; min-width: 0; }
+  .data-header {
+    display: flex; flex-wrap: wrap; gap: 0; background: var(--vra-green); color: #fff;
+    border-bottom: 2px solid var(--gold); font-size: 12px;
+  }
+  .data-header__cell {
+    flex: 1 1 120px; min-width: 110px; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,.12);
+  }
+  .data-header__cell:last-child { border-right: none; }
+  .data-header__label {
+    display: block; font-size: 9px; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: rgba(255,255,255,.72); margin-bottom: 3px;
+  }
+  .data-header__value {
+    display: block; font-size: 14px; font-weight: 600; line-height: 1.2; color: #fff;
+  }
+  .data-header__cell--name { flex: 1.4 1 160px; }
+  .data-header__cell--name .data-header__value {
+    font-size: 16px; font-weight: 700; color: var(--gold);
+  }
+  .data-header__value.is-muted { color: rgba(255,255,255,.55); font-weight: 500; font-size: 12px; }
+  .data-header__note {
+    display: block; font-size: 9px; color: rgba(255,255,255,.55); margin-top: 2px;
+  }
+  .data-header__cell.is-hidden { display: none; }
+  .data-header__includes {
+    flex: 1 1 100%; padding: 4px 12px 8px; font-size: 11px; color: rgba(255,255,255,.78);
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .data-header__includes.is-hidden { display: none; }
+  .panel-about-dates {
+    margin-top: 16px; padding-top: 12px; border-top: 1px solid #d7ccb0;
+  }
+  .panel-about-dates button {
+    background: transparent; border: none; padding: 0; cursor: pointer;
+    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: #9a7a10;
+  }
+  .panel-about-dates button span {
+    color: var(--gold); font-size: 13px; margin-left: 3px;
+  }
+  .panel-about-dates button:hover { text-decoration: underline; }
+  .place-search { margin-bottom: 6px; }
+  .place-search input {
+    width: 100%; padding: 8px 10px; font-size: 12px; border: 1px solid #c9c2ad;
+    border-radius: 4px; background: #fff; color: var(--ink);
+  }
+  .place-search input:focus {
+    outline: 2px solid rgba(254,205,42,.45); border-color: var(--gold);
+  }
+  .place-list {
+    list-style: none; margin: 0; padding: 0; overflow-y: auto;
+    max-height: min(38vh, 360px); min-height: 100px;
+  }
+  .place-list li { margin: 0 0 2px; }
+  .place-list button {
+    width: 100%; text-align: left; padding: 7px 8px; border: none; border-radius: 3px;
+    background: transparent; color: var(--ink); cursor: pointer; font-size: 12px; line-height: 1.25;
+  }
+  .place-list button:hover { background: rgba(11,70,54,.08); }
+  .place-list li.is-selected button {
+    background: rgba(254,205,42,.28); font-weight: 600;
+  }
+  .place-list__name { display: block; }
+  .place-list__meta {
+    display: block; font-size: 10px; font-weight: 500; color: #5a6b60; margin-top: 1px;
+  }
+  .place-list__empty {
+    padding: 10px 8px; font-size: 11px; color: #5a6b60; font-style: italic;
+  }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  @media (max-width: 900px) {
+    .wrap { grid-template-columns: 1fr; }
+    .data-header__cell { flex: 1 1 45%; min-width: 0; }
+    aside {
+      display: none; position: fixed; z-index: 9000; top: 52px; left: 0; bottom: 0;
+      width: min(300px, 88vw); max-height: none; box-shadow: 4px 0 24px rgba(0,0,0,.18);
+    }
+    .wrap.panel-open aside { display: flex; }
+    .panel-toggle {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin: 8px 12px 0; padding: 7px 12px; font-size: 12px; font-weight: 600;
+      border: 1px solid #b8b0a0; border-radius: 4px; background: #faf7ef; color: var(--ink); cursor: pointer;
+    }
+  }
+  .panel-toggle { display: none; }
+  aside {
+    padding: 14px 16px; border-right: 1px solid #c9c2ad; background: #faf7ef;
+    max-height: calc(100vh - 52px); display: flex; flex-direction: column; min-height: 0;
+  }
+  .panel-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+  aside h1 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 6px; color: var(--vra-green); }
+  .panel-intro { font-size: 12px; color: #4a5346; margin: 0 0 14px; line-height: 1.4; }
+  aside h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; margin: 14px 0 8px; color: var(--green); }
+  aside h2:first-of-type { margin-top: 0; }
+  label { display: block; font-size: 12px; margin: 6px 0; cursor: pointer; }
+  .view-toggle { display: flex; gap: 6px; margin-bottom: 4px; }
+  .view-toggle button {
+    flex: 1; font-size: 11px; font-weight: 600; padding: 7px 8px; border-radius: 4px;
+    border: 1px solid #b8b0a0; background: #fff; color: var(--ink); cursor: pointer;
+  }
+  .view-toggle button.is-active {
+    background: var(--vra-green); color: var(--gold); border-color: var(--vra-green);
+  }
+  #map { min-height: 620px; height: calc(100vh - 52px - 52px); width: 100%; flex: 1 1 auto; }
+  #map-error { display: none; margin: 8px 16px; padding: 10px 12px; background: #fde8dc; color: #6b1d1d; border: 1px solid #c45c26; font-size: 13px; }
+
+  .sub-map-label, .hd-map-label, .nb-map-label {
+    background: transparent !important; border: none !important; box-shadow: none !important;
+  }
+  .sub-map-label span, .hd-map-label span, .nb-map-label span {
+    display: block; white-space: nowrap; pointer-events: none;
+    font-family: system-ui, -apple-system, sans-serif; line-height: 1.15; letter-spacing: 0.01em;
+    text-shadow: 0 0 2px #f4f1e8, 0 0 4px #f4f1e8, 1px 0 0 #f4f1e8, -1px 0 0 #f4f1e8, 0 1px 0 #f4f1e8, 0 -1px 0 #f4f1e8;
+  }
+  .sub-map-label--tier-a span { font-size: 12px; font-weight: 700; color: #1a2e22; }
+  .sub-map-label--tier-b span { font-size: 11px; font-weight: 600; color: #1e3228; }
+  .sub-map-label--tier-c span { font-size: 10px; font-weight: 500; color: #243528; }
+  .sub-map-label--tier-d span { font-size: 9px; font-weight: 500; color: #2a3a30; }
+  .sub-map-label--tier-e span { font-size: 8.5px; font-weight: 500; color: #334038; }
+  .sub-map-label--lakeview span { font-weight: 700; color: #0f2418; }
+  .hd-map-label span {
+    font-size: 10px; font-weight: 600; font-style: italic; color: #4a1a6b;
+  }
+  .nb-map-label span {
+    font-size: 13px; font-weight: 700; color: #1a2e22;
+  }
+  .about-dates-backdrop {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 10000;
+    align-items: center; justify-content: center; padding: 16px;
+  }
+  .about-dates-backdrop.is-open { display: flex; }
+  .about-dates-panel {
+    max-width: 420px; background: #fff; border: 2px solid var(--gold); border-radius: 6px;
+    padding: 16px 18px; box-shadow: 0 8px 32px rgba(0,0,0,.2);
+  }
+  .about-dates-panel h3 { margin: 0 0 8px; color: var(--vra-green); font-size: 15px; }
+  .about-dates-panel p { margin: 0 0 10px; font-size: 13px; line-height: 1.45; color: #333; }
+  .about-dates-panel button {
+    margin-top: 4px; background: var(--vra-green); color: var(--gold); border: none;
+    padding: 6px 12px; font-weight: 600; border-radius: 4px; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div><strong>Staunton</strong> — residential subdivisions map</div>
+</header>
+<div id="map-error" role="alert"></div>
+<div class="wrap">
+<aside id="panel">
+  <div class="panel-scroll">
+    <h1>Staunton subdivisions</h1>
+    <p class="panel-intro">Explore residential subdivisions, neighborhoods, and historic districts.</p>
+    <h2>View</h2>
+    <div class="view-toggle" role="group" aria-label="Map view">
+      <button type="button" id="view-subs" class="is-active" aria-pressed="true">Subdivisions</button>
+      <button type="button" id="view-nb" aria-pressed="false">Neighborhoods</button>
+    </div>
+    <h2>Layers</h2>
+    <label><input type="checkbox" id="tog-subs" checked> Residential subdivision families</label>
+    <label><input type="checkbox" id="tog-nosub" checked> Residential — no verified subdivision</label>
+    <label><input type="checkbox" id="tog-roads" checked> Major roads</label>
+    <label><input type="checkbox" id="tog-hd"> Historic districts</label>
+    <h2>Find a place</h2>
+    <div class="place-search">
+      <label class="visually-hidden" for="place-search-input">Search neighborhoods or subdivisions</label>
+      <input type="search" id="place-search-input" placeholder="Search neighborhoods or subdivisions" autocomplete="off" spellcheck="false">
+    </div>
+    <ul id="place-list" class="place-list" role="listbox" aria-label="Places"></ul>
+    <div class="panel-about-dates">
+      <button type="button" id="btn-about-dates" aria-haspopup="dialog">About dates <span aria-hidden="true">ⓘ</span></button>
+    </div>
+  </div>
+</aside>
+<div class="map-col">
+  <button type="button" class="panel-toggle" id="panel-toggle" aria-expanded="false" aria-controls="panel">Places</button>
+  <div class="data-header" id="data-header" aria-live="polite">
+    <div class="data-header__cell data-header__cell--name">
+      <span class="data-header__label">Selected place</span>
+      <span class="data-header__value is-muted" id="hdr-name">Select a subdivision to view details.</span>
+    </div>
+    <div class="data-header__cell">
+      <span class="data-header__label" id="hdr-sale-label">Median sale price</span>
+      <span class="data-header__value is-muted" id="hdr-sale">—</span>
+      <span class="data-header__note" id="hdr-sale-note"></span>
+    </div>
+    <div class="data-header__cell">
+      <span class="data-header__label">Recent sales</span>
+      <span class="data-header__value is-muted" id="hdr-sales-n">—</span>
+    </div>
+    <div class="data-header__cell">
+      <span class="data-header__label">Median home size</span>
+      <span class="data-header__value is-muted" id="hdr-home">—</span>
+    </div>
+    <div class="data-header__cell">
+      <span class="data-header__label">Median lot size</span>
+      <span class="data-header__value is-muted" id="hdr-lot">—</span>
+    </div>
+    <div class="data-header__cell is-hidden" id="hdr-established-cell">
+      <span class="data-header__label" id="hdr-established-label">Date established</span>
+      <span class="data-header__value" id="hdr-established">—</span>
+    </div>
+    <div class="data-header__includes is-hidden" id="hdr-includes"></div>
+  </div>
+  <div id="map"></div>
+</div>
+</div>
+<div class="about-dates-backdrop" id="about-dates" role="dialog" aria-labelledby="about-dates-title" aria-modal="true">
+  <div class="about-dates-panel">
+    <h3 id="about-dates-title">About dates</h3>
+    <p>Staunton was settled in 1732, its town plan was laid out in 1747, and it was incorporated in 1761. Many of the city&rsquo;s oldest areas developed before modern subdivision platting, so some places do not have a single recorded subdivision-establishment date.</p>
+    <p>Where available, the map uses verified plat, development, or building-era records.</p>
+    <button type="button" id="btn-close-about">Close</button>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+<script>
+const DATA_PATH = "staunton-subdivision-truth-data.json";
+const METRICS_PATH = "staunton-subdivision-family-metrics.json";
+const GROUPS_PATH = "staunton-neighborhood-groups.json";
+const NB_METRICS_PATH = "staunton-neighborhood-housing-metrics.json";
+const VRA_GOLD = "#FECD2A";
+
+const TIER_LABEL = {
+  A: { minZoom: 11, fontSize: 12, fontWeight: 700, priority: 1 },
+  B: { minZoom: 12, fontSize: 11, fontWeight: 600, priority: 2 },
+  C: { minZoom: 14, fontSize: 10, fontWeight: 500, priority: 3 },
+  D: { minZoom: 16, fontSize: 9,  fontWeight: 500, priority: 4 },
+  E: { minZoom: 17, fontSize: 8.5, fontWeight: 500, priority: 5 },
+};
+
+const STAUNTON_CENTER = [38.1499, -79.0713];
+const mapEl = document.getElementById("map");
+if (mapEl._leaflet_id) {
+  mapEl._leaflet_id = undefined;
+  mapEl.innerHTML = "";
+}
+const map = L.map(mapEl, { scrollWheelZoom: true, center: STAUNTON_CENTER, zoom: 13 });
+window.__stauntonMap = map;
+map.createPane("subdivisionLabels");
+map.getPane("subdivisionLabels").style.zIndex = 650;
+map.createPane("historicLabels");
+map.getPane("historicLabels").style.zIndex = 640;
+map.createPane("neighborhoodLabels");
+map.getPane("neighborhoodLabels").style.zIndex = 645;
+map.createPane("neighborhoodOutline");
+map.getPane("neighborhoodOutline").style.zIndex = 455;
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap",
+  maxZoom: 19
+}).addTo(map);
+
+function showMapError(msg) {
+  const el = document.getElementById("map-error");
+  if (!el) return;
+  el.style.display = "block";
+  el.textContent = msg;
+}
+
+if (location.protocol === "file:") {
+  showMapError("Open via local HTTP server — file:// blocks JSON sidecar load. Run: cd data/staunton-map/review-only/2026-09-14 && python3 -m http.server 8765");
+}
+
+function fitMapToData() {
+  map.invalidateSize(true);
+  try {
+    const subLayers = layers.subs && layers.subs.getLayers ? layers.subs.getLayers() : [];
+    if (subLayers.length) {
+      const fg = L.featureGroup(subLayers);
+      if (fg.getBounds().isValid()) {
+        map.fitBounds(fg.getBounds().pad(0.04));
+      } else {
+        map.setView(STAUNTON_CENTER, 13);
+      }
+    } else {
+      map.setView(STAUNTON_CENTER, 13);
+    }
+  } catch (err) {
+    console.warn("fitMapToData fallback:", err);
+    map.setView(STAUNTON_CENTER, 13);
+  }
+  refreshSubdivisionLabels();
+  refreshNeighborhoodLabel();
+}
+
+window.addEventListener("load", () => {
+  map.invalidateSize(true);
+  if (layers.subs) fitMapToData();
+});
+
+const layers = {};
+const familyLayers = {};
+const familyProps = {};
+const familyMetrics = {};
+const neighborhoodMetrics = {};
+const crosswalk = {};
+const neighborhoodBySub = {};
+const neighborhoodGroups = {};
+const labelCandidates = [];
+const hdLabelCandidates = [];
+let labelLayer = L.layerGroup().addTo(map);
+let hdLabelLayer = L.layerGroup().addTo(map);
+let nbLabelLayer = L.layerGroup().addTo(map);
+let nbOutlineLayer = L.layerGroup().addTo(map);
+let labelsEnabled = true;
+let viewMode = "subdivisions";
+let selectedNeighborhood = null;
+let selectedSubdivision = null;
+const subdivisionCatalog = [];
+const neighborhoodCatalog = [];
+const searchIndex = [];
+
+const styles = {
+  cityBoundary: { color: "#1e2a22", weight: 1.5, opacity: 0.5, fillOpacity: 0, dashArray: "6 4" },
+  publicOutline: { color: "#6b8f72", weight: 1, opacity: 0.45, fillOpacity: 0, dashArray: "4 5" },
+  cityGis: { color: "#8a939c", weight: 1, opacity: 0.35, fillOpacity: 0, dashArray: "3 5" },
+  specialCtx: { color: "#9aa3ab", weight: 1, opacity: 0.38, fillOpacity: 0, dashArray: "4 4" },
+  noSub: { radius: 4, color: "#8a3b3b", fillColor: "#d46a6a", fillOpacity: 0.85, weight: 1 },
+  oldLeeNoPlat: { radius: 5, color: "#4a2d6a", fillColor: "#9b7bd4", fillOpacity: 0.9, weight: 2 },
+  hd: { color: "#5c1a7a", weight: 2.8, opacity: 0.92, fillColor: "#8e44ad", fillOpacity: 0.08 },
+  roads: { color: "#3d5a80", weight: 2, opacity: 0.65 },
+  goldSelected: { color: VRA_GOLD, weight: 3, opacity: 1, fillColor: VRA_GOLD, fillOpacity: 0.32 },
+  goldOutline: { color: VRA_GOLD, weight: 3.5, opacity: 1, fillOpacity: 0, dashArray: null },
+  dimmed: { opacity: 0.35, fillOpacity: 0.15 },
+};
+
+const measureCanvas = document.createElement("canvas");
+const measureCtx = measureCanvas.getContext("2d");
+
+function measureText(text, fontSize, fontWeight) {
+  measureCtx.font = fontWeight + " " + fontSize + "px system-ui, -apple-system, sans-serif";
+  const w = Math.ceil(measureCtx.measureText(text).width);
+  const h = Math.ceil(fontSize * 1.25);
+  return { width: w, height: h };
+}
+
+function boxesCollide(a, b, pad) {
+  pad = pad || 3;
+  return !(a.right + pad < b.left || a.left - pad > b.right ||
+           a.bottom + pad < b.top || a.top - pad > b.bottom);
+}
+
+function labelPoint(layer) {
+  const b = layer.getBounds();
+  if (!b.isValid()) return null;
+  return b.getCenter();
+}
+
+function escapeHtml(text) {
+  return String(text || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+}
+
+function collectSearchTerms(name, rawNames) {
+  const terms = new Set();
+  if (name) terms.add(name.toLowerCase());
+  String(rawNames || "").split(/[;|,]/).forEach(part => {
+    const t = part.trim();
+    if (t) terms.add(t.toLowerCase());
+  });
+  return terms;
+}
+
+function buildPlaceCatalogs() {
+  subdivisionCatalog.length = 0;
+  neighborhoodCatalog.length = 0;
+  searchIndex.length = 0;
+
+  Object.keys(familyProps).sort((a, b) => a.localeCompare(b)).forEach(name => {
+    const p = familyProps[name] || {};
+    const parcels = p.residential_parcel_count || 0;
+    const terms = collectSearchTerms(name, p.raw_names);
+    subdivisionCatalog.push({ name, parcels, terms });
+    searchIndex.push({ kind: "subdivision", id: name, label: name, parcels, terms });
+  });
+
+  Object.keys(neighborhoodGroups).sort((a, b) => a.localeCompare(b)).forEach(name => {
+    const g = neighborhoodGroups[name] || { members: [] };
+    const terms = new Set([name.toLowerCase()]);
+    g.members.forEach(m => collectSearchTerms(m, familyProps[m] && familyProps[m].raw_names).forEach(t => terms.add(t)));
+    neighborhoodCatalog.push({ name, memberCount: g.members.length, terms });
+    searchIndex.push({ kind: "neighborhood", id: name, label: name, terms });
+  });
+}
+
+function placeMatchesQuery(item, query) {
+  if (!query) return true;
+  if (item.label.toLowerCase().includes(query)) return true;
+  for (const t of item.terms) {
+    if (t.includes(query)) return true;
+  }
+  return false;
+}
+
+function renderPlaceList() {
+  const listEl = document.getElementById("place-list");
+  if (!listEl) return;
+  const query = (document.getElementById("place-search-input").value || "").trim().toLowerCase();
+  listEl.innerHTML = "";
+
+  let items = [];
+  if (query) {
+    items = searchIndex.filter(item => placeMatchesQuery(item, query))
+      .sort((a, b) => a.label.localeCompare(b.label));
+  } else if (viewMode === "subdivisions") {
+    items = subdivisionCatalog.map(s => ({
+      kind: "subdivision", id: s.name, label: s.name, parcels: s.parcels, terms: s.terms,
+    }));
+  } else {
+    items = neighborhoodCatalog.map(n => ({
+      kind: "neighborhood", id: n.name, label: n.name, terms: n.terms,
+    }));
+  }
+
+  if (!items.length) {
+    const empty = document.createElement("li");
+    empty.className = "place-list__empty";
+    empty.textContent = query ? "No matching places." : "No places to show.";
+    listEl.appendChild(empty);
+    return;
+  }
+
+  items.forEach(item => {
+    const li = document.createElement("li");
+    li.dataset.kind = item.kind;
+    li.dataset.id = item.id;
+    li.setAttribute("role", "option");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    let html = '<span class="place-list__name">' + escapeHtml(item.label) + "</span>";
+    if (query) {
+      html += '<span class="place-list__meta">' + (item.kind === "neighborhood" ? "Neighborhood" : "Subdivision") + "</span>";
+    } else if (viewMode === "subdivisions" && item.parcels) {
+      html += '<span class="place-list__meta">' + item.parcels + " residential parcels</span>";
+    }
+    btn.innerHTML = html;
+    btn.addEventListener("click", () => selectFromList(item.kind, item.id));
+    li.appendChild(btn);
+    listEl.appendChild(li);
+  });
+  syncListSelection();
+}
+
+function syncListSelection() {
+  document.querySelectorAll("#place-list li[data-kind]").forEach(li => {
+    const kind = li.dataset.kind;
+    const id = li.dataset.id;
+    let selected = false;
+    if (viewMode === "subdivisions" && kind === "subdivision") selected = selectedSubdivision === id;
+    if (viewMode === "neighborhoods" && kind === "neighborhood") selected = selectedNeighborhood === id;
+    li.classList.toggle("is-selected", selected);
+    li.setAttribute("aria-selected", selected ? "true" : "false");
+  });
+}
+
+function zoomToSubdivision(name) {
+  const lg = familyLayers[name];
+  if (!lg) return;
+  try {
+    const b = lg.getBounds();
+    if (b.isValid()) map.fitBounds(b.pad(0.08));
+  } catch (e) { /* skip */ }
+}
+
+function zoomToNeighborhood(name) {
+  const group = neighborhoodGroups[name];
+  if (!group) return;
+  const bounds = L.latLngBounds([]);
+  group.members.forEach(m => {
+    const lg = familyLayers[m];
+    if (lg) {
+      try {
+        const b = lg.getBounds();
+        if (b.isValid()) bounds.extend(b);
+      } catch (e) { /* skip */ }
+    }
+  });
+  if (bounds.isValid()) map.fitBounds(bounds.pad(0.08));
+}
+
+function openPlacePopup(kind, id) {
+  let opened = false;
+  if (kind === "subdivision") {
+    const lg = familyLayers[id];
+    if (!lg) return;
+    lg.eachLayer(l => {
+      if (!opened && l.openPopup) { l.openPopup(); opened = true; }
+    });
+  } else {
+    const group = neighborhoodGroups[id];
+    if (!group || !group.members.length) return;
+    const lg = familyLayers[group.members[0]];
+    if (!lg) return;
+    lg.eachLayer(l => {
+      if (!opened && l.openPopup) { l.openPopup(); opened = true; }
+    });
+  }
+}
+
+function selectFromList(kind, id) {
+  if (kind === "subdivision" && viewMode !== "subdivisions") setViewMode("subdivisions");
+  if (kind === "neighborhood" && viewMode !== "neighborhoods") setViewMode("neighborhoods");
+  if (kind === "subdivision") {
+    selectSubdivision(id);
+    zoomToSubdivision(id);
+  } else {
+    selectNeighborhood(id);
+    zoomToNeighborhood(id);
+  }
+  openPlacePopup(kind, id);
+  syncListSelection();
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    document.querySelector(".wrap").classList.remove("panel-open");
+    document.getElementById("panel-toggle").setAttribute("aria-expanded", "false");
+  }
+}
+
+function defaultSubStyle(p) {
+  return {
+    color: p.stroke || "#1a5c3d",
+    weight: p.lakeview_special ? 3 : (p.betsy_bell_hill ? 2 : 1.2),
+    fillColor: p.fill || "#5cb88a",
+    fillOpacity: p.lakeview_special ? 0.55 : 0.42,
+  };
+}
+
+function applySubdivisionStyles() {
+  Object.keys(familyLayers).forEach(name => {
+    const lg = familyLayers[name];
+    const p = familyProps[name] || {};
+    const nb = neighborhoodBySub[name] || name;
+    const isSelectedMember = viewMode === "neighborhoods" && selectedNeighborhood && nb === selectedNeighborhood;
+    const isSelectedSub = viewMode === "subdivisions" && selectedSubdivision === name;
+    const style = (isSelectedMember || isSelectedSub) ? Object.assign({}, styles.goldSelected) :
+      (viewMode === "neighborhoods" && selectedNeighborhood && nb !== selectedNeighborhood) ?
+        Object.assign({}, defaultSubStyle(p), styles.dimmed) : defaultSubStyle(p);
+    lg.setStyle(style);
+  });
+}
+
+function refreshHistoricLabels() {
+  hdLabelLayer.clearLayers();
+  const tog = document.getElementById("tog-hd");
+  if (!tog || !tog.checked) return;
+  const zoom = map.getZoom();
+  if (zoom < 12) return;
+  const view = map.getBounds().pad(-0.02);
+  const placed = [];
+  hdLabelCandidates.forEach(item => {
+    if (!item.point || !view.contains(item.point)) return;
+    const shortName = item.name.replace(/ Historic District$/i, "");
+    const dims = measureText(shortName, 10, 600);
+    const pt = map.latLngToContainerPoint(item.point);
+    const box = { left: pt.x - dims.width / 2, top: pt.y - dims.height / 2, right: pt.x + dims.width / 2, bottom: pt.y + dims.height / 2 };
+    for (let i = 0; i < placed.length; i++) if (boxesCollide(box, placed[i], 6)) return;
+    placed.push(box);
+    const icon = L.divIcon({
+      className: "hd-map-label",
+      html: "<span>" + shortName.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</span>",
+      iconSize: [dims.width, dims.height],
+      iconAnchor: [dims.width / 2, dims.height / 2],
+    });
+    L.marker(item.point, { icon, interactive: false, pane: "historicLabels" }).addTo(hdLabelLayer);
+  });
+}
+
+function refreshSubdivisionLabels() {
+  labelLayer.clearLayers();
+  if (!labelsEnabled || viewMode !== "subdivisions") return;
+  const zoom = map.getZoom();
+  const view = map.getBounds().pad(-0.02);
+  const placed = [];
+  const sorted = labelCandidates.slice().sort((a, b) => {
+    if (a.lakeview_special && !b.lakeview_special) return -1;
+    if (b.lakeview_special && !a.lakeview_special) return 1;
+    const pa = (TIER_LABEL[a.tier] || TIER_LABEL.E).priority;
+    const pb = (TIER_LABEL[b.tier] || TIER_LABEL.E).priority;
+    if (pa !== pb) return pa - pb;
+    return b.resCount - a.resCount;
+  });
+  sorted.forEach(item => {
+    const cfg = TIER_LABEL[item.tier] || TIER_LABEL.E;
+    if (zoom < cfg.minZoom) return;
+    if (!item.point || !view.contains(item.point)) return;
+    const dims = measureText(item.name, cfg.fontSize, cfg.fontWeight);
+    const pt = map.latLngToContainerPoint(item.point);
+    const box = { left: pt.x - dims.width / 2, top: pt.y - dims.height / 2, right: pt.x + dims.width / 2, bottom: pt.y + dims.height / 2 };
+    for (let i = 0; i < placed.length; i++) if (boxesCollide(box, placed[i], 4)) return;
+    placed.push(box);
+    const icon = L.divIcon({
+      className: "sub-map-label sub-map-label--tier-" + item.tier.toLowerCase() + (item.lakeview_special ? " sub-map-label--lakeview" : ""),
+      html: "<span>" + item.name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</span>",
+      iconSize: [dims.width, dims.height],
+      iconAnchor: [dims.width / 2, dims.height / 2],
+    });
+    L.marker(item.point, { icon, interactive: false, pane: "subdivisionLabels" }).addTo(labelLayer);
+  });
+}
+
+function refreshNeighborhoodLabel() {
+  nbLabelLayer.clearLayers();
+  if (viewMode !== "neighborhoods" || !selectedNeighborhood) return;
+  const group = neighborhoodGroups[selectedNeighborhood];
+  if (!group) return;
+  const bounds = L.latLngBounds([]);
+  group.members.forEach(m => {
+    const lg = familyLayers[m];
+    if (lg) bounds.extend(lg.getBounds());
+  });
+  if (!bounds.isValid()) return;
+  const pt = bounds.getCenter();
+  const name = selectedNeighborhood;
+  const dims = measureText(name, 13, 700);
+  const icon = L.divIcon({
+    className: "nb-map-label",
+    html: "<span>" + name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</span>",
+    iconSize: [dims.width, dims.height],
+    iconAnchor: [dims.width / 2, dims.height / 2],
+  });
+  L.marker(pt, { icon, interactive: false, pane: "neighborhoodLabels" }).addTo(nbLabelLayer);
+}
+
+function buildNeighborhoodOutline(neighborhood) {
+  nbOutlineLayer.clearLayers();
+  const group = neighborhoodGroups[neighborhood];
+  if (!group || group.members.length < 2) return;
+  const features = [];
+  group.members.forEach(name => {
+    const lg = familyLayers[name];
+    if (!lg) return;
+    lg.eachLayer(l => {
+      try { features.push(l.toGeoJSON()); } catch (e) { /* skip */ }
+    });
+  });
+  if (!features.length) return;
+  try {
+    let merged = features[0];
+    for (let i = 1; i < features.length; i++) {
+      merged = turf.union(merged, features[i]);
+    }
+    if (merged) {
+      L.geoJSON(merged, {
+        style: () => styles.goldOutline,
+        interactive: false,
+        pane: "neighborhoodOutline",
+      }).addTo(nbOutlineLayer);
+    }
+  } catch (err) {
+    features.forEach(f => {
+      L.geoJSON(f, { style: () => styles.goldOutline, interactive: false, pane: "neighborhoodOutline" }).addTo(nbOutlineLayer);
+    });
+  }
+}
+
+function bindToggle(id, layer) {
+  const el = document.getElementById(id);
+  if (!el || !layer) return;
+  el.addEventListener("change", () => {
+    if (el.checked) map.addLayer(layer);
+    else map.removeLayer(layer);
+  });
+}
+
+function setHeaderText(id, text, muted) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = text;
+  el.classList.toggle("is-muted", !!muted);
+}
+
+function setSalePriceLabel(metrics) {
+  const labelEl = document.getElementById("hdr-sale-label");
+  if (!labelEl) return;
+  let label = "Median sale price";
+  if (metrics) {
+    const saleN = metrics.verified_sale_count;
+    if (saleN === 1 || metrics.recent_sale_price != null && metrics.median_sale_price == null) {
+      label = metrics.sale_label === "Recent verified sale" ? "Recent verified sale" : "Recent sale price";
+    } else if (metrics.sale_label && metrics.sale_label !== "Median sale price" && metrics.sale_label !== "Recent sales") {
+      label = metrics.sale_label;
+    }
+  }
+  labelEl.textContent = label;
+}
+
+function clearHeader() {
+  setHeaderText("hdr-name", viewMode === "neighborhoods" ?
+    "Select a neighborhood to view details." : "Select a subdivision to view details.", true);
+  setSalePriceLabel(null);
+  setHeaderText("hdr-sale", "—", true);
+  setHeaderText("hdr-sales-n", "—", true);
+  setHeaderText("hdr-home", "—", true);
+  setHeaderText("hdr-lot", "—", true);
+  document.getElementById("hdr-established-cell").classList.add("is-hidden");
+  document.getElementById("hdr-established-label").textContent = "Date established";
+  document.getElementById("hdr-sale-note").textContent = "";
+  document.getElementById("hdr-includes").classList.add("is-hidden");
+}
+
+function selectSubdivision(name) {
+  selectedSubdivision = name;
+  selectedNeighborhood = null;
+  if (!name) { clearHeader(); applySubdivisionStyles(); nbOutlineLayer.clearLayers(); syncListSelection(); return; }
+  const m = familyMetrics[name] || {};
+  setHeaderText("hdr-name", name, false);
+  setSalePriceLabel(m);
+  setHeaderText("hdr-sale", m.sale_price_display || "Not available", !m.sale_price_display);
+  setHeaderText("hdr-sales-n", m.verified_sale_count != null ? String(m.verified_sale_count) : "Not available", m.verified_sale_count == null);
+  setHeaderText("hdr-home", m.home_size_display || "Not available", !m.home_size_display);
+  setHeaderText("hdr-lot", m.lot_size_display || "Not available", !m.lot_size_display);
+  const estCell = document.getElementById("hdr-established-cell");
+  document.getElementById("hdr-established-label").textContent = "Date established";
+  if (m.date_established_display) {
+    estCell.classList.remove("is-hidden");
+    setHeaderText("hdr-established", m.date_established_display, false);
+  } else {
+    estCell.classList.add("is-hidden");
+  }
+  const noteEl = document.getElementById("hdr-sale-note");
+  if (m.show_limited_caution && m.sale_price_display) {
+    noteEl.textContent = m.limited_caution_label || "Limited sample";
+  } else if (m.sale_note) {
+    noteEl.textContent = m.sale_note;
+  } else {
+    noteEl.textContent = "";
+  }
+  document.getElementById("hdr-includes").classList.add("is-hidden");
+  applySubdivisionStyles();
+  nbOutlineLayer.clearLayers();
+  refreshNeighborhoodLabel();
+  syncListSelection();
+}
+
+function selectNeighborhood(name) {
+  selectedNeighborhood = name;
+  selectedSubdivision = null;
+  if (!name) { clearHeader(); applySubdivisionStyles(); nbOutlineLayer.clearLayers(); refreshNeighborhoodLabel(); syncListSelection(); return; }
+  const group = neighborhoodGroups[name] || { members: [name] };
+  setHeaderText("hdr-name", name, false);
+  const nm = neighborhoodMetrics[name];
+  if (nm && nm.sale_price_display) {
+    setSalePriceLabel(nm);
+    setHeaderText("hdr-sale", nm.sale_price_display, false);
+    setHeaderText("hdr-sales-n", nm.verified_sale_count != null ? String(nm.verified_sale_count) : "—", nm.verified_sale_count == null);
+    setHeaderText("hdr-home", nm.home_size_display || "—", !nm.home_size_display);
+    setHeaderText("hdr-lot", nm.lot_size_display || "—", !nm.lot_size_display);
+    const noteEl = document.getElementById("hdr-sale-note");
+    noteEl.textContent = nm.show_limited_caution ? (nm.limited_caution_label || "Limited sample") : (nm.sale_note || "");
+  } else {
+    setSalePriceLabel(null);
+    setHeaderText("hdr-sale", "—", true);
+    setHeaderText("hdr-sales-n", "—", true);
+    setHeaderText("hdr-home", "—", true);
+    setHeaderText("hdr-lot", "—", true);
+    document.getElementById("hdr-sale-note").textContent = "";
+  }
+  document.getElementById("hdr-established-cell").classList.add("is-hidden");
+  const inc = document.getElementById("hdr-includes");
+  if (group.members.length > 1) {
+    inc.textContent = "Includes: " + group.members.join(", ");
+    inc.classList.remove("is-hidden");
+  } else {
+    inc.classList.add("is-hidden");
+  }
+  applySubdivisionStyles();
+  buildNeighborhoodOutline(name);
+  refreshNeighborhoodLabel();
+  syncListSelection();
+}
+
+function subPopup(p) {
+  const name = p.family || "";
+  const parcels = p.residential_parcel_count || 0;
+  const acreage = p.acreage;
+  let html = "<strong>" + name + "</strong><br>Residential parcels: " + parcels;
+  if (acreage != null && acreage > 0) html += "<br>Acreage: " + Number(acreage).toFixed(2);
+  if (viewMode === "neighborhoods") {
+    const nb = neighborhoodBySub[name];
+    if (nb && nb !== name) html += "<br>Neighborhood: " + nb;
+  }
+  return html;
+}
+
+function neighborhoodPopup(name) {
+  const group = neighborhoodGroups[name];
+  if (!group) return "<strong>" + name + "</strong>";
+  let html = "<strong>" + name + "</strong>";
+  if (group.members.length > 1) html += "<br>Includes: " + group.members.join(", ");
+  return html;
+}
+
+function noSubPopup() {
+  return "<strong>Residential parcel</strong><br>No verified subdivision on record.";
+}
+
+function handlePlaceClick(subName) {
+  if (viewMode === "neighborhoods") {
+    const nb = neighborhoodBySub[subName] || subName;
+    selectNeighborhood(nb);
+  } else {
+    selectSubdivision(subName);
+  }
+}
+
+function setViewMode(mode) {
+  viewMode = mode;
+  document.getElementById("view-subs").classList.toggle("is-active", mode === "subdivisions");
+  document.getElementById("view-nb").classList.toggle("is-active", mode === "neighborhoods");
+  document.getElementById("view-subs").setAttribute("aria-pressed", mode === "subdivisions");
+  document.getElementById("view-nb").setAttribute("aria-pressed", mode === "neighborhoods");
+  selectedSubdivision = null;
+  selectedNeighborhood = null;
+  clearHeader();
+  applySubdivisionStyles();
+  nbOutlineLayer.clearLayers();
+  refreshSubdivisionLabels();
+  refreshNeighborhoodLabel();
+  renderPlaceList();
+}
+
+document.getElementById("view-subs").addEventListener("click", () => setViewMode("subdivisions"));
+document.getElementById("view-nb").addEventListener("click", () => setViewMode("neighborhoods"));
+
+document.getElementById("place-search-input").addEventListener("input", renderPlaceList);
+document.getElementById("place-search-input").addEventListener("keydown", e => {
+  if (e.key !== "Enter") return;
+  e.preventDefault();
+  const first = document.querySelector("#place-list li[data-kind]");
+  if (!first) return;
+  selectFromList(first.dataset.kind, first.dataset.id);
+});
+
+document.getElementById("panel-toggle").addEventListener("click", () => {
+  const wrap = document.querySelector(".wrap");
+  const open = !wrap.classList.contains("panel-open");
+  wrap.classList.toggle("panel-open", open);
+  document.getElementById("panel-toggle").setAttribute("aria-expanded", open ? "true" : "false");
+  if (open) setTimeout(() => map.invalidateSize(true), 200);
+});
+
+document.getElementById("btn-about-dates").addEventListener("click", () => {
+  document.getElementById("about-dates").classList.add("is-open");
+});
+document.getElementById("btn-close-about").addEventListener("click", () => {
+  document.getElementById("about-dates").classList.remove("is-open");
+});
+document.getElementById("about-dates").addEventListener("click", e => {
+  if (e.target.id === "about-dates") document.getElementById("about-dates").classList.remove("is-open");
+});
+
+Promise.all([
+  fetch(DATA_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + DATA_PATH); return r.json(); }),
+  fetch(METRICS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + METRICS_PATH); return r.json(); }),
+  fetch(GROUPS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + GROUPS_PATH); return r.json(); }),
+  fetch(NB_METRICS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + NB_METRICS_PATH); return r.json(); }),
+]).then(([DATA, METRICS, GROUPS, NB_METRICS]) => {
+  Object.assign(familyMetrics, METRICS.families || {});
+  Object.assign(neighborhoodMetrics, NB_METRICS || {});
+
+  (GROUPS.groups || []).forEach(g => {
+    neighborhoodGroups[g.neighborhood] = g;
+    g.members.forEach(m => {
+      crosswalk[m] = g;
+      neighborhoodBySub[m] = g.neighborhood;
+    });
+  });
+  Object.assign(crosswalk, GROUPS.crosswalk || {});
+
+  const LAY = DATA.layers;
+  L.geoJSON(LAY.city, { style: () => styles.cityBoundary }).addTo(map);
+
+  layers.subs = L.layerGroup();
+  (LAY.subdivision_families.features || []).forEach(f => {
+    const p = f.properties || {};
+    const name = p.family || "";
+    familyProps[name] = p;
+    const layer = L.geoJSON(f, { style: () => defaultSubStyle(p) });
+    layer.eachLayer(l => {
+      l.bindPopup(() => viewMode === "neighborhoods" ?
+        neighborhoodPopup(neighborhoodBySub[name] || name) : subPopup(p));
+      l.on("click", () => handlePlaceClick(name));
+      const pt = labelPoint(l);
+      if (pt) {
+        labelCandidates.push({
+          name, tier: p.tier || "E", resCount: p.residential_parcel_count || 0,
+          point: pt, lakeview_special: !!p.lakeview_special, betsy_bell_hill: !!p.betsy_bell_hill,
+        });
+      }
+    });
+    familyLayers[name] = layer;
+    layer.addTo(layers.subs);
+  });
+  layers.subs.addTo(map);
+
+  layers.public = L.geoJSON(LAY.public51_outline, { style: () => styles.publicOutline });
+  layers.cityGis = L.geoJSON(LAY.city_gis_context, { style: () => styles.cityGis });
+  layers.special = L.geoJSON(LAY.special_context, { style: () => styles.specialCtx });
+  layers.oldLeeNoPlat = L.geoJSON(LAY.old_lee_no_plat, {
+    pointToLayer: (f, latlng) => L.circleMarker(latlng, styles.oldLeeNoPlat),
+  });
+
+  layers.noSub = L.geoJSON(LAY.no_verified_subdivision, {
+    pointToLayer: (f, latlng) => L.circleMarker(latlng, styles.noSub),
+    onEachFeature: (f, l) => { l.bindPopup(noSubPopup()); }
+  }).addTo(map);
+
+  layers.hd = L.geoJSON(LAY.historic_districts, {
+    style: () => styles.hd,
+    onEachFeature: (f, l) => {
+      const p = f.properties || {};
+      const hdName = p.public_name || p.city_gis_name || "";
+      const pt = labelPoint(l);
+      if (hdName && pt) hdLabelCandidates.push({ name: hdName, point: pt });
+    },
+  });
+  layers.roads = L.geoJSON(LAY.major_roads, { style: () => styles.roads }).addTo(map);
+
+  bindToggle("tog-subs", layers.subs);
+  bindToggle("tog-nosub", layers.noSub);
+  bindToggle("tog-roads", layers.roads);
+
+  const hdTog = document.getElementById("tog-hd");
+  if (hdTog && layers.hd) {
+    hdTog.addEventListener("change", () => {
+      if (hdTog.checked) { map.addLayer(layers.hd); refreshHistoricLabels(); }
+      else { map.removeLayer(layers.hd); hdLabelLayer.clearLayers(); }
+    });
+  }
+
+  document.getElementById("tog-subs").addEventListener("change", e => {
+    labelsEnabled = e.target.checked;
+    refreshSubdivisionLabels();
+  });
+
+  map.on("zoomend moveend", () => {
+    refreshSubdivisionLabels();
+    refreshHistoricLabels();
+    refreshNeighborhoodLabel();
+  });
+
+  buildPlaceCatalogs();
+  renderPlaceList();
+
+  requestAnimationFrame(() => {
+    fitMapToData();
+    setTimeout(fitMapToData, 150);
+  });
+}).catch(err => {
+  console.error("Map load error:", err);
+  showMapError("Map load error: " + err.message + " — confirm JSON sidecars are beside this HTML and you are using http://127.0.0.1:8765/…");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+{
+  "type": "FeatureCollection",
+  "name": "waynesboro-connector-labels-official",
+  "properties": {
+    "label_count": 8,
+    "verified_connectors": 8
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us250-w-main",
+        "name": "US 250 · W Main St",
+        "edge": "west",
+        "route_numbers": [
+          "US 250"
+        ],
+        "source": "VDOT Route 250 corridor study (West Main Street); City Street SN_FULL",
+        "min_zoom": 11,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.92965670762912,
+          38.082460818723746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us340-rosser",
+        "name": "US 340 · Rosser Ave",
+        "edge": "west",
+        "route_numbers": [
+          "US 340"
+        ],
+        "source": "VDOT / Virginia US 340 alignment (Rosser Ave from I-64); City Street SN_FULL",
+        "min_zoom": 11,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.93947202637708,
+          38.06176669651911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us250-broad",
+        "name": "US 250 · Broad St",
+        "edge": "west",
+        "route_numbers": [
+          "US 250"
+        ],
+        "source": "VDOT Broad Street (Route 250) corridor improvements; City Street SN_FULL",
+        "min_zoom": 11,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.894520295279,
+          38.0709821365604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us250-340-e-main",
+        "name": "US 250 · US 340 · E Main St",
+        "edge": "east",
+        "route_numbers": [
+          "US 250",
+          "US 340"
+        ],
+        "source": "VDOT US 250/US 340 concurrency on East Main Street; City Street SN_FULL",
+        "min_zoom": 11,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.86744799458113,
+          38.047847767471296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us340-delphine",
+        "name": "US 340 · Delphine Ave",
+        "edge": "south",
+        "route_numbers": [
+          "US 340"
+        ],
+        "source": "VDOT US 340 north on Delphine Avenue; City Street SN_FULL",
+        "min_zoom": 11,
+        "bearing": -129.9,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9232195546559,
+          38.03377767125633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hopeman-pkwy",
+        "name": "Hopeman Pkwy",
+        "edge": "north",
+        "route_numbers": [],
+        "source": "VDOT Route 250 corridor study eastern terminus at Hopeman Pkwy; City Street SN_FULL (no US route on parkway)",
+        "min_zoom": 11,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.88716001992437,
+          38.0856688005956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lyndhurst-rd",
+        "name": "Lyndhurst Rd",
+        "edge": "south",
+        "route_numbers": [],
+        "source": "VDOT Virginia State Transportation Map (principal local connector); City Street SN_FULL",
+        "min_zoom": 12,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.89991713136311,
+          38.05878220594889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "port-republic-rd",
+        "name": "Port Republic Rd",
+        "edge": "east",
+        "route_numbers": [],
+        "source": "City Street SN_FULL; VDOT Broad St project display segments reference Port Republic Road",
+        "min_zoom": 12,
+        "bearing": 0.0,
+        "kind": "connector"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.88451298451578,
+          38.07693756012788
+        ]
+      }
+    }
+  ]
+}

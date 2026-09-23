@@ -1,0 +1,22 @@
+{
+  "labelPolicy": {
+    "majorMinZoom": 9,
+    "localMinZoom": 14
+  },
+  "tier1Highways": [
+    "I-81",
+    "US 33"
+  ],
+  "roadStyles": {
+    "1": {
+      "color": "#0B4636",
+      "weight": 3.2,
+      "opacity": 0.85
+    },
+    "2": {
+      "color": "#3d6b5c",
+      "weight": 2.0,
+      "opacity": 0.7
+    }
+  }
+}

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rockingham County residential map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root { --vra-green:#0B4636; --gold:#FECD2A; --parchment:#f4f1e8; --ink:#1e2a22; }
+* { box-sizing:border-box; }
+body { margin:0; font:14px/1.45 system-ui,sans-serif; background:var(--parchment); color:var(--ink); }
+.wrap { display:grid; grid-template-columns:320px 1fr; min-height:100vh; }
+aside.sidebar { padding:14px 16px; border-right:1px solid #c9c2ad; background:#faf7ef; overflow:auto; }
+.browse-heading { display:none; margin:0; font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--vra-green); }
+aside h1 { font-size:15px; text-transform:uppercase; letter-spacing:.06em; margin:0 0 6px; color:var(--vra-green); }
+.panel-intro { font-size:12px; color:#4a5346; margin:0 0 10px; }
+.view-toggle { display:flex; gap:6px; margin:8px 0; }
+.view-toggle button { flex:1; font-size:11px; font-weight:600; padding:7px 8px; border-radius:4px; border:1px solid #b8b0a0; background:#fff; cursor:pointer; }
+.view-toggle button.is-active { background:rgba(254,205,42,.35); border-color:var(--gold); }
+.place-search input { width:100%; padding:8px 10px; font-size:12px; border:1px solid #c9c2ad; border-radius:4px; }
+.place-list { list-style:none; margin:8px 0 0; padding:0; max-height:36vh; overflow:auto; }
+.place-list button { width:100%; text-align:left; padding:7px 8px; border:none; border-radius:3px; background:transparent; cursor:pointer; font-size:12px; }
+.place-list button .roster-meta { display:block; font-size:10px; color:#5a6356; margin-top:2px; font-weight:400; }
+.place-list li.is-selected button { background:rgba(254,205,42,.28); font-weight:600; }
+#map-legend { margin-top:10px; font-size:11px; line-height:1.5; background:#fff; border:1px solid #d7ccb0; border-radius:4px; padding:8px 10px; }
+#map-legend strong { display:block; margin-bottom:4px; color:var(--vra-green); }
+.layer-toggle { display:flex; align-items:flex-start; gap:8px; margin-top:10px; font-size:11px; line-height:1.4; cursor:pointer; }
+.layer-toggle input { margin-top:2px; }
+.layer-toggle small { display:block; color:#5a6356; font-weight:400; }
+.map-col { display:flex; flex-direction:column; min-width:0; }
+#map-error { flex:0 0 auto; }
+.data-header { order:1; flex:0 0 auto; }
+#map { order:2; flex:1; min-height:420px; }
+.data-header {
+  display:grid;
+  grid-template-columns:minmax(140px,1.85fr) repeat(5, minmax(88px, 1fr));
+  background:var(--vra-green); color:#fff; border-bottom:2px solid var(--gold);
+}
+.data-header__cell { padding:9px 12px; border-right:1px solid rgba(255,255,255,.12); min-width:0; }
+.data-header__cell:last-child { border-right:none; }
+.data-header__label { display:block; font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:rgba(255,255,255,.78); margin-bottom:2px; line-height:1.2; }
+.data-header__value { display:block; font-size:15px; font-weight:600; line-height:1.3; color:#fff; white-space:normal; overflow:visible; text-overflow:clip; word-break:break-word; }
+.data-header__cell--name .data-header__value { font-size:18px; color:var(--gold); }
+.data-header__value.is-muted { color:rgba(255,255,255,.72); font-size:14px; }
+.data-header__cell--hide-unavailable { display:none; }
+.summary-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:6px; margin-top:8px; font-size:11px; }
+.summary-grid div { background:#fff; border:1px solid #d7ccb0; padding:6px 8px; border-radius:4px; }
+.sub-label { font:600 10px/1.2 system-ui,sans-serif; color:var(--vra-green); text-shadow:0 0 2px #fff,0 0 4px #fff; white-space:nowrap; pointer-events:none; }
+.sub-label.is-selected { color:#7a5f00; font-size:11px; font-weight:700; }
+.comm-label { font:600 10px/1.2 system-ui,sans-serif; color:var(--vra-green); text-shadow:0 0 2px #fff,0 0 4px #fff; white-space:nowrap; pointer-events:none; }
+.comm-label.is-selected { color:#7a5f00; font-weight:700; }
+#map-error { display:none; margin:8px 12px; padding:8px; background:#fff3cd; border:1px solid #e6c200; font-size:12px; }
+@media (max-width:900px) and (min-width:701px) {
+  .wrap { grid-template-columns:1fr; grid-template-rows:auto 1fr; }
+  aside.sidebar { max-height:34vh; border-right:none; border-bottom:1px solid #c9c2ad; }
+  .place-list { max-height:22vh; }
+  .data-header { grid-template-columns:1fr 1fr; }
+  .data-header__cell--name { grid-column:1 / -1; border-right:none; border-bottom:1px solid rgba(255,255,255,.12); }
+  .data-header__cell:nth-child(2n) { border-right:none; }
+}
+@media (max-width:700px) {
+  .wrap {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    gap:0;
+  }
+  aside.sidebar { display:contents; }
+  .map-col { display:contents; }
+  .aside-head {
+    order:1;
+    padding:10px 12px 6px;
+    background:#faf7ef;
+  }
+  .aside-head h1 { font-size:14px; margin:0 0 4px; }
+  .aside-head .panel-intro { font-size:12px; margin:0; line-height:1.35; }
+  .data-header {
+    order:2;
+    width:100%;
+    border-top:none;
+    border-bottom:2px solid var(--gold);
+  }
+  .aside-tools {
+    order:3;
+    padding:8px 12px;
+    background:#faf7ef;
+    border-bottom:1px solid #e0d9c8;
+  }
+  .aside-tools .view-toggle { margin:0 0 6px; }
+  .aside-tools .view-toggle button { padding:10px 8px; font-size:12px; min-height:44px; }
+  .aside-tools .place-search input { padding:10px; font-size:16px; }
+  #map {
+    order:4;
+  }
+  .aside-browse {
+    order:5;
+    padding:10px 12px 16px;
+    background:#faf7ef;
+    border-top:1px solid #e0d9c8;
+  }
+  .browse-heading { display:block; margin:0 0 8px; }
+  .place-list { max-height:none; margin:0; -webkit-overflow-scrolling:touch; }
+  .place-list button .roster-meta { display:none !important; }
+  .place-list button { font-size:13px; padding:9px 8px; }
+  .summary-grid, #map-legend, .layer-toggle { display:none !important; }
+  #map-error { order:4; margin:0; width:100%; }
+  #map {
+    flex:0 0 auto;
+    width:100%;
+    min-height:58vh;
+    max-height:none;
+  }
+  .data-header {
+    flex:0 0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    margin:0;
+  }
+  .data-header__cell { padding:8px 10px; border-right:1px solid rgba(255,255,255,.12); border-bottom:1px solid rgba(255,255,255,.1); }
+  .data-header__cell--name {
+    grid-column:1 / -1;
+    border-right:none;
+    padding:10px 12px 8px;
+    background:rgba(0,0,0,.12);
+  }
+  .data-header__cell--name .data-header__label { display:none; }
+  .data-header__cell--name .data-header__value { font-size:17px; color:var(--gold); }
+  .data-header__cell--metric {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    min-height:0;
+  }
+  .data-header__cell--metric .data-header__value { order:1; font-size:15px; font-weight:700; line-height:1.2; margin-bottom:3px; }
+  .data-header__cell--metric .data-header__label { order:2; font-size:9px; letter-spacing:.04em; text-transform:none; font-weight:600; color:rgba(255,255,255,.75); margin:0; line-height:1.25; }
+  .data-header__cell--metric:nth-child(2) { grid-column:1; }
+  .data-header__cell--metric:nth-child(3) { grid-column:2; border-right:none; }
+  .data-header__cell--metric:nth-child(4) { grid-column:1; }
+  .data-header__cell--metric:nth-child(5) { grid-column:2; border-right:none; }
+  .data-header__cell--metric:nth-child(6) { grid-column:1 / -1; border-right:none; border-bottom:none; }
+  .data-header__cell--hide-unavailable { display:none !important; }
+  .data-header.data-header--idle { display:none !important; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside class="sidebar">
+<div class="aside-head">
+<h1>Rockingham County</h1>
+<p class="panel-intro">Explore communities and subdivisions.</p>
+</div>
+<div class="aside-tools">
+<div class="view-toggle">
+<button type="button" id="mode-sub" class="is-active">Subdivisions</button>
+<button type="button" id="mode-com">Communities</button>
+</div>
+<div class="place-search"><input id="search" type="search" placeholder="Search active mode…" autocomplete="off"></div>
+</div>
+<div class="aside-browse">
+<h2 class="browse-heading" id="browse-heading">Browse subdivisions</h2>
+<ul class="place-list" id="place-list"></ul>
+<div class="summary-grid" id="summary-grid"></div>
+<div id="map-legend"></div>
+<label class="layer-toggle" for="toggle-fabric">
+<input type="checkbox" id="toggle-fabric">
+<span><strong>Residential fabric</strong> / no verified subdivision<small>Close zoom only (z≥16). 24,627 parcels in data — hidden at county scale.</small></span>
+</label>
+</div>
+</aside>
+<div class="map-col">
+<div id="map-error"></div>
+<div id="map"></div>
+<div class="data-header data-header--idle">
+<div class="data-header__cell data-header__cell--name"><span class="data-header__label">Selection</span><span class="data-header__value" id="hdr-name">Rockingham County</span></div>
+<div class="data-header__cell data-header__cell--metric"><span class="data-header__label">Median sale price</span><span class="data-header__value is-muted" id="hdr-sale">—</span></div>
+<div class="data-header__cell data-header__cell--metric"><span class="data-header__label">Recent sales</span><span class="data-header__value is-muted" id="hdr-recent">—</span></div>
+<div class="data-header__cell data-header__cell--metric"><span class="data-header__label">Median home size</span><span class="data-header__value is-muted" id="hdr-home">—</span></div>
+<div class="data-header__cell data-header__cell--metric"><span class="data-header__label">Median lot size</span><span class="data-header__value is-muted" id="hdr-lot">—</span></div>
+<div class="data-header__cell data-header__cell--metric data-header__cell--date"><span class="data-header__label">Date established</span><span class="data-header__value is-muted" id="hdr-date">—</span></div>
+</div>
+</div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const DATA_PATH = "rockingham-subdivision-truth-data.json";
+const METRICS_PATH = "rockingham-subdivision-family-metrics.json";
+const COMM_PATH = "rockingham-community-groups.json";
+const COMM_METRICS_PATH = "rockingham-community-metrics.json";
+const MEMBERS_PATH = "rockingham-subdivision-all-member-parcels.geojson";
+const DISPLAY_PATH = "rockingham-subdivision-display-polygons.geojson";
+const STREETS_PATH = "rockingham-streets-major.geojson";
+const STREET_CARTO_PATH = "rockingham-street-cartography.json";
+const VRA_GREEN = "#0B4636";
+const VRA_GOLD = "#FECD2A";
+const COUNTY_CENTER = [38.45, -78.88];
+let mode = "subdivisions";
+let selected = null;
+let truth = null;
+let metricsByKey = {};
+let communityCatalog = [];
+let communityMetricsByName = {};
+let memberByFamily = {};
+let familyLayers = {};
+let familyProps = {};
+let labelCandidates = [];
+let labelLayer = L.layerGroup();
+let selectedLabelLayer = L.layerGroup();
+let communityLayers = {};
+let communityCatalogByName = {};
+let fabricEnabled = false;
+const FABRIC_MIN_ZOOM = 16;
+const map = L.map("map", { preferCanvas: true, zoomControl: true }).setView(COUNTY_CENTER, 10);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap" }).addTo(map);
+const layers = {
+  county: null,
+  subs: L.layerGroup(),
+  members: L.layerGroup(),
+  roads: L.layerGroup(),
+  fabric: L.layerGroup(),
+  comm: L.layerGroup(),
+};
+layers.subs.addTo(map);
+layers.roads.addTo(map);
+
+function showError(msg) {
+  const el = document.getElementById("map-error");
+  el.style.display = "block";
+  el.textContent = msg;
+}
+if (location.protocol === "file:") showError("Open via local HTTP server — file:// blocks JSON sidecars.");
+
+function fmt(n, suffix="") {
+  if (n == null || n === "") return "—";
+  if (typeof n === "number") return n.toLocaleString() + suffix;
+  return String(n);
+}
+
+const NA_METRIC = "Not available";
+const SQFT_PER_ACRE = 43560;
+const LOT_ACRE_THRESHOLD_SQFT = 0.25 * SQFT_PER_ACRE;
+const BLOCKED_METRIC_TOKENS = new Set(["OK", "PASS", "TRUE", "FALSE", "VALID", "VERIFIED", "SUCCESS", "DEVELOPMENT_ERA"]);
+
+function isFiniteNumber(n) {
+  return typeof n === "number" && Number.isFinite(n);
+}
+
+function isBlockedMetricText(value) {
+  if (value == null) return true;
+  const text = String(value).trim();
+  if (!text) return true;
+  return BLOCKED_METRIC_TOKENS.has(text.toUpperCase());
+}
+
+function fmtMedianSalePrice(m) {
+  if (!m || !isFiniteNumber(m.median_sale_price)) return NA_METRIC;
+  return "$" + Math.round(m.median_sale_price).toLocaleString();
+}
+
+function fmtRecentSales(m, kind) {
+  if (!m) return NA_METRIC;
+  const count = kind === "community" ? m.qualifying_sale_count : m.qualifying_sales_count;
+  if (!isFiniteNumber(count)) return NA_METRIC;
+  return String(count);
+}
+
+function fmtMedianHomeSize(m) {
+  if (!m || !isFiniteNumber(m.median_home_sqft)) return NA_METRIC;
+  return Math.round(m.median_home_sqft).toLocaleString() + " sq ft";
+}
+
+function fmtMedianLotSize(m) {
+  if (!m || !isFiniteNumber(m.median_lot_sqft)) return NA_METRIC;
+  const sqft = m.median_lot_sqft;
+  if (sqft < LOT_ACRE_THRESHOLD_SQFT) return Math.round(sqft).toLocaleString() + " sq ft";
+  const acres = sqft / SQFT_PER_ACRE;
+  const rounded = acres >= 10 ? acres.toFixed(1) : acres.toFixed(2);
+  const trimmed = rounded.replace(/(\.\d*?)0+$/, "$1").replace(/\.$/, "");
+  return trimmed + (parseFloat(trimmed) === 1 ? " acre" : " acres");
+}
+
+function fmtDateEstablished(m) {
+  if (!m) return NA_METRIC;
+  const display = m.date_established_display || m.date_established || m.established_display || m.verified_development_start;
+  if (display != null && !isBlockedMetricText(display)) return String(display);
+  return NA_METRIC;
+}
+
+function syncDateEstablishedVisibility() {
+  const dateCell = document.querySelector(".data-header__cell--date");
+  const val = document.getElementById("hdr-date")?.textContent || "";
+  if (!dateCell) return;
+  const hide = val === NA_METRIC || val === "—";
+  dateCell.classList.toggle("data-header__cell--hide-unavailable", hide);
+}
+
+function syncMetricPanelVisibility() {
+  const hdr = document.querySelector(".data-header");
+  if (!hdr) return;
+  hdr.classList.toggle("data-header--idle", selected == null);
+}
+
+function resetMetricStrip() {
+  ["hdr-sale", "hdr-recent", "hdr-home", "hdr-lot", "hdr-date"].forEach(id => {
+    document.getElementById(id).textContent = "—";
+  });
+  syncDateEstablishedVisibility();
+}
+
+function applyMetricStrip(m, kind) {
+  document.getElementById("hdr-sale").textContent = fmtMedianSalePrice(m);
+  document.getElementById("hdr-recent").textContent = fmtRecentSales(m, kind);
+  document.getElementById("hdr-home").textContent = fmtMedianHomeSize(m);
+  document.getElementById("hdr-lot").textContent = fmtMedianLotSize(m);
+  document.getElementById("hdr-date").textContent = fmtDateEstablished(m);
+  syncDateEstablishedVisibility();
+}
+
+function defaultSubStyle(props, selectedName) {
+  const name = props.public_name || props.family || "";
+  const on = selectedName && name === selectedName;
+  return {
+    color: on ? VRA_GOLD : VRA_GREEN,
+    weight: on ? 2.4 : 1.1,
+    fillColor: on ? VRA_GOLD : "#c8ddd3",
+    fillOpacity: on ? 0.48 : 0.32,
+  };
+}
+
+function defaultCommStyle(name, selectedName) {
+  const on = selectedName && name === selectedName;
+  return {
+    color: on ? VRA_GOLD : "#2a6496",
+    weight: on ? 2.6 : 1.4,
+    fillColor: on ? VRA_GOLD : "#b8d4e8",
+    fillOpacity: on ? 0.42 : 0.22,
+  };
+}
+
+function targetMaxZoom(memberCount) {
+  if (memberCount <= 3) return 17;
+  if (memberCount <= 15) return 16;
+  if (memberCount <= 75) return 15;
+  if (memberCount <= 200) return 14;
+  return 13;
+}
+
+function focusSelection(layer, props) {
+  const currentZoom = map.getZoom();
+  const members = props.member_count || 0;
+  const maxZ = targetMaxZoom(members);
+  let bounds = layer.getBounds();
+  if (props.fit_west != null) {
+    bounds = L.latLngBounds([[props.fit_south, props.fit_west], [props.fit_north, props.fit_east]]);
+  }
+  const visible = map.getBounds().contains(bounds);
+  if (visible && currentZoom >= 13) {
+    map.fitBounds(bounds, { maxZoom: Math.max(currentZoom, maxZ), padding: [28, 28] });
+  } else {
+    map.fitBounds(bounds, { maxZoom: maxZ, padding: [28, 28] });
+  }
+  if (map.getZoom() < 13 && currentZoom >= 14) map.setZoom(14);
+}
+
+function communitySummary(name) {
+  const meta = communityCatalogByName[name] || {};
+  const metrics = communityMetricsByName[name] || {};
+  const subs = (truth.subdivisions_master || []).filter(r => r.residential_drawable && r.parent_community === name);
+  return {
+    entity_type: meta.entity_type || "community",
+    population_2020: meta.population_2020,
+    grouped_subdivisions: metrics.subdivision_family_count != null ? metrics.subdivision_family_count : subs.length,
+    grouped_parcels: metrics.member_parcels != null ? metrics.member_parcels : subs.reduce((s, r) => s + (r.member_count || 0), 0),
+  };
+}
+
+function catalog() {
+  if (mode === "subdivisions") {
+    return (truth.subdivisions_master || []).filter(r => r.residential_drawable).map(r => ({
+      name: r.canonical_name, meta: r.member_count + " parcels · tier " + (r.label_tier || "E"),
+      kind: "subdivision", key: r.family_key,
+    }));
+  }
+  return communityCatalog.map(c => ({ name: c.public_name, meta: c.entity_type.replaceAll("_"," "), kind: "community" }));
+}
+
+function renderList(q="") {
+  const ul = document.getElementById("place-list");
+  ul.innerHTML = "";
+  const query = q.trim().toLowerCase();
+  catalog().filter(i => !query || i.name.toLowerCase().includes(query) || (i.meta||"").toLowerCase().includes(query))
+    .forEach(i => {
+      const li = document.createElement("li");
+      if (selected === i.name) li.className = "is-selected";
+      const btn = document.createElement("button");
+      btn.innerHTML = '<span class="roster-name">' + i.name + '</span><span class="roster-meta">' + (i.meta || "") + "</span>";
+      btn.onclick = () => i.kind === "subdivision" ? selectSub(i.name) : selectCommunity(i.name);
+      li.appendChild(btn); ul.appendChild(li);
+    });
+}
+
+function setHeader(name, m, kind) {
+  document.getElementById("hdr-name").textContent = name;
+  if (m) applyMetricStrip(m, kind);
+  else resetMetricStrip();
+}
+
+function showMemberLots(familyKey) {
+  layers.members.clearLayers();
+  const feats = memberByFamily[familyKey] || [];
+  if (!feats.length) return;
+  L.geoJSON({ type: "FeatureCollection", features: feats }, {
+    style: () => ({ color: VRA_GOLD, weight: 1.6, fillColor: VRA_GOLD, fillOpacity: 0.55 }),
+  }).eachLayer(l => layers.members.addLayer(l));
+  layers.members.addTo(map);
+}
+
+function selectSub(name) {
+  selected = name;
+  const row = (truth.subdivisions_master || []).find(r => r.canonical_name === name);
+  const m = row ? metricsByKey[row.family_key] : null;
+  setHeader(name, m, "subdivision");
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  Object.entries(familyLayers).forEach(([fam, layer]) => {
+    const props = familyProps[fam] || {};
+    const on = props.public_name === name;
+    layer.setStyle(defaultSubStyle(props, on ? name : null));
+    if (on) {
+      showMemberLots(fam);
+      focusSelection(layer, props);
+    }
+  });
+  if (!row) layers.members.clearLayers();
+  refreshLabels();
+  addSelectedSubLabel(name);
+}
+
+function selectCommunity(name) {
+  selected = name;
+  const summary = communitySummary(name);
+  const m = communityMetricsByName[name] || null;
+  setHeader(name, m, "community");
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  layers.members.clearLayers();
+  Object.entries(communityLayers).forEach(([n, layer]) => {
+    layer.setStyle(defaultCommStyle(n, n === name ? name : null));
+  });
+  const layer = communityLayers[name];
+  if (layer) {
+    focusSelection(layer, { member_count: summary.grouped_parcels || 50 });
+  }
+  refreshCommunityLabels();
+}
+
+function syncFabricVisibility() {
+  if (fabricEnabled && mode === "subdivisions" && map.getZoom() >= FABRIC_MIN_ZOOM) {
+    if (!map.hasLayer(layers.fabric)) layers.fabric.addTo(map);
+  } else if (map.hasLayer(layers.fabric)) {
+    layers.fabric.remove();
+  }
+}
+
+function updateBrowseHeading() {
+  const el = document.getElementById("browse-heading");
+  if (el) el.textContent = mode === "communities" ? "Browse communities" : "Browse subdivisions";
+}
+
+function setMode(next) {
+  mode = next;
+  document.getElementById("mode-sub").classList.toggle("is-active", mode === "subdivisions");
+  document.getElementById("mode-com").classList.toggle("is-active", mode === "communities");
+  updateBrowseHeading();
+  layers.members.clearLayers();
+  if (mode === "communities") {
+    layers.subs.remove(); layers.fabric.remove(); labelLayer.remove(); selectedLabelLayer.remove();
+    layers.comm.addTo(map);
+  } else {
+    layers.comm.remove(); layers.subs.addTo(map); labelLayer.addTo(map); selectedLabelLayer.addTo(map);
+    syncFabricVisibility();
+  }
+  selected = null;
+  setHeader("Rockingham County", null, null);
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  refreshLabels();
+}
+
+function tierMinZoom(tier) {
+  return { A: 10, B: 11, C: 12, D: 14, E: 16 }[tier] || 16;
+}
+
+function maxLabelsForZoom(z) {
+  if (z >= 16) return 9999;
+  if (z >= 14) return 90;
+  if (z >= 12) return 45;
+  if (z >= 10) return 20;
+  return 0;
+}
+
+function addSelectedSubLabel(name) {
+  selectedLabelLayer.clearLayers();
+  if (!name) return;
+  let point = null;
+  const cand = labelCandidates.find(c => c.name === name);
+  if (cand) point = cand.point;
+  else {
+    const row = (truth.subdivisions_master || []).find(r => r.canonical_name === name);
+    const props = row ? familyProps[row.family_key] : null;
+    if (props && props.label_lat != null) point = L.latLng(props.label_lat, props.label_lon);
+  }
+  if (!point) return;
+  L.marker(point, {
+    icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="sub-label is-selected">' + name + '</span>', iconSize: [0, 0] }),
+    interactive: false,
+    zIndexOffset: 1000,
+  }).addTo(selectedLabelLayer);
+}
+
+function refreshLabels() {
+  labelLayer.clearLayers();
+  if (mode !== "subdivisions") return;
+  const z = map.getZoom();
+  const cap = maxLabelsForZoom(z);
+  const placed = [];
+  const minPx = z >= 15 ? 36 : z >= 13 ? 44 : 56;
+  const sorted = labelCandidates.slice().sort((a, b) => {
+    const ta = tierMinZoom(a.tier), tb = tierMinZoom(b.tier);
+    if (ta !== tb) return ta - tb;
+    return (b.resCount || 0) - (a.resCount || 0);
+  });
+  for (const c of sorted) {
+    if (c.name === selected) continue;
+    if (!cap || placed.length >= cap) continue;
+    if (z < tierMinZoom(c.tier)) continue;
+    const pt = map.latLngToContainerPoint(c.point);
+    const hit = placed.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < minPx);
+    if (hit) continue;
+    placed.push(pt);
+    L.marker(c.point, {
+      icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="sub-label">' + c.name + '</span>', iconSize: [0, 0] }),
+      interactive: false,
+    }).addTo(labelLayer);
+  }
+}
+
+function refreshCommunityLabels() {
+  selectedLabelLayer.clearLayers();
+  if (mode !== "communities" || !selected) return;
+  const layer = communityLayers[selected];
+  if (!layer) return;
+  const center = layer.getBounds().getCenter();
+  L.marker(center, {
+    icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="comm-label is-selected">' + selected + '</span>', iconSize: [0, 0] }),
+    interactive: false,
+    zIndexOffset: 1000,
+  }).addTo(selectedLabelLayer);
+}
+
+document.getElementById("mode-sub").onclick = () => setMode("subdivisions");
+document.getElementById("mode-com").onclick = () => setMode("communities");
+document.getElementById("search").oninput = e => renderList(e.target.value);
+document.getElementById("toggle-fabric").onchange = e => {
+  fabricEnabled = e.target.checked;
+  syncFabricVisibility();
+};
+map.on("zoomend moveend", () => { refreshLabels(); if (mode === "subdivisions") addSelectedSubLabel(selected); refreshCommunityLabels(); syncFabricVisibility(); });
+
+Promise.all([
+  fetch(DATA_PATH).then(r => { if (!r.ok) throw new Error(DATA_PATH); return r.json(); }),
+  fetch(METRICS_PATH).then(r => { if (!r.ok) throw new Error(METRICS_PATH); return r.json(); }),
+  fetch(COMM_PATH).then(r => { if (!r.ok) throw new Error(COMM_PATH); return r.json(); }),
+  fetch(COMM_METRICS_PATH).then(r => { if (!r.ok) throw new Error(COMM_METRICS_PATH); return r.json(); }),
+  fetch(MEMBERS_PATH).then(r => { if (!r.ok) throw new Error(MEMBERS_PATH); return r.json(); }),
+  fetch(DISPLAY_PATH).then(r => { if (!r.ok) throw new Error(DISPLAY_PATH); return r.json(); }),
+  fetch(STREETS_PATH).then(r => { if (!r.ok) throw new Error(STREETS_PATH); return r.json(); }),
+  fetch(STREET_CARTO_PATH).then(r => { if (!r.ok) throw new Error(STREET_CARTO_PATH); return r.json(); }),
+]).then(([DATA, METRICS, COMM, COMM_METRICS, MEMBERS, DISPLAY, STREETS, CARTO]) => {
+  truth = DATA;
+  (METRICS.families || []).forEach(f => { metricsByKey[f.family_key] = f; });
+  communityCatalog = COMM.communities || [];
+  communityCatalog.forEach(c => { communityCatalogByName[c.public_name] = c; });
+  (COMM_METRICS.communities || []).forEach(c => { communityMetricsByName[c.display_name] = c; });
+  (MEMBERS.features || []).forEach(f => {
+    const fam = (f.properties || {}).family_key || (f.properties || {}).family || "";
+    if (!memberByFamily[fam]) memberByFamily[fam] = [];
+    memberByFamily[fam].push(f);
+  });
+
+  const legend = document.getElementById("map-legend");
+  const q = DATA.qa || {};
+  legend.innerHTML = "<strong>Parcel classes</strong>" +
+    "Modern subdivision: " + (q.modern_subdivision_parcels || 0) + "<br>" +
+    "Historic / legal subdivision: " + (q.historic_legal_parcels || 0) + "<br>" +
+    "Residential fabric — no verified subdivision: " + (q.fabric_parcels || 0);
+
+  if (DATA.layers && DATA.layers.county) {
+    layers.county = L.geoJSON(DATA.layers.county, { style: () => ({ color: VRA_GREEN, weight: 2.5, fillOpacity: 0.04 }), interactive: false }).addTo(map);
+  }
+
+  const subFc = DISPLAY.features ? DISPLAY : (DATA.layers.subdivision_display || DATA.layers.subdivisions);
+  (subFc.features || []).forEach(f => {
+    const p = f.properties || {};
+    const fam = p.family_key || p.family || "";
+    familyProps[fam] = p;
+    const layer = L.geoJSON(f, { style: () => defaultSubStyle(p, null) });
+    layer.eachLayer(l => {
+      l.on("click", () => selectSub(p.public_name || fam));
+      const lat = p.label_lat, lon = p.label_lon;
+      if (lat != null && lon != null) {
+        labelCandidates.push({ name: p.public_name || fam, tier: p.tier || "E", resCount: p.member_count || 0, point: L.latLng(lat, lon) });
+      }
+    });
+    familyLayers[fam] = layer;
+    layers.subs.addLayer(layer);
+  });
+
+  if (DATA.layers && DATA.layers.fabric_points) {
+    L.geoJSON(DATA.layers.fabric_points, {
+      pointToLayer: (f, ll) => L.circleMarker(ll, { radius: 4, color: "#8a6d3b", weight: 1, fillColor: "#d4a843", fillOpacity: 0.65 }),
+      onEachFeature: (f, l) => {
+        const pid = (f.properties || {}).pid || "—";
+        l.bindPopup("<strong>Residential fabric</strong><br>No verified subdivision membership.<br>Parcel: " + pid);
+        l.on("click", () => setHeader("Residential fabric", null, null));
+      },
+    }).eachLayer(l => layers.fabric.addLayer(l));
+  }
+
+  const roadStyle = (CARTO.roadStyles || {})["1"] || { color: VRA_GREEN, weight: 3, opacity: 0.85 };
+  L.geoJSON(STREETS, { style: () => roadStyle, interactive: false }).eachLayer(l => layers.roads.addLayer(l));
+
+  if (COMM.layers && COMM.layers.communities) {
+    (COMM.layers.communities.features || []).forEach(f => {
+      const p = f.properties || {};
+      const name = p.public_name || "";
+      const layer = L.geoJSON(f, { style: () => defaultCommStyle(name, null) });
+      layer.eachLayer(l => l.on("click", () => selectCommunity(name)));
+      communityLayers[name] = layer;
+      layers.comm.addLayer(layer);
+    });
+  }
+
+  const grid = document.getElementById("summary-grid");
+  grid.innerHTML = [
+    ["Residential parcels", q.in_scope_residential_parcels],
+    ["Drawable subdivisions", q.publicly_drawable_families],
+    ["Fabric parcels", q.fabric_parcels],
+    ["Grouped to community", (truth.subdivisions_master || []).filter(r => r.parent_community).length],
+  ].map(([k,v]) => "<div><strong>" + k + "</strong><br>" + v + "</div>").join("");
+
+  labelLayer.addTo(map);
+  selectedLabelLayer.addTo(map);
+  if (layers.county) map.fitBounds(layers.county.getBounds(), { padding: [20, 20] });
+  else if (layers.subs.getLayers().length) map.fitBounds(layers.subs.getBounds(), { padding: [20, 20] });
+  updateBrowseHeading();
+  syncMetricPanelVisibility();
+  renderList();
+  refreshLabels();
+}).catch(err => showError("Failed to load sidecars: " + err.message));
+</script>
+</body>
+</html>

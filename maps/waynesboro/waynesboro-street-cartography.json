@@ -1,0 +1,105 @@
+{
+  "labelPolicy": {
+    "majorMinZoom": 12,
+    "localMinZoom": 16,
+    "connectorMinZoomDefault": 11,
+    "connectorSuppressStreetKeys": [
+      "W MAIN ST",
+      "ROSSER AVE",
+      "W BROAD ST",
+      "E BROAD ST",
+      "E MAIN ST",
+      "S DELPHINE AVE",
+      "N DELPHINE AVE",
+      "HOPEMAN PKWY",
+      "LYNDHURST RD",
+      "PORT REPUBLIC RD"
+    ]
+  },
+  "tier2MajorStreets": [
+    "Arch Ave",
+    "Cherry Ave",
+    "Dogwood St",
+    "Dupont Blvd",
+    "Fairview Ave",
+    "Jefferson Ave",
+    "Kirby Ave",
+    "Lew Dewitt Blvd",
+    "Market Ave",
+    "N Charlotte Ave",
+    "N Commerce Ave",
+    "N Wayne Ave",
+    "N Winchester Ave",
+    "New Hope Rd",
+    "Northgate Ave",
+    "Red Top Orchard Rd",
+    "S Charlotte Ave",
+    "S Wayne Ave",
+    "S Winchester Ave",
+    "White Bridge Rd",
+    "Windsor Rd"
+  ],
+  "connectorStreetNames": [
+    "W Main St",
+    "Rosser Ave",
+    "W Broad St",
+    "E Broad St",
+    "E Main St",
+    "S Delphine Ave",
+    "N Delphine Ave",
+    "Hopeman Pkwy",
+    "Lyndhurst Rd",
+    "Port Republic Rd"
+  ],
+  "connectorStreetMatch": {
+    "us250-w-main": [
+      "W Main St"
+    ],
+    "us340-rosser": [
+      "Rosser Ave"
+    ],
+    "us250-broad": [
+      "E Broad St",
+      "W Broad St"
+    ],
+    "us250-340-e-main": [
+      "E Main St"
+    ],
+    "us340-delphine": [
+      "N Delphine Ave",
+      "S Delphine Ave"
+    ],
+    "hopeman-pkwy": [
+      "Hopeman Pkwy"
+    ],
+    "lyndhurst-rd": [
+      "Lyndhurst Rd"
+    ],
+    "port-republic-rd": [
+      "Port Republic Rd"
+    ]
+  },
+  "roadStyles": {
+    "connector": {
+      "color": "#152820",
+      "weight": 2.35,
+      "opacity": 1.0,
+      "lineCap": "round",
+      "lineJoin": "round"
+    },
+    "major": {
+      "color": "#243830",
+      "weight": 1.75,
+      "opacity": 0.97,
+      "lineCap": "round",
+      "lineJoin": "round"
+    },
+    "local": {
+      "color": "#3D4F47",
+      "weight": 0.95,
+      "opacity": 0.88,
+      "lineCap": "round",
+      "lineJoin": "round"
+    }
+  }
+}
