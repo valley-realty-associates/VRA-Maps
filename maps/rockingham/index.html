@@ -390,6 +390,45 @@ function defaultCommStyle(name, selectedName) {
   };
 }
 
+function isPointCommunityLayer(layer) {
+  return !!(layer && layer._vraCommPoint);
+}
+
+function defaultCommPointStyle(name, selectedName) {
+  const on = selectedName && name === selectedName;
+  return {
+    radius: on ? 12 : 9,
+    color: on ? VRA_GOLD : "#2a6496",
+    weight: on ? 3 : 2,
+    fillColor: on ? VRA_GOLD : "#b8d4e8",
+    fillOpacity: on ? 0.92 : 0.55,
+  };
+}
+
+function communityLayerCenter(layer) {
+  if (!layer) return null;
+  if (typeof layer.getLatLng === "function") {
+    try {
+      return layer.getLatLng();
+    } catch (e) {
+      return null;
+    }
+  }
+  if (typeof layer.getBounds === "function") {
+    try {
+      return layer.getBounds().getCenter();
+    } catch (e) {
+      return null;
+    }
+  }
+  return null;
+}
+
+function isNoHardBoundaryCommunity(name) {
+  const meta = communityCatalogByName[name] || {};
+  return meta.geometry_representation === "verified_grouping_no_hard_boundary";
+}
+
 function targetMaxZoom(memberCount) {
   if (memberCount <= 3) return 17;
   if (memberCount <= 15) return 16;
@@ -399,6 +438,13 @@ function targetMaxZoom(memberCount) {
 }
 
 function focusSelection(layer, props) {
+  if (isPointCommunityLayer(layer)) {
+    const center = communityLayerCenter(layer);
+    if (!center) return;
+    const pointZoom = props.community_point_zoom || 13;
+    map.setView(center, Math.max(map.getZoom(), pointZoom), { animate: true });
+    return;
+  }
   const currentZoom = map.getZoom();
   const members = props.member_count || 0;
   const maxZ = targetMaxZoom(members);
@@ -498,11 +544,19 @@ function selectCommunity(name) {
   renderList(document.getElementById("search").value);
   layers.members.clearLayers();
   Object.entries(communityLayers).forEach(([n, layer]) => {
-    layer.setStyle(defaultCommStyle(n, n === name ? name : null));
+    if (isPointCommunityLayer(layer)) {
+      layer.setStyle(defaultCommPointStyle(n, n === name ? name : null));
+    } else {
+      layer.setStyle(defaultCommStyle(n, n === name ? name : null));
+    }
   });
   const layer = communityLayers[name];
   if (layer) {
-    focusSelection(layer, { member_count: summary.grouped_parcels || 50 });
+    const focusProps = { member_count: summary.grouped_parcels || 50 };
+    if (isNoHardBoundaryCommunity(name) || isPointCommunityLayer(layer)) {
+      focusProps.community_point_zoom = 13;
+    }
+    focusSelection(layer, focusProps);
   }
   refreshCommunityLabels();
 }
@@ -603,7 +657,8 @@ function refreshCommunityLabels() {
   if (mode !== "communities" || !selected) return;
   const layer = communityLayers[selected];
   if (!layer) return;
-  const center = layer.getBounds().getCenter();
+  const center = communityLayerCenter(layer);
+  if (!center) return;
   L.marker(center, {
     icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="comm-label is-selected">' + selected + '</span>', iconSize: [0, 0] }),
     interactive: false,
@@ -687,6 +742,16 @@ Promise.all([
     (COMM.layers.communities.features || []).forEach(f => {
       const p = f.properties || {};
       const name = p.public_name || "";
+      const geom = f.geometry || {};
+      if (geom.type === "Point" && Array.isArray(geom.coordinates) && geom.coordinates.length >= 2) {
+        const [lng, lat] = geom.coordinates;
+        const marker = L.circleMarker([lat, lng], defaultCommPointStyle(name, null));
+        marker._vraCommPoint = true;
+        marker.on("click", () => selectCommunity(name));
+        communityLayers[name] = marker;
+        layers.comm.addLayer(marker);
+        return;
+      }
       const layer = L.geoJSON(f, { style: () => defaultCommStyle(name, null) });
       layer.eachLayer(l => l.on("click", () => selectCommunity(name)));
       communityLayers[name] = layer;

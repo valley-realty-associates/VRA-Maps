@@ -180,7 +180,13 @@
       "population_2020": null,
       "source": "site/vra-build/data/communities.json; placester-ia.json",
       "public_drawable": "yes",
-      "notes": "Unincorporated Rockingham community east of Harrisonburg. Not a 2020 Census place; kept because buyers search it and a complete guide already exists."
+      "notes": "Unincorporated Rockingham community east of Harrisonburg. Not a 2020 Census place; kept because buyers search it and a complete guide already exists.",
+      "orientation_point": [
+        -78.81285053513723,
+        38.396818403635955
+      ],
+      "orientation_source": "Rockingham County GIS parcel centroid (pid 14005, PO Box 30, Penn Laird VA 22846) from data/rockingham-map/source/2026-09-16/county-parcels-citywide-raw.geojson; orientation only — not a legal or Census boundary",
+      "orientation_parcel_pid": 14005
     }
   ],
   "layers": {
@@ -19575,6 +19581,26 @@
                   38.557254000193524
                 ]
               ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "vra_id": "community:Penn Laird",
+            "public_name": "Penn Laird",
+            "kind": "community",
+            "entity_type": "unincorporated_community",
+            "verification_status": "VERIFIED_UNINCORPORATED_COMMUNITY",
+            "geometry_representation": "verified_grouping_no_hard_boundary",
+            "orientation_source": "Rockingham County GIS parcel centroid (pid 14005, PO Box 30, Penn Laird VA 22846) from data/rockingham-map/source/2026-09-16/county-parcels-citywide-raw.geojson; orientation only — not a legal or Census boundary",
+            "orientation_parcel_pid": 14005
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -78.81285053513723,
+              38.396818403635955
             ]
           }
         }
