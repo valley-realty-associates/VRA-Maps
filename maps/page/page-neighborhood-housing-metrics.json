@@ -1,0 +1,14 @@
+{
+  "Luray": {
+    "community_id": "luray",
+    "orientation_only": true
+  },
+  "Shenandoah": {
+    "community_id": "shenandoah",
+    "orientation_only": true
+  },
+  "Stanley": {
+    "community_id": "stanley",
+    "orientation_only": true
+  }
+}

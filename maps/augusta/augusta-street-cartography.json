@@ -1,0 +1,14 @@
+{
+  "labelPolicy": {
+    "majorMinZoom": 11,
+    "localMinZoom": 15,
+    "connectorMinZoomDefault": 11,
+    "connectorSuppressStreetKeys": []
+  },
+  "tier2MajorStreets": [],
+  "meta": {
+    "generated": "2026-09-30",
+    "prefix": "augusta",
+    "street_feature_count": 6397
+  }
+}

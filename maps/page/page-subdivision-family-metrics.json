@@ -1,0 +1,1218 @@
+{
+  "meta": {
+    "generated": "2026-09-30",
+    "county": "page"
+  },
+  "families": [
+    {
+      "family_key": "RIVER RETREAT",
+      "public_name": "River Retreat",
+      "residential_subdivision_view": false,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 18730.8,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "JESSE KEYSER SUBD",
+      "public_name": "Jesse Keyser Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 36459.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SOUTH FORK FARMS",
+      "public_name": "South Fork Farms",
+      "residential_subdivision_view": false,
+      "member_parcels": 6,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 859133.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SOUTH FORK RANCHES",
+      "public_name": "South Fork Ranches",
+      "residential_subdivision_view": false,
+      "member_parcels": 91,
+      "median_sale_price": null,
+      "median_home_sqft": 468.0,
+      "median_lot_sqft": 131507.6,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "LORELEI ESTATES",
+      "public_name": "Lorelei Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 65,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 22020.4,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "SHENANDOAH RIVER FOREST",
+      "public_name": "Shenandoah River Forest",
+      "residential_subdivision_view": false,
+      "member_parcels": 48,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 30616.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH RIDGE",
+      "public_name": "Shenandoah Ridge",
+      "residential_subdivision_view": false,
+      "member_parcels": 41,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 56471.2,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "SHENANDOAH RIVER BEND",
+      "public_name": "Shenandoah River Bend",
+      "residential_subdivision_view": false,
+      "member_parcels": 205,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 41974.4,
+      "qualifying_sales_count": 3
+    },
+    {
+      "family_key": "SHENANDOAH OUTBACK",
+      "public_name": "Shenandoah Outback",
+      "residential_subdivision_view": false,
+      "member_parcels": 14,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 146076.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "PAGE VALLEY ESTATES",
+      "public_name": "Page Valley Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 127,
+      "median_sale_price": null,
+      "median_home_sqft": 840.0,
+      "median_lot_sqft": 17380.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BROAD VALLEY RANCHETTES",
+      "public_name": "Broad Valley Ranchettes",
+      "residential_subdivision_view": false,
+      "member_parcels": 6,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 214990.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CAVALIER FARMS",
+      "public_name": "Cavalier Farms",
+      "residential_subdivision_view": false,
+      "member_parcels": 58,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 44278.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "J ALLEN WILLIAMS SUBD",
+      "public_name": "J Allen Williams Subd",
+      "residential_subdivision_view": false,
+      "member_parcels": 1,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": null,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SERENITY RIDGE ASSOCIATION",
+      "public_name": "Serenity Ridge Association",
+      "residential_subdivision_view": false,
+      "member_parcels": 45,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 31798.8,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH RIVER LODGE SUBD",
+      "public_name": "Shenandoah River Lodge Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 23,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 25603.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "RIVER LODGE FARMS",
+      "public_name": "River Lodge Farms",
+      "residential_subdivision_view": false,
+      "member_parcels": 13,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 124973.6,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "HOPE MILL ACRES",
+      "public_name": "Hope Mill Acres",
+      "residential_subdivision_view": false,
+      "member_parcels": 56,
+      "median_sale_price": null,
+      "median_home_sqft": 728.0,
+      "median_lot_sqft": 171800.6,
+      "qualifying_sales_count": 3
+    },
+    {
+      "family_key": "LAZY RIVER ESTATES",
+      "public_name": "Lazy River Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 35,
+      "median_sale_price": null,
+      "median_home_sqft": 624.0,
+      "median_lot_sqft": 142615.4,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "SHENANDOAH CLIFFS",
+      "public_name": "Shenandoah Cliffs",
+      "residential_subdivision_view": false,
+      "member_parcels": 8,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 414273.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "FORT STOVER",
+      "public_name": "Fort Stover",
+      "residential_subdivision_view": false,
+      "member_parcels": 217,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 24829.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SPRINGFIELD ESTATES",
+      "public_name": "Springfield Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 20,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 142049.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BURNER'S GAP ESTATES",
+      "public_name": "Burner'S Gap Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 37,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 132030.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "TURKEY RIDGE",
+      "public_name": "Turkey Ridge",
+      "residential_subdivision_view": false,
+      "member_parcels": 12,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 102801.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CATHY'S MOUNTAIN",
+      "public_name": "Cathy'S Mountain",
+      "residential_subdivision_view": false,
+      "member_parcels": 16,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 221219.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "EGYPT BEND ESTATES",
+      "public_name": "Egypt Bend Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 195,
+      "median_sale_price": null,
+      "median_home_sqft": 600.0,
+      "median_lot_sqft": 14810.4,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "RIVERVIEW ESTATES",
+      "public_name": "Riverview Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 157,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 39204.0,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "PARKVIEW ESTATES",
+      "public_name": "Parkview Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 17,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 210699.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "THE OUTPOST",
+      "public_name": "The Outpost",
+      "residential_subdivision_view": false,
+      "member_parcels": 21,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 43560.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MASSANUTTEN FOREST",
+      "public_name": "Massanutten Forest",
+      "residential_subdivision_view": false,
+      "member_parcels": 90,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 138085.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH FOREST",
+      "public_name": "Shenandoah Forest",
+      "residential_subdivision_view": false,
+      "member_parcels": 203,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 40185.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "RIVER HEIGHTS SUBD",
+      "public_name": "River Heights Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 23,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 36895.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "OH SHENANDOAH",
+      "public_name": "Oh Shenandoah",
+      "residential_subdivision_view": false,
+      "member_parcels": 134,
+      "median_sale_price": null,
+      "median_home_sqft": 872.0,
+      "median_lot_sqft": 59575.9,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "YAGER'S WOODS SUBD",
+      "public_name": "Yager'S Woods Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 136473.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WESTLU MEADOWS",
+      "public_name": "Westlu Meadows",
+      "residential_subdivision_view": false,
+      "member_parcels": 55,
+      "median_sale_price": null,
+      "median_home_sqft": 589.0,
+      "median_lot_sqft": 11790.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "EUGENE PARK SUBD",
+      "public_name": "Eugene Park Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 30,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 11619.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BROWN AND CAMPBELL SUBD",
+      "public_name": "Brown And Campbell Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 45,
+      "median_sale_price": null,
+      "median_home_sqft": 600.0,
+      "median_lot_sqft": 3452.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MOUNTAIN VIEW",
+      "public_name": "Mountain View",
+      "residential_subdivision_view": false,
+      "member_parcels": 39,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 37287.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WOODLAND PARK",
+      "public_name": "Woodland Park",
+      "residential_subdivision_view": false,
+      "member_parcels": 30,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 19404.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WOODLAND OAKS TOWNHOUSES SUBD",
+      "public_name": "Woodland Oaks Townhouses Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 26,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 2613.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MARYE PLACE SUBD",
+      "public_name": "Marye Place Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 16415.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HILLTOP SUBD",
+      "public_name": "Hilltop Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 7535.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BROOKSIDE PARK SUBD",
+      "public_name": "Brookside Park Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 65,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14607.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HILLDALE SUBD",
+      "public_name": "Hilldale Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 79,
+      "median_sale_price": null,
+      "median_home_sqft": 1288.0,
+      "median_lot_sqft": 16283.5,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "SPRINGVIEW SUBD",
+      "public_name": "Springview Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 66,
+      "median_sale_price": null,
+      "median_home_sqft": 984.0,
+      "median_lot_sqft": 18083.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SKYLINE ESTATES SUBD",
+      "public_name": "Skyline Estates Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 10,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 37897.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "OLD FARMS",
+      "public_name": "Old Farms",
+      "residential_subdivision_view": false,
+      "member_parcels": 83,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 36307.3,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "SOUTH FORTY",
+      "public_name": "South Forty",
+      "residential_subdivision_view": false,
+      "member_parcels": 14,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 123377.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BLUE RIDGE VIEW ESTATES",
+      "public_name": "Blue Ridge View Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 5,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 91911.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CRESCENT HEIGHTS",
+      "public_name": "Crescent Heights",
+      "residential_subdivision_view": false,
+      "member_parcels": 3,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 3726.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MOUNTAIN CREST",
+      "public_name": "Mountain Crest",
+      "residential_subdivision_view": false,
+      "member_parcels": 0,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": null,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SOLANUS HILLS SUBD",
+      "public_name": "Solanus Hills Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 6,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 157905.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WHITE PINE SUBD",
+      "public_name": "White Pine Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 166529.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "PINE HILL ESTATES",
+      "public_name": "Pine Hill Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 12,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 90103.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BLUE RIDGE COVE",
+      "public_name": "Blue Ridge Cove",
+      "residential_subdivision_view": false,
+      "member_parcels": 33,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 47480.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHADOW MOUNTAIN TRACTS",
+      "public_name": "Shadow Mountain Tracts",
+      "residential_subdivision_view": false,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 225510.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BATTLE CREEK FOREST",
+      "public_name": "Battle Creek Forest",
+      "residential_subdivision_view": false,
+      "member_parcels": 39,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 163350.0,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "BATTLE CREEK SUBD",
+      "public_name": "Battle Creek Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 47,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 57799.8,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "FORT LONG ESTATES",
+      "public_name": "Fort Long Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 21,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 223985.5,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "MILL CREEK COMMUNITY",
+      "public_name": "Mill Creek Community",
+      "residential_subdivision_view": false,
+      "member_parcels": 61,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 12458.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HARPER VALLEY",
+      "public_name": "Harper Valley",
+      "residential_subdivision_view": false,
+      "member_parcels": 58,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 140067.2,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "DEERFIELD ESTATES",
+      "public_name": "Deerfield Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 94,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 16095.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CHARLES W. CAMPBELL'S SUBD",
+      "public_name": "Charles W. Campbell'S Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 5,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 26769.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WALTER HUFFMAN ESTATES",
+      "public_name": "Walter Huffman Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 2,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": null,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "STRICKLER SUBD",
+      "public_name": "Strickler Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 14,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 12893.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "GEORGE NELSON PETTIT",
+      "public_name": "George Nelson Pettit",
+      "residential_subdivision_view": false,
+      "member_parcels": 12,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 13230.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "R. V. DOVEL'S ADDITION",
+      "public_name": "R. V. Dovel'S Addition",
+      "residential_subdivision_view": true,
+      "member_parcels": 10,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 6791.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HILLIARD ADDITION",
+      "public_name": "Hilliard Addition",
+      "residential_subdivision_view": true,
+      "member_parcels": 13,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 15936.8,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MACK CUBBAGE & DOUGLAS WILL",
+      "public_name": "Mack Cubbage & Douglas Will",
+      "residential_subdivision_view": false,
+      "member_parcels": 2,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": null,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "R. C. CAVE SUBD",
+      "public_name": "R. C. Cave Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 6,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 12087.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "DAVIS LUCAS & JESSE MCCOY",
+      "public_name": "Davis Lucas & Jesse Mccoy",
+      "residential_subdivision_view": true,
+      "member_parcels": 11,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14418.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "JAMES L. COMER SUBD",
+      "public_name": "James L. Comer Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 3,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14632.8,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SCENIC VIEW ESTATES",
+      "public_name": "Scenic View Estates",
+      "residential_subdivision_view": false,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 108464.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HERDMAN HILLTOP SUBD",
+      "public_name": "Herdman Hilltop Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 14,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 18012.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MOUNTAIN HOME SUBD",
+      "public_name": "Mountain Home Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 23,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 24698.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MOSBY'S RAIDERS HIDEOUT",
+      "public_name": "Mosby'S Raiders Hideout",
+      "residential_subdivision_view": false,
+      "member_parcels": 67,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 42976.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HELMS MOUNTAIN",
+      "public_name": "Helms Mountain",
+      "residential_subdivision_view": false,
+      "member_parcels": 82,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 46443.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HOLIDAY HILL",
+      "public_name": "Holiday Hill",
+      "residential_subdivision_view": false,
+      "member_parcels": 99,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 45206.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CUB RUN SUBD",
+      "public_name": "Cub Run Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 5,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 21344.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "INGHAM KNOB",
+      "public_name": "Ingham Knob",
+      "residential_subdivision_view": false,
+      "member_parcels": 8,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 235899.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CHAPEL VILLAGE",
+      "public_name": "Chapel Village",
+      "residential_subdivision_view": false,
+      "member_parcels": 10,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 15507.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MINE MOUNTAIN",
+      "public_name": "Mine Mountain",
+      "residential_subdivision_view": false,
+      "member_parcels": 100,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 48878.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "ROUNDHEAD MOUNTAIN SUBD",
+      "public_name": "Roundhead Mountain Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 120,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 43873.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BLUE RIDGE PINES",
+      "public_name": "Blue Ridge Pines",
+      "residential_subdivision_view": false,
+      "member_parcels": 65,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 133724.8,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "THE HAWKSBILL PINES",
+      "public_name": "The Hawksbill Pines",
+      "residential_subdivision_view": false,
+      "member_parcels": 20,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 19212.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "TURKEY PEN HILL",
+      "public_name": "Turkey Pen Hill",
+      "residential_subdivision_view": false,
+      "member_parcels": 11,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 150264.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH RAPIDS REC. SUBD",
+      "public_name": "Shenandoah Rapids Rec. Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 25,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 62726.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "RIVER HILLS SUBD",
+      "public_name": "River Hills Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 121,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 45711.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH GAP",
+      "public_name": "Shenandoah Gap",
+      "residential_subdivision_view": false,
+      "member_parcels": 182,
+      "median_sale_price": null,
+      "median_home_sqft": 768.0,
+      "median_lot_sqft": 49876.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "TANNER'S RIDGE RETREAT",
+      "public_name": "Tanner'S Ridge Retreat",
+      "residential_subdivision_view": false,
+      "member_parcels": 167,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 22215.6,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SKYLINE LAKES WEST",
+      "public_name": "Skyline Lakes West",
+      "residential_subdivision_view": false,
+      "member_parcels": 42,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 37897.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SHENANDOAH HIGHLANDS",
+      "public_name": "Shenandoah Highlands",
+      "residential_subdivision_view": false,
+      "member_parcels": 142,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 30415.8,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "SHIPWRECK FARMS",
+      "public_name": "Shipwreck Farms",
+      "residential_subdivision_view": false,
+      "member_parcels": 96,
+      "median_sale_price": null,
+      "median_home_sqft": 480.0,
+      "median_lot_sqft": 75620.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "MILL RUN SUBD",
+      "public_name": "Mill Run Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 19,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 137475.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "FISHTRAP HOLLOW",
+      "public_name": "Fishtrap Hollow",
+      "residential_subdivision_view": false,
+      "member_parcels": 12,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 42950.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "WOODLAND ACRES",
+      "public_name": "Woodland Acres",
+      "residential_subdivision_view": false,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 48787.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SKYLINE LAKES",
+      "public_name": "Skyline Lakes",
+      "residential_subdivision_view": false,
+      "member_parcels": 483,
+      "median_sale_price": null,
+      "median_home_sqft": 609.0,
+      "median_lot_sqft": 38237.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "EPPARD SUBD",
+      "public_name": "Eppard Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 38,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 25034.7,
+      "qualifying_sales_count": 2
+    },
+    {
+      "family_key": "FOREST KNOLLS SUBD",
+      "public_name": "Forest Knolls Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 60,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 12980.9,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "KANAGY HEIGHTS",
+      "public_name": "Kanagy Heights",
+      "residential_subdivision_view": false,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 130680.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "OVERLOOK MOUNTAIN",
+      "public_name": "Overlook Mountain",
+      "residential_subdivision_view": false,
+      "member_parcels": 52,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 119354.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "GRINDSTONE MT. SUBD",
+      "public_name": "Grindstone Mt. Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 15,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 149846.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "BRIDGE OF ROCKS",
+      "public_name": "Bridge Of Rocks",
+      "residential_subdivision_view": false,
+      "member_parcels": 1,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": null,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HIGHLAND COURT SUBD",
+      "public_name": "Highland Court Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 17,
+      "median_sale_price": null,
+      "median_home_sqft": 400.0,
+      "median_lot_sqft": 10467.5,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HUDSON (SPRING VALLEY) SUBD",
+      "public_name": "Hudson (Spring Valley) Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 89,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 18730.8,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "FOREST HILLS",
+      "public_name": "Forest Hills",
+      "residential_subdivision_view": false,
+      "member_parcels": 46,
+      "median_sale_price": null,
+      "median_home_sqft": 750.0,
+      "median_lot_sqft": 21453.3,
+      "qualifying_sales_count": 3
+    },
+    {
+      "family_key": "BLUE RIDGE TERRACE",
+      "public_name": "Blue Ridge Terrace",
+      "residential_subdivision_view": false,
+      "member_parcels": 6,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 11233.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "INN PARK SUBD",
+      "public_name": "Inn Park Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 19,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 19994.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "HAWKSBILL HEIGHTS SUBD",
+      "public_name": "Hawksbill Heights Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 12,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 9653.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SPRING AVENUE QUATTLANDER SUBD",
+      "public_name": "Spring Avenue Quattlander Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 10,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 13158.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "OAK CREST",
+      "public_name": "Oak Crest",
+      "residential_subdivision_view": false,
+      "member_parcels": 26,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 15610.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "LEEWOOD SUBD",
+      "public_name": "Leewood Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 7,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 15246.0,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "SUNRISE HILLS SUBD",
+      "public_name": "Sunrise Hills Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 17,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 16422.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "THE MEADOWS",
+      "public_name": "The Meadows",
+      "residential_subdivision_view": false,
+      "member_parcels": 16,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 20778.1,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "THE MEADOWS SECTION II",
+      "public_name": "The Meadows Section Ii",
+      "residential_subdivision_view": true,
+      "member_parcels": 24,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 15616.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "EAST GATE SUBD",
+      "public_name": "East Gate Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 25,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14855.7,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CEDAR KNOLL",
+      "public_name": "Cedar Knoll",
+      "residential_subdivision_view": false,
+      "member_parcels": 26,
+      "median_sale_price": null,
+      "median_home_sqft": 1312.0,
+      "median_lot_sqft": 22708.3,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "CREEKSIDE SUBD",
+      "public_name": "Creekside Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 9,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 34412.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "THE RIDGE AT FOREST HILLS",
+      "public_name": "The Ridge At Forest Hills",
+      "residential_subdivision_view": true,
+      "member_parcels": 21,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 16814.2,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "FAIRVIEW SUBD",
+      "public_name": "Fairview Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 66,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14810.4,
+      "qualifying_sales_count": 0
+    },
+    {
+      "family_key": "FOX MEADOW",
+      "public_name": "Fox Meadow",
+      "residential_subdivision_view": false,
+      "member_parcels": 21,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14374.8,
+      "qualifying_sales_count": 1
+    },
+    {
+      "family_key": "LURAY LANDING SUBD",
+      "public_name": "Luray Landing Subd",
+      "residential_subdivision_view": true,
+      "member_parcels": 26,
+      "median_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 1960.2,
+      "qualifying_sales_count": 0
+    }
+  ]
+}

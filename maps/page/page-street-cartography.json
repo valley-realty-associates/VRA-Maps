@@ -1,0 +1,40 @@
+{
+  "labelPolicy": {
+    "majorMinZoom": 11,
+    "localMinZoom": 15,
+    "connectorMinZoomDefault": 11,
+    "connectorSuppressStreetKeys": []
+  },
+  "tier2MajorStreets": [
+    "Main",
+    "Us Hwy 211",
+    "Us Hwy 340",
+    "Lee",
+    "Old Valley",
+    "Interstate 81 Sb",
+    "Interstate 81 Nb",
+    "Spotswood",
+    "Skyline",
+    "Us Hwy Bsn 340",
+    "East Side",
+    "Ramp",
+    "Fort Valley",
+    "Middle",
+    "East Point",
+    "Congress",
+    "Fourth",
+    "Maryland",
+    "Leaksville",
+    "Comertown",
+    "Stuart",
+    "Ida",
+    "Edinburg Gap",
+    "Hollow Run",
+    "Quicksburg"
+  ],
+  "meta": {
+    "generated": "2026-09-30",
+    "prefix": "page",
+    "street_feature_count": 1237
+  }
+}

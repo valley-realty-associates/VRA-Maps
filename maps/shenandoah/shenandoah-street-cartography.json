@@ -1,0 +1,40 @@
+{
+  "labelPolicy": {
+    "majorMinZoom": 11,
+    "localMinZoom": 15,
+    "connectorMinZoomDefault": 11,
+    "connectorSuppressStreetKeys": []
+  },
+  "tier2MajorStreets": [
+    "Old Valley Pike",
+    "Back Rd",
+    "John Marshall Hwy",
+    "Senedo Rd",
+    "Orkney Grade",
+    "Fort Valley Rd",
+    "S Main St",
+    "Main St",
+    "S Middle Rd",
+    "Fairway Dr",
+    "Supinlick Ridge Rd",
+    "Crooked Run Rd",
+    "Smith Creek Rd",
+    "N Main St",
+    "Cottonwood Dr",
+    "E Lee Hwy",
+    "W Spring St",
+    "Stoney Creek Rd",
+    "Willow Ln",
+    "E Washington St",
+    "Quicksburg Rd",
+    "Moreland Gap Rd",
+    "Edinburg Gap Rd",
+    "S Ox Rd",
+    "Battlefield Rd"
+  ],
+  "meta": {
+    "generated": "2026-09-30",
+    "prefix": "shenandoah",
+    "street_feature_count": 3714
+  }
+}

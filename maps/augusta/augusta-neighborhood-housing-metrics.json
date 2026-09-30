@@ -1,0 +1,86 @@
+{
+  "Staunton": {
+    "community_id": "staunton",
+    "orientation_only": true
+  },
+  "Waynesboro": {
+    "community_id": "waynesboro",
+    "orientation_only": true
+  },
+  "Craigsville": {
+    "community_id": "craigsville",
+    "orientation_only": true
+  },
+  "Augusta Springs": {
+    "community_id": "augusta-springs",
+    "orientation_only": true
+  },
+  "Churchville": {
+    "community_id": "churchville",
+    "orientation_only": true
+  },
+  "Crimora": {
+    "community_id": "crimora",
+    "orientation_only": true
+  },
+  "Deerfield": {
+    "community_id": "deerfield",
+    "orientation_only": true
+  },
+  "Dooms": {
+    "community_id": "dooms",
+    "orientation_only": true
+  },
+  "Fishersville": {
+    "community_id": "fishersville",
+    "orientation_only": true
+  },
+  "Greenville": {
+    "community_id": "greenville",
+    "orientation_only": true
+  },
+  "Harriston": {
+    "community_id": "harriston",
+    "orientation_only": true
+  },
+  "Jolivue": {
+    "community_id": "jolivue",
+    "orientation_only": true
+  },
+  "Lyndhurst": {
+    "community_id": "lyndhurst",
+    "orientation_only": true
+  },
+  "Middlebrook": {
+    "community_id": "middlebrook",
+    "orientation_only": true
+  },
+  "Mount Sidney": {
+    "community_id": "mount-sidney",
+    "orientation_only": true
+  },
+  "New Hope": {
+    "community_id": "new-hope",
+    "orientation_only": true
+  },
+  "Sherando": {
+    "community_id": "sherando",
+    "orientation_only": true
+  },
+  "Stuarts Draft": {
+    "community_id": "stuarts-draft",
+    "orientation_only": true
+  },
+  "Verona": {
+    "community_id": "verona",
+    "orientation_only": true
+  },
+  "Weyers Cave": {
+    "community_id": "weyers-cave",
+    "orientation_only": true
+  },
+  "Wintergreen": {
+    "community_id": "wintergreen",
+    "orientation_only": true
+  }
+}

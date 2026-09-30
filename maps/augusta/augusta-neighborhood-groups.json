@@ -1,0 +1,703 @@
+{
+  "generated_from": "VRA-AUGUSTA-MAP-2026-09-30",
+  "subdivision_count": 39,
+  "polygon_count": 0,
+  "group_count": 21,
+  "crosswalk": {
+    "Staunton": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Independent historic city and Augusta County seat, not part of county government."
+    },
+    "Waynesboro": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Independent Blue Ridge gateway city surrounded by Augusta County."
+    },
+    "Craigsville": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Western Augusta town in the mountain foothills."
+    },
+    "Augusta Springs": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small western Augusta CDP."
+    },
+    "Churchville": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small CDP west of Staunton on the Churchville corridor."
+    },
+    "Crimora": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Augusta CDP north of Waynesboro."
+    },
+    "Deerfield": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small western Augusta CDP in a rural mountain valley."
+    },
+    "Dooms": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP north of Waynesboro along the US-340 corridor."
+    },
+    "Fishersville": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Largest Augusta CDP, between Staunton and Waynesboro, with Augusta Health and suburban housing."
+    },
+    "Greenville": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP south of Staunton on US-11 / I-81."
+    },
+    "Harriston": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small Augusta CDP near Grottoes / the South River."
+    },
+    "Jolivue": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP immediately south of Staunton."
+    },
+    "Lyndhurst": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP south of Waynesboro toward the Blue Ridge."
+    },
+    "Middlebrook": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small rural Augusta CDP southwest of Staunton."
+    },
+    "Mount Sidney": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP north of Staunton along US-11."
+    },
+    "New Hope": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Small Augusta CDP northeast of Staunton."
+    },
+    "Sherando": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "CDP south of Waynesboro near Sherando Lake."
+    },
+    "Stuarts Draft": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Large Augusta CDP south of Waynesboro with suburban and rural housing."
+    },
+    "Verona": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Northern Augusta CDP on I-81 between Staunton and Harrisonburg."
+    },
+    "Weyers Cave": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Augusta CDP near Shenandoah Valley Regional Airport and Blue Ridge Community College."
+    },
+    "Wintergreen": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Resort CDP that straddles Augusta and Nelson counties. Confirm county, HOA, and ski-resort rules by parcel."
+    },
+    "21 Virginia Manor Sec": {
+      "subdivision_family": "21 VIRGINIA MANOR SEC",
+      "residential_parcels": 41,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "4 Chetola Estates Sec": {
+      "subdivision_family": "4 CHETOLA ESTATES SEC",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 16 Dominion Heights Sec": {
+      "subdivision_family": "2 16 DOMINION HEIGHTS SEC",
+      "residential_parcels": 29,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "4 35 Crawford Manor Sec": {
+      "subdivision_family": "4 35 CRAWFORD MANOR SEC",
+      "residential_parcels": 113,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "1 Markels Woods Sec": {
+      "subdivision_family": "1 MARKELS WOODS SEC",
+      "residential_parcels": 20,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "195 Forest Springs Estates Sec": {
+      "subdivision_family": "195 FOREST SPRINGS ESTATES SEC",
+      "residential_parcels": 134,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "47 Forest Springs Estate Sec": {
+      "subdivision_family": "47 FOREST SPRINGS ESTATE SEC",
+      "residential_parcels": 28,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "6 3 Craig Addition": {
+      "subdivision_family": "6 3 CRAIG ADDITION",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 14 Forest Springs Est Sec": {
+      "subdivision_family": "2 14 FOREST SPRINGS EST SEC",
+      "residential_parcels": 27,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "23 Hermitage Estates Sec": {
+      "subdivision_family": "23 HERMITAGE ESTATES SEC",
+      "residential_parcels": 22,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Emerald Hills Sec": {
+      "subdivision_family": "EMERALD HILLS SEC",
+      "residential_parcels": 139,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "13 Enchanted View Estates Sec": {
+      "subdivision_family": "13 ENCHANTED VIEW ESTATES SEC",
+      "residential_parcels": 50,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 32 Stratford Estates Sec": {
+      "subdivision_family": "2 32 STRATFORD ESTATES SEC",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "10 Twin Hills Estates Sec": {
+      "subdivision_family": "10 TWIN HILLS ESTATES SEC",
+      "residential_parcels": 8,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 7 Meadow Ridge Sec": {
+      "subdivision_family": "2 7 MEADOW RIDGE SEC",
+      "residential_parcels": 37,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "65 Round Hill Estates Sec": {
+      "subdivision_family": "65 ROUND HILL ESTATES SEC",
+      "residential_parcels": 42,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "7 Howes Addition": {
+      "subdivision_family": "7 HOWES ADDITION",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "3 1 Rose Addition": {
+      "subdivision_family": "3 1 ROSE ADDITION",
+      "residential_parcels": 10,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 13 Cranberry Hills Sec": {
+      "subdivision_family": "2 13 CRANBERRY HILLS SEC",
+      "residential_parcels": 49,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "4 4 Moore Addition": {
+      "subdivision_family": "4 4 MOORE ADDITION",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "1 13 Spitler Addition": {
+      "subdivision_family": "1 13 SPITLER ADDITION",
+      "residential_parcels": 19,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "21 Willow Springs Sec": {
+      "subdivision_family": "21 WILLOW SPRINGS SEC",
+      "residential_parcels": 19,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "32 Huntington Hills Sec": {
+      "subdivision_family": "32 HUNTINGTON HILLS SEC",
+      "residential_parcels": 33,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "25 Village Green At The Lake Phase": {
+      "subdivision_family": "25 VILLAGE GREEN AT THE LAKE PHASE",
+      "residential_parcels": 49,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "15 Shannon Lee At Kennedy Creek Section": {
+      "subdivision_family": "15 SHANNON LEE AT KENNEDY CREEK SECTION",
+      "residential_parcels": 30,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "27 Hamptons At Kennedy Creek Sec": {
+      "subdivision_family": "27 HAMPTONS AT KENNEDY CREEK SEC",
+      "residential_parcels": 41,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "1B Village On Goose Creek Sec": {
+      "subdivision_family": "1B VILLAGE ON GOOSE CREEK SEC",
+      "residential_parcels": 8,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2A Village On Goose Creek Sec": {
+      "subdivision_family": "2A VILLAGE ON GOOSE CREEK SEC",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "26 Ivy Ridge Townhomes Sec": {
+      "subdivision_family": "26 IVY RIDGE TOWNHOMES SEC",
+      "residential_parcels": 31,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "20 Ivy Ridge Commer Park Sec": {
+      "subdivision_family": "20 IVY RIDGE COMMER PARK SEC",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "9 Panorama Estates Sec": {
+      "subdivision_family": "9 PANORAMA ESTATES SEC",
+      "residential_parcels": 29,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "26 Interstate Business Park Sec": {
+      "subdivision_family": "26 INTERSTATE BUSINESS PARK SEC",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "2 Harley Crossing Sec": {
+      "subdivision_family": "2 HARLEY CROSSING SEC",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "39 River Hills Section": {
+      "subdivision_family": "39 RIVER HILLS SECTION",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "1 River Hills Sec": {
+      "subdivision_family": "1 RIVER HILLS SEC",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "37 Ivy Ridge Estates Section": {
+      "subdivision_family": "37 IVY RIDGE ESTATES SECTION",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "38 W Rt 631 Ivy Ridge Dev Sec": {
+      "subdivision_family": "38 W RT 631 IVY RIDGE DEV SEC",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "28 Ivy Ridge Estates Sec": {
+      "subdivision_family": "28 IVY RIDGE ESTATES SEC",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "4 The Village At Mint Spring Sec": {
+      "subdivision_family": "4 THE VILLAGE AT MINT SPRING SEC",
+      "residential_parcels": 34,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    }
+  },
+  "groups": [
+    {
+      "neighborhood": "Staunton",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Waynesboro",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Craigsville",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Augusta Springs",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Churchville",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Crimora",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Deerfield",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Dooms",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Fishersville",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Greenville",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Harriston",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Jolivue",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Lyndhurst",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Middlebrook",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Mount Sidney",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "New Hope",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Sherando",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Stuarts Draft",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Verona",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Weyers Cave",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Wintergreen",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Augusta County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    }
+  ],
+  "summary": {
+    "verified_groups": 0,
+    "standalone": 0,
+    "identity_only": 21,
+    "unresolved": 0
+  }
+}

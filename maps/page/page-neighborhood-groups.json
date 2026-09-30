@@ -1,0 +1,487 @@
+{
+  "generated_from": "VRA-PAGE-MAP-2026-09-30",
+  "subdivision_count": 47,
+  "polygon_count": 0,
+  "group_count": 3,
+  "crosswalk": {
+    "Luray": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Page County seat, known for Luray Caverns and US-211 access to Skyline Drive."
+    },
+    "Shenandoah": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Page County town on US-340. Not the same as Shenandoah County or Shenandoah National Park."
+    },
+    "Stanley": {
+      "subdivision_family": "",
+      "residential_parcels": 0,
+      "parent_neighborhood": "",
+      "grouping_status": "IDENTITY_ONLY",
+      "grouping_source": "Community identity layer",
+      "owner_review_role": "",
+      "notes": "Page County town between Luray and Shenandoah on US-340."
+    },
+    "Jesse Keyser Subd": {
+      "subdivision_family": "JESSE KEYSER SUBD",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Shenandoah River Lodge Subd": {
+      "subdivision_family": "SHENANDOAH RIVER LODGE SUBD",
+      "residential_parcels": 23,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "River Heights Subd": {
+      "subdivision_family": "RIVER HEIGHTS SUBD",
+      "residential_parcels": 23,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Yager'S Woods Subd": {
+      "subdivision_family": "YAGER'S WOODS SUBD",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Eugene Park Subd": {
+      "subdivision_family": "EUGENE PARK SUBD",
+      "residential_parcels": 30,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Brown And Campbell Subd": {
+      "subdivision_family": "BROWN AND CAMPBELL SUBD",
+      "residential_parcels": 45,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Woodland Oaks Townhouses Subd": {
+      "subdivision_family": "WOODLAND OAKS TOWNHOUSES SUBD",
+      "residential_parcels": 26,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Marye Place Subd": {
+      "subdivision_family": "MARYE PLACE SUBD",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Hilltop Subd": {
+      "subdivision_family": "HILLTOP SUBD",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Brookside Park Subd": {
+      "subdivision_family": "BROOKSIDE PARK SUBD",
+      "residential_parcels": 65,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Hilldale Subd": {
+      "subdivision_family": "HILLDALE SUBD",
+      "residential_parcels": 79,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Springview Subd": {
+      "subdivision_family": "SPRINGVIEW SUBD",
+      "residential_parcels": 66,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Skyline Estates Subd": {
+      "subdivision_family": "SKYLINE ESTATES SUBD",
+      "residential_parcels": 10,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Blue Ridge View Estates": {
+      "subdivision_family": "BLUE RIDGE VIEW ESTATES",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Solanus Hills Subd": {
+      "subdivision_family": "SOLANUS HILLS SUBD",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "White Pine Subd": {
+      "subdivision_family": "WHITE PINE SUBD",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Battle Creek Subd": {
+      "subdivision_family": "BATTLE CREEK SUBD",
+      "residential_parcels": 47,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Charles W. Campbell'S Subd": {
+      "subdivision_family": "CHARLES W. CAMPBELL'S SUBD",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Strickler Subd": {
+      "subdivision_family": "STRICKLER SUBD",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "R. V. Dovel'S Addition": {
+      "subdivision_family": "R. V. DOVEL'S ADDITION",
+      "residential_parcels": 10,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Hilliard Addition": {
+      "subdivision_family": "HILLIARD ADDITION",
+      "residential_parcels": 13,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "R. C. Cave Subd": {
+      "subdivision_family": "R. C. CAVE SUBD",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Davis Lucas & Jesse Mccoy": {
+      "subdivision_family": "DAVIS LUCAS & JESSE MCCOY",
+      "residential_parcels": 11,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "James L. Comer Subd": {
+      "subdivision_family": "JAMES L. COMER SUBD",
+      "residential_parcels": 3,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Herdman Hilltop Subd": {
+      "subdivision_family": "HERDMAN HILLTOP SUBD",
+      "residential_parcels": 14,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Mountain Home Subd": {
+      "subdivision_family": "MOUNTAIN HOME SUBD",
+      "residential_parcels": 23,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Cub Run Subd": {
+      "subdivision_family": "CUB RUN SUBD",
+      "residential_parcels": 5,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Roundhead Mountain Subd": {
+      "subdivision_family": "ROUNDHEAD MOUNTAIN SUBD",
+      "residential_parcels": 120,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Shenandoah Rapids Rec. Subd": {
+      "subdivision_family": "SHENANDOAH RAPIDS REC. SUBD",
+      "residential_parcels": 25,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "River Hills Subd": {
+      "subdivision_family": "RIVER HILLS SUBD",
+      "residential_parcels": 121,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Mill Run Subd": {
+      "subdivision_family": "MILL RUN SUBD",
+      "residential_parcels": 19,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Eppard Subd": {
+      "subdivision_family": "EPPARD SUBD",
+      "residential_parcels": 38,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Forest Knolls Subd": {
+      "subdivision_family": "FOREST KNOLLS SUBD",
+      "residential_parcels": 60,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Grindstone Mt. Subd": {
+      "subdivision_family": "GRINDSTONE MT. SUBD",
+      "residential_parcels": 15,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Highland Court Subd": {
+      "subdivision_family": "HIGHLAND COURT SUBD",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Hudson (Spring Valley) Subd": {
+      "subdivision_family": "HUDSON (SPRING VALLEY) SUBD",
+      "residential_parcels": 89,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Inn Park Subd": {
+      "subdivision_family": "INN PARK SUBD",
+      "residential_parcels": 19,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Hawksbill Heights Subd": {
+      "subdivision_family": "HAWKSBILL HEIGHTS SUBD",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Spring Avenue Quattlander Subd": {
+      "subdivision_family": "SPRING AVENUE QUATTLANDER SUBD",
+      "residential_parcels": 10,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Leewood Subd": {
+      "subdivision_family": "LEEWOOD SUBD",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Sunrise Hills Subd": {
+      "subdivision_family": "SUNRISE HILLS SUBD",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "The Meadows Section Ii": {
+      "subdivision_family": "THE MEADOWS SECTION II",
+      "residential_parcels": 24,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "East Gate Subd": {
+      "subdivision_family": "EAST GATE SUBD",
+      "residential_parcels": 25,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Creekside Subd": {
+      "subdivision_family": "CREEKSIDE SUBD",
+      "residential_parcels": 9,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "The Ridge At Forest Hills": {
+      "subdivision_family": "THE RIDGE AT FOREST HILLS",
+      "residential_parcels": 21,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Fairview Subd": {
+      "subdivision_family": "FAIRVIEW SUBD",
+      "residential_parcels": 66,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Luray Landing Subd": {
+      "subdivision_family": "LURAY LANDING SUBD",
+      "residential_parcels": 26,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    }
+  },
+  "groups": [
+    {
+      "neighborhood": "Luray",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Page County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Shenandoah",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Page County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    },
+    {
+      "neighborhood": "Stanley",
+      "grouping_status": "IDENTITY_ONLY",
+      "members": [],
+      "member_count": 0,
+      "grouping_source": "Verified public community in Page County, Virginia (site/vra-build/data/communities.json). Subdivision geometry pending county GIS."
+    }
+  ],
+  "summary": {
+    "verified_groups": 0,
+    "standalone": 0,
+    "identity_only": 3,
+    "unresolved": 0
+  }
+}

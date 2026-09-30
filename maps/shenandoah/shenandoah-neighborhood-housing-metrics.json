@@ -1,0 +1,38 @@
+{
+  "Edinburg": {
+    "community_id": "edinburg",
+    "orientation_only": true
+  },
+  "Mount Jackson": {
+    "community_id": "mount-jackson",
+    "orientation_only": true
+  },
+  "New Market": {
+    "community_id": "new-market",
+    "orientation_only": true
+  },
+  "Strasburg": {
+    "community_id": "strasburg",
+    "orientation_only": true
+  },
+  "Toms Brook": {
+    "community_id": "toms-brook",
+    "orientation_only": true
+  },
+  "Woodstock": {
+    "community_id": "woodstock",
+    "orientation_only": true
+  },
+  "Basye": {
+    "community_id": "basye",
+    "orientation_only": true
+  },
+  "Maurertown": {
+    "community_id": "maurertown",
+    "orientation_only": true
+  },
+  "Mount Clifton": {
+    "community_id": "mount-clifton",
+    "orientation_only": true
+  }
+}
