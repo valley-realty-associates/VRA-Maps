@@ -280,6 +280,9 @@ const CONNECTOR_LABELS_PATH = "page-connector-labels-official.geojson";
 const STREET_CARTO_PATH = "page-street-cartography.json";
 const MEMBERS_PATH = "page-subdivision-all-member-parcels.geojson";
 const memberByFamily = {};
+const IDENTITY_CROSSWALK_PATH = "page-subdivision-public-identity-crosswalk.json";
+const publicIdentityMembers = {};
+const memberDisplayToPublic = {};
 const VRA_GOLD = "#FECD2A";
 
 const TIER_LABEL = {
@@ -383,11 +386,17 @@ function inResidentialSubdivisionView(name) {
 function syncFamilyLayerMembership() {
   Object.keys(familyLayers).forEach(name => {
     const lg = familyLayers[name];
-    const wantOnMap = viewMode === "neighborhoods" || inResidentialSubdivisionView(name);
+    const wantOnMap = viewMode === "neighborhoods" ||
+      inResidentialSubdivisionView(name) ||
+      (viewMode === "subdivisions" && isPublicIdentityHitTarget(name));
     const onSubs = layers.subs && layers.subs.hasLayer(lg);
     if (wantOnMap && !onSubs) layers.subs.addLayer(lg);
     if (!wantOnMap && onSubs) layers.subs.removeLayer(lg);
+    if (lg && lg.setStyle && wantOnMap && viewMode === "subdivisions" && !inResidentialSubdivisionView(name)) {
+      lg.setStyle(() => identityHitStyle(name));
+    }
   });
+  rebuildMemberHitLayer();
 }
 
 const styles = {
@@ -536,7 +545,21 @@ function syncListSelection() {
 }
 
 function zoomToSubdivision(name) {
-  const lg = familyLayers[name];
+  const publicName = resolvePublicSubdivision(name) || name;
+  const bounds = L.latLngBounds([]);
+  publicIdentityMemberNames(publicName).forEach(memberName => {
+    const lg = familyLayers[memberName];
+    if (!lg) return;
+    try {
+      const b = lg.getBounds();
+      if (b.isValid()) bounds.extend(b);
+    } catch (e) { /* skip */ }
+  });
+  if (bounds.isValid()) {
+    map.fitBounds(bounds.pad(0.08));
+    return;
+  }
+  const lg = familyLayers[publicName] || familyLayers[name];
   if (!lg) return;
   try {
     const b = lg.getBounds();
@@ -652,14 +675,17 @@ function applySubdivisionStyles() {
     const lg = familyLayers[name];
     const p = familyProps[name] || {};
     const parentNb = verifiedParentBySub[name];
+    const publicName = resolvePublicSubdivision(name);
     const isSelectedMember = viewMode === "neighborhoods" && selectedNeighborhood && parentNb === selectedNeighborhood;
     const isSelectedUnparented = viewMode === "neighborhoods" && !selectedNeighborhood && selectedSubdivision === name;
-    const isSelectedSub = viewMode === "subdivisions" && selectedSubdivision === name;
+    const isSelectedSub = viewMode === "subdivisions" && selectedSubdivision && publicName === selectedSubdivision;
     let style;
     if (isSelectedMember || isSelectedSub || isSelectedUnparented) {
       style = Object.assign({}, styles.goldSelected);
     } else if (viewMode === "neighborhoods" && selectedNeighborhood && parentNb !== selectedNeighborhood) {
       style = Object.assign({}, defaultSubStyle(p), styles.dimmed);
+    } else if (viewMode === "subdivisions" && !inResidentialSubdivisionView(name) && isPublicIdentityHitTarget(name)) {
+      style = identityHitStyle(name);
     } else {
       style = defaultSubStyle(p);
     }
@@ -812,6 +838,148 @@ function setHeaderText(id, text, muted) {
   el.classList.toggle("is-muted", !!muted);
 }
 
+function formatCurrency(value) {
+  if (value == null || Number.isNaN(Number(value))) return null;
+  return "$" + Math.round(Number(value)).toLocaleString("en-US");
+}
+
+function formatSqft(value) {
+  if (value == null || Number.isNaN(Number(value))) return null;
+  return Math.round(Number(value)).toLocaleString("en-US") + " sq ft";
+}
+
+function formatLotSize(value) {
+  if (value == null || Number.isNaN(Number(value))) return null;
+  const sqft = Number(value);
+  if (sqft >= 43560 * 0.15) {
+    const acres = sqft / 43560;
+    const text = acres.toFixed(2).replace(/\.00$/, "");
+    return text + " acres";
+  }
+  return Math.round(sqft).toLocaleString("en-US") + " sq ft";
+}
+
+function normalizeMetricsRow(row) {
+  if (!row || typeof row !== "object") return {};
+  const m = Object.assign({}, row);
+  if (!m.sale_price_display && m.median_sale_price != null) {
+    m.sale_price_display = formatCurrency(m.median_sale_price);
+  }
+  if (!m.sale_price_display && m.recent_sale_price != null) {
+    m.sale_price_display = formatCurrency(m.recent_sale_price);
+  }
+  if (m.verified_sale_count == null && m.qualifying_sales_count != null) {
+    m.verified_sale_count = m.qualifying_sales_count;
+  }
+  if (m.verified_sale_count == null && m.recent_sales_count != null) {
+    m.verified_sale_count = m.recent_sales_count;
+  }
+  if (!m.home_size_display && m.median_home_sqft != null) {
+    m.home_size_display = formatSqft(m.median_home_sqft);
+  }
+  if (!m.home_size_display && m.median_home_size != null) {
+    m.home_size_display = formatSqft(m.median_home_size);
+  }
+  if (!m.lot_size_display && m.median_lot_sqft != null) {
+    m.lot_size_display = formatLotSize(m.median_lot_sqft);
+  }
+  if (!m.lot_size_display && m.median_lot_size != null) {
+    m.lot_size_display = formatLotSize(m.median_lot_size);
+  }
+  return m;
+}
+
+function indexFamilyMetricsPayload(payload) {
+  const out = {};
+  const families = payload && payload.families;
+  if (Array.isArray(families)) {
+    families.forEach(row => {
+      const norm = normalizeMetricsRow(row);
+      const key = norm.public_name || row.public_name || row.family_key;
+      if (key) out[key] = norm;
+    });
+  } else if (families && typeof families === "object") {
+    Object.keys(families).forEach(key => {
+      out[key] = normalizeMetricsRow(families[key]);
+    });
+  }
+  return out;
+}
+
+function indexNeighborhoodMetricsPayload(payload) {
+  const out = {};
+  if (!payload || typeof payload !== "object") return out;
+  Object.keys(payload).forEach(key => {
+    if (key === "meta" || key === "qa") return;
+    const row = payload[key];
+    if (row && typeof row === "object") out[key] = normalizeMetricsRow(row);
+  });
+  return out;
+}
+
+function applyPublicIdentityCrosswalk(crosswalk) {
+  Object.keys(publicIdentityMembers).forEach(k => delete publicIdentityMembers[k]);
+  Object.keys(memberDisplayToPublic).forEach(k => delete memberDisplayToPublic[k]);
+  const identities = (crosswalk && crosswalk.public_identities) || {};
+  Object.keys(identities).forEach(pub => {
+    const row = identities[pub] || {};
+    const members = (row.member_display_names || []).slice();
+    if (pub && members.indexOf(pub) < 0) members.push(pub);
+    publicIdentityMembers[pub] = members;
+    members.forEach(name => { memberDisplayToPublic[name] = pub; });
+  });
+  const extra = (crosswalk && crosswalk.member_display_to_public) || {};
+  Object.keys(extra).forEach(name => { memberDisplayToPublic[name] = extra[name]; });
+}
+
+function resolvePublicSubdivision(displayName) {
+  if (!displayName) return null;
+  if (memberDisplayToPublic[displayName]) return memberDisplayToPublic[displayName];
+  if (inResidentialSubdivisionView(displayName)) return displayName;
+  return null;
+}
+
+function publicIdentityMemberNames(publicName) {
+  if (!publicName) return [];
+  const list = publicIdentityMembers[publicName];
+  if (list && list.length) return list.slice();
+  return [publicName];
+}
+
+function isPublicIdentityHitTarget(displayName) {
+  return !!resolvePublicSubdivision(displayName);
+}
+
+function identityHitStyle(displayName) {
+  const publicName = resolvePublicSubdivision(displayName);
+  const selected = viewMode === "subdivisions" && selectedSubdivision && publicName === selectedSubdivision;
+  if (selected) return Object.assign({}, styles.goldSelected);
+  return { color: "transparent", weight: 0, opacity: 0, fillColor: "#000", fillOpacity: 0.01 };
+}
+
+function rebuildMemberHitLayer() {
+  if (!layers.memberHits) return;
+  layers.memberHits.clearLayers();
+  if (viewMode !== "subdivisions") return;
+  const tog = document.getElementById("tog-subs");
+  if (tog && !tog.checked) return;
+  Object.keys(memberByFamily).forEach(fam => {
+    const publicName = resolvePublicSubdivision(fam);
+    if (!publicName) return;
+    const feats = memberByFamily[fam] || [];
+    if (!feats.length) return;
+    L.geoJSON({ type: "FeatureCollection", features: feats }, {
+      style: () => ({ color: "transparent", weight: 0, opacity: 0, fillColor: "#000", fillOpacity: 0.01 }),
+      onEachFeature: (f, layer) => {
+        layer.on("click", ev => {
+          if (L.DomEvent && L.DomEvent.stopPropagation) L.DomEvent.stopPropagation(ev);
+          handlePlaceClick(fam);
+        });
+      },
+    }).addTo(layers.memberHits);
+  });
+}
+
 function setSalePriceLabel(metrics) {
   const labelEl = document.getElementById("hdr-sale-label");
   if (!labelEl) return;
@@ -842,11 +1010,11 @@ function clearHeader() {
 }
 
 function selectSubdivision(name) {
-  selectedSubdivision = name;
+  selectedSubdivision = name ? (resolvePublicSubdivision(name) || name) : null;
   selectedNeighborhood = null;
-  if (!name) { clearHeader(); applySubdivisionStyles(); nbOutlineLayer.clearLayers(); syncListSelection(); return; }
-  const m = familyMetrics[name] || {};
-  setHeaderText("hdr-name", name, false);
+  if (!selectedSubdivision) { clearHeader(); applySubdivisionStyles(); nbOutlineLayer.clearLayers(); syncListSelection(); rebuildMemberHitLayer(); return; }
+  const m = familyMetrics[selectedSubdivision] || {};
+  setHeaderText("hdr-name", selectedSubdivision, false);
   setSalePriceLabel(m);
   setHeaderText("hdr-sale", m.sale_price_display || "Not available", !m.sale_price_display);
   setHeaderText("hdr-sales-n", m.verified_sale_count != null ? String(m.verified_sale_count) : "Not available", m.verified_sale_count == null);
@@ -1005,9 +1173,10 @@ function handlePlaceClick(subName) {
     } else {
       selectUnparentedSubdivisionInNeighborhoodMode(subName);
     }
-  } else {
-    selectSubdivision(subName);
+    return;
   }
+  const publicName = resolvePublicSubdivision(subName);
+  if (publicName) selectSubdivision(publicName);
 }
 
 function setViewMode(mode) {
@@ -1015,6 +1184,7 @@ function setViewMode(mode) {
   const carryNb = selectedNeighborhood;
   viewMode = mode;
   syncFamilyLayerMembership();
+  rebuildMemberHitLayer();
   document.getElementById("view-subs").classList.toggle("is-active", mode === "subdivisions");
   document.getElementById("view-nb").classList.toggle("is-active", mode === "neighborhoods");
   document.getElementById("view-subs").setAttribute("aria-pressed", mode === "subdivisions");
@@ -1084,7 +1254,8 @@ Promise.all([
   fetch(CONNECTOR_LABELS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + CONNECTOR_LABELS_PATH); return r.json(); }),
   fetch(STREET_CARTO_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + STREET_CARTO_PATH); return r.json(); }),
   fetch(MEMBERS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + MEMBERS_PATH); return r.json(); }),
-]).then(([DATA, METRICS, GROUPS, NB_METRICS, STREETS, STREET_LABELS, CONNECTOR_LABELS, STREET_CARTO, MEMBERS]) => {
+  fetch(IDENTITY_CROSSWALK_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + IDENTITY_CROSSWALK_PATH); return r.json(); }),
+]).then(([DATA, METRICS, GROUPS, NB_METRICS, STREETS, STREET_LABELS, CONNECTOR_LABELS, STREET_CARTO, MEMBERS, IDENTITY_CROSSWALK]) => {
   (MEMBERS.features || []).forEach(f => {
     const fam = (f.properties || {}).family || "";
     if (!memberByFamily[fam]) memberByFamily[fam] = [];
@@ -1098,8 +1269,9 @@ Promise.all([
       "Residential fabric — no recorded subdivision: " + (DATA.qa.true_fabric_parcels || 0) + "<br>" +
       "No verified identity: " + (DATA.qa.unidentified_parcels || 0);
   }
-  Object.assign(familyMetrics, METRICS.families || {});
-  Object.assign(neighborhoodMetrics, NB_METRICS || {});
+  Object.assign(familyMetrics, indexFamilyMetricsPayload(METRICS));
+  Object.assign(neighborhoodMetrics, indexNeighborhoodMetricsPayload(NB_METRICS));
+  applyPublicIdentityCrosswalk(IDENTITY_CROSSWALK || {});
 
   (GROUPS.groups || []).forEach(g => {
     neighborhoodGroups[g.neighborhood] = g;
@@ -1111,6 +1283,7 @@ Promise.all([
   L.geoJSON(LAY.city, { style: () => styles.cityBoundary }).addTo(map);
 
   layers.subs = L.layerGroup();
+  layers.memberHits = L.layerGroup().addTo(map);
   (LAY.subdivision_families.features || []).forEach(f => {
     const p = f.properties || {};
     const name = p.family || "";
@@ -1174,6 +1347,7 @@ Promise.all([
   document.getElementById("tog-subs").addEventListener("change", e => {
     labelsEnabled = e.target.checked;
     refreshSubdivisionLabels();
+    syncFamilyLayerMembership();
   });
 
   map.on("zoomend moveend", () => {
@@ -1232,13 +1406,18 @@ let streetCarto = {};
 
 function highlightMemberLots(familyName) {
   memberGoldLayer.clearLayers();
-  const feats = memberByFamily[familyName] || [];
-  if (!feats.length) return;
-  L.geoJSON({ type: "FeatureCollection", features: feats }, {
-    style: () => ({ color: VRA_GOLD, weight: 1.4, opacity: 1, fillColor: VRA_GOLD, fillOpacity: 0.38 }),
-    interactive: false,
-  }).addTo(memberGoldLayer);
-  if (!map.hasLayer(memberGoldLayer)) memberGoldLayer.addTo(map);
+  const publicName = resolvePublicSubdivision(familyName) || familyName;
+  if (!publicName) return;
+  const names = publicIdentityMemberNames(publicName);
+  names.forEach(n => {
+    const feats = memberByFamily[n] || [];
+    if (!feats.length) return;
+    L.geoJSON({ type: "FeatureCollection", features: feats }, {
+      style: () => ({ color: VRA_GOLD, weight: 1.4, opacity: 1, fillColor: VRA_GOLD, fillOpacity: 0.38 }),
+      interactive: false,
+    }).addTo(memberGoldLayer);
+  });
+  if (memberGoldLayer.getLayers().length && !map.hasLayer(memberGoldLayer)) memberGoldLayer.addTo(map);
 }
 
 const _selectSubdivision = selectSubdivision;

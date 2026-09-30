@@ -1,0 +1,529 @@
+{
+  "meta": {
+    "county": "page",
+    "generated_from": "page-subdivision-truth-data.json",
+    "public_identity_count": 47,
+    "member_display_mappings": 47
+  },
+  "public_identities": {
+    "Jesse Keyser Subd": {
+      "public_family_key": "JESSE KEYSER SUBD",
+      "public_display_name": "Jesse Keyser Subd",
+      "member_family_keys": [
+        "JESSE KEYSER SUBD"
+      ],
+      "member_display_names": [
+        "Jesse Keyser Subd"
+      ]
+    },
+    "Shenandoah River Lodge Subd": {
+      "public_family_key": "SHENANDOAH RIVER LODGE SUBD",
+      "public_display_name": "Shenandoah River Lodge Subd",
+      "member_family_keys": [
+        "SHENANDOAH RIVER LODGE SUBD"
+      ],
+      "member_display_names": [
+        "Shenandoah River Lodge Subd"
+      ]
+    },
+    "River Heights Subd": {
+      "public_family_key": "RIVER HEIGHTS SUBD",
+      "public_display_name": "River Heights Subd",
+      "member_family_keys": [
+        "RIVER HEIGHTS SUBD"
+      ],
+      "member_display_names": [
+        "River Heights Subd"
+      ]
+    },
+    "Yager'S Woods Subd": {
+      "public_family_key": "YAGER'S WOODS SUBD",
+      "public_display_name": "Yager'S Woods Subd",
+      "member_family_keys": [
+        "YAGER'S WOODS SUBD"
+      ],
+      "member_display_names": [
+        "Yager'S Woods Subd"
+      ]
+    },
+    "Eugene Park Subd": {
+      "public_family_key": "EUGENE PARK SUBD",
+      "public_display_name": "Eugene Park Subd",
+      "member_family_keys": [
+        "EUGENE PARK SUBD"
+      ],
+      "member_display_names": [
+        "Eugene Park Subd"
+      ]
+    },
+    "Brown And Campbell Subd": {
+      "public_family_key": "BROWN AND CAMPBELL SUBD",
+      "public_display_name": "Brown And Campbell Subd",
+      "member_family_keys": [
+        "BROWN AND CAMPBELL SUBD"
+      ],
+      "member_display_names": [
+        "Brown And Campbell Subd"
+      ]
+    },
+    "Woodland Oaks Townhouses Subd": {
+      "public_family_key": "WOODLAND OAKS TOWNHOUSES SUBD",
+      "public_display_name": "Woodland Oaks Townhouses Subd",
+      "member_family_keys": [
+        "WOODLAND OAKS TOWNHOUSES SUBD"
+      ],
+      "member_display_names": [
+        "Woodland Oaks Townhouses Subd"
+      ]
+    },
+    "Marye Place Subd": {
+      "public_family_key": "MARYE PLACE SUBD",
+      "public_display_name": "Marye Place Subd",
+      "member_family_keys": [
+        "MARYE PLACE SUBD"
+      ],
+      "member_display_names": [
+        "Marye Place Subd"
+      ]
+    },
+    "Hilltop Subd": {
+      "public_family_key": "HILLTOP SUBD",
+      "public_display_name": "Hilltop Subd",
+      "member_family_keys": [
+        "HILLTOP SUBD"
+      ],
+      "member_display_names": [
+        "Hilltop Subd"
+      ]
+    },
+    "Brookside Park Subd": {
+      "public_family_key": "BROOKSIDE PARK SUBD",
+      "public_display_name": "Brookside Park Subd",
+      "member_family_keys": [
+        "BROOKSIDE PARK SUBD"
+      ],
+      "member_display_names": [
+        "Brookside Park Subd"
+      ]
+    },
+    "Hilldale Subd": {
+      "public_family_key": "HILLDALE SUBD",
+      "public_display_name": "Hilldale Subd",
+      "member_family_keys": [
+        "HILLDALE SUBD"
+      ],
+      "member_display_names": [
+        "Hilldale Subd"
+      ]
+    },
+    "Springview Subd": {
+      "public_family_key": "SPRINGVIEW SUBD",
+      "public_display_name": "Springview Subd",
+      "member_family_keys": [
+        "SPRINGVIEW SUBD"
+      ],
+      "member_display_names": [
+        "Springview Subd"
+      ]
+    },
+    "Skyline Estates Subd": {
+      "public_family_key": "SKYLINE ESTATES SUBD",
+      "public_display_name": "Skyline Estates Subd",
+      "member_family_keys": [
+        "SKYLINE ESTATES SUBD"
+      ],
+      "member_display_names": [
+        "Skyline Estates Subd"
+      ]
+    },
+    "Blue Ridge View Estates": {
+      "public_family_key": "BLUE RIDGE VIEW ESTATES",
+      "public_display_name": "Blue Ridge View Estates",
+      "member_family_keys": [
+        "BLUE RIDGE VIEW ESTATES"
+      ],
+      "member_display_names": [
+        "Blue Ridge View Estates"
+      ]
+    },
+    "Solanus Hills Subd": {
+      "public_family_key": "SOLANUS HILLS SUBD",
+      "public_display_name": "Solanus Hills Subd",
+      "member_family_keys": [
+        "SOLANUS HILLS SUBD"
+      ],
+      "member_display_names": [
+        "Solanus Hills Subd"
+      ]
+    },
+    "White Pine Subd": {
+      "public_family_key": "WHITE PINE SUBD",
+      "public_display_name": "White Pine Subd",
+      "member_family_keys": [
+        "WHITE PINE SUBD"
+      ],
+      "member_display_names": [
+        "White Pine Subd"
+      ]
+    },
+    "Battle Creek Subd": {
+      "public_family_key": "BATTLE CREEK SUBD",
+      "public_display_name": "Battle Creek Subd",
+      "member_family_keys": [
+        "BATTLE CREEK SUBD"
+      ],
+      "member_display_names": [
+        "Battle Creek Subd"
+      ]
+    },
+    "Charles W. Campbell'S Subd": {
+      "public_family_key": "CHARLES W. CAMPBELL'S SUBD",
+      "public_display_name": "Charles W. Campbell'S Subd",
+      "member_family_keys": [
+        "CHARLES W. CAMPBELL'S SUBD"
+      ],
+      "member_display_names": [
+        "Charles W. Campbell'S Subd"
+      ]
+    },
+    "Strickler Subd": {
+      "public_family_key": "STRICKLER SUBD",
+      "public_display_name": "Strickler Subd",
+      "member_family_keys": [
+        "STRICKLER SUBD"
+      ],
+      "member_display_names": [
+        "Strickler Subd"
+      ]
+    },
+    "R. V. Dovel'S Addition": {
+      "public_family_key": "R. V. DOVEL'S ADDITION",
+      "public_display_name": "R. V. Dovel'S Addition",
+      "member_family_keys": [
+        "R. V. DOVEL'S ADDITION"
+      ],
+      "member_display_names": [
+        "R. V. Dovel'S Addition"
+      ]
+    },
+    "Hilliard Addition": {
+      "public_family_key": "HILLIARD ADDITION",
+      "public_display_name": "Hilliard Addition",
+      "member_family_keys": [
+        "HILLIARD ADDITION"
+      ],
+      "member_display_names": [
+        "Hilliard Addition"
+      ]
+    },
+    "R. C. Cave Subd": {
+      "public_family_key": "R. C. CAVE SUBD",
+      "public_display_name": "R. C. Cave Subd",
+      "member_family_keys": [
+        "R. C. CAVE SUBD"
+      ],
+      "member_display_names": [
+        "R. C. Cave Subd"
+      ]
+    },
+    "Davis Lucas & Jesse Mccoy": {
+      "public_family_key": "DAVIS LUCAS & JESSE MCCOY",
+      "public_display_name": "Davis Lucas & Jesse Mccoy",
+      "member_family_keys": [
+        "DAVIS LUCAS & JESSE MCCOY"
+      ],
+      "member_display_names": [
+        "Davis Lucas & Jesse Mccoy"
+      ]
+    },
+    "James L. Comer Subd": {
+      "public_family_key": "JAMES L. COMER SUBD",
+      "public_display_name": "James L. Comer Subd",
+      "member_family_keys": [
+        "JAMES L. COMER SUBD"
+      ],
+      "member_display_names": [
+        "James L. Comer Subd"
+      ]
+    },
+    "Herdman Hilltop Subd": {
+      "public_family_key": "HERDMAN HILLTOP SUBD",
+      "public_display_name": "Herdman Hilltop Subd",
+      "member_family_keys": [
+        "HERDMAN HILLTOP SUBD"
+      ],
+      "member_display_names": [
+        "Herdman Hilltop Subd"
+      ]
+    },
+    "Mountain Home Subd": {
+      "public_family_key": "MOUNTAIN HOME SUBD",
+      "public_display_name": "Mountain Home Subd",
+      "member_family_keys": [
+        "MOUNTAIN HOME SUBD"
+      ],
+      "member_display_names": [
+        "Mountain Home Subd"
+      ]
+    },
+    "Cub Run Subd": {
+      "public_family_key": "CUB RUN SUBD",
+      "public_display_name": "Cub Run Subd",
+      "member_family_keys": [
+        "CUB RUN SUBD"
+      ],
+      "member_display_names": [
+        "Cub Run Subd"
+      ]
+    },
+    "Roundhead Mountain Subd": {
+      "public_family_key": "ROUNDHEAD MOUNTAIN SUBD",
+      "public_display_name": "Roundhead Mountain Subd",
+      "member_family_keys": [
+        "ROUNDHEAD MOUNTAIN SUBD"
+      ],
+      "member_display_names": [
+        "Roundhead Mountain Subd"
+      ]
+    },
+    "Shenandoah Rapids Rec. Subd": {
+      "public_family_key": "SHENANDOAH RAPIDS REC. SUBD",
+      "public_display_name": "Shenandoah Rapids Rec. Subd",
+      "member_family_keys": [
+        "SHENANDOAH RAPIDS REC. SUBD"
+      ],
+      "member_display_names": [
+        "Shenandoah Rapids Rec. Subd"
+      ]
+    },
+    "River Hills Subd": {
+      "public_family_key": "RIVER HILLS SUBD",
+      "public_display_name": "River Hills Subd",
+      "member_family_keys": [
+        "RIVER HILLS SUBD"
+      ],
+      "member_display_names": [
+        "River Hills Subd"
+      ]
+    },
+    "Mill Run Subd": {
+      "public_family_key": "MILL RUN SUBD",
+      "public_display_name": "Mill Run Subd",
+      "member_family_keys": [
+        "MILL RUN SUBD"
+      ],
+      "member_display_names": [
+        "Mill Run Subd"
+      ]
+    },
+    "Eppard Subd": {
+      "public_family_key": "EPPARD SUBD",
+      "public_display_name": "Eppard Subd",
+      "member_family_keys": [
+        "EPPARD SUBD"
+      ],
+      "member_display_names": [
+        "Eppard Subd"
+      ]
+    },
+    "Forest Knolls Subd": {
+      "public_family_key": "FOREST KNOLLS SUBD",
+      "public_display_name": "Forest Knolls Subd",
+      "member_family_keys": [
+        "FOREST KNOLLS SUBD"
+      ],
+      "member_display_names": [
+        "Forest Knolls Subd"
+      ]
+    },
+    "Grindstone Mt. Subd": {
+      "public_family_key": "GRINDSTONE MT. SUBD",
+      "public_display_name": "Grindstone Mt. Subd",
+      "member_family_keys": [
+        "GRINDSTONE MT. SUBD"
+      ],
+      "member_display_names": [
+        "Grindstone Mt. Subd"
+      ]
+    },
+    "Highland Court Subd": {
+      "public_family_key": "HIGHLAND COURT SUBD",
+      "public_display_name": "Highland Court Subd",
+      "member_family_keys": [
+        "HIGHLAND COURT SUBD"
+      ],
+      "member_display_names": [
+        "Highland Court Subd"
+      ]
+    },
+    "Hudson (Spring Valley) Subd": {
+      "public_family_key": "HUDSON (SPRING VALLEY) SUBD",
+      "public_display_name": "Hudson (Spring Valley) Subd",
+      "member_family_keys": [
+        "HUDSON (SPRING VALLEY) SUBD"
+      ],
+      "member_display_names": [
+        "Hudson (Spring Valley) Subd"
+      ]
+    },
+    "Inn Park Subd": {
+      "public_family_key": "INN PARK SUBD",
+      "public_display_name": "Inn Park Subd",
+      "member_family_keys": [
+        "INN PARK SUBD"
+      ],
+      "member_display_names": [
+        "Inn Park Subd"
+      ]
+    },
+    "Hawksbill Heights Subd": {
+      "public_family_key": "HAWKSBILL HEIGHTS SUBD",
+      "public_display_name": "Hawksbill Heights Subd",
+      "member_family_keys": [
+        "HAWKSBILL HEIGHTS SUBD"
+      ],
+      "member_display_names": [
+        "Hawksbill Heights Subd"
+      ]
+    },
+    "Spring Avenue Quattlander Subd": {
+      "public_family_key": "SPRING AVENUE QUATTLANDER SUBD",
+      "public_display_name": "Spring Avenue Quattlander Subd",
+      "member_family_keys": [
+        "SPRING AVENUE QUATTLANDER SUBD"
+      ],
+      "member_display_names": [
+        "Spring Avenue Quattlander Subd"
+      ]
+    },
+    "Leewood Subd": {
+      "public_family_key": "LEEWOOD SUBD",
+      "public_display_name": "Leewood Subd",
+      "member_family_keys": [
+        "LEEWOOD SUBD"
+      ],
+      "member_display_names": [
+        "Leewood Subd"
+      ]
+    },
+    "Sunrise Hills Subd": {
+      "public_family_key": "SUNRISE HILLS SUBD",
+      "public_display_name": "Sunrise Hills Subd",
+      "member_family_keys": [
+        "SUNRISE HILLS SUBD"
+      ],
+      "member_display_names": [
+        "Sunrise Hills Subd"
+      ]
+    },
+    "The Meadows Section Ii": {
+      "public_family_key": "THE MEADOWS SECTION II",
+      "public_display_name": "The Meadows Section Ii",
+      "member_family_keys": [
+        "THE MEADOWS SECTION II"
+      ],
+      "member_display_names": [
+        "The Meadows Section Ii"
+      ]
+    },
+    "East Gate Subd": {
+      "public_family_key": "EAST GATE SUBD",
+      "public_display_name": "East Gate Subd",
+      "member_family_keys": [
+        "EAST GATE SUBD"
+      ],
+      "member_display_names": [
+        "East Gate Subd"
+      ]
+    },
+    "Creekside Subd": {
+      "public_family_key": "CREEKSIDE SUBD",
+      "public_display_name": "Creekside Subd",
+      "member_family_keys": [
+        "CREEKSIDE SUBD"
+      ],
+      "member_display_names": [
+        "Creekside Subd"
+      ]
+    },
+    "The Ridge At Forest Hills": {
+      "public_family_key": "THE RIDGE AT FOREST HILLS",
+      "public_display_name": "The Ridge At Forest Hills",
+      "member_family_keys": [
+        "THE RIDGE AT FOREST HILLS"
+      ],
+      "member_display_names": [
+        "The Ridge At Forest Hills"
+      ]
+    },
+    "Fairview Subd": {
+      "public_family_key": "FAIRVIEW SUBD",
+      "public_display_name": "Fairview Subd",
+      "member_family_keys": [
+        "FAIRVIEW SUBD"
+      ],
+      "member_display_names": [
+        "Fairview Subd"
+      ]
+    },
+    "Luray Landing Subd": {
+      "public_family_key": "LURAY LANDING SUBD",
+      "public_display_name": "Luray Landing Subd",
+      "member_family_keys": [
+        "LURAY LANDING SUBD"
+      ],
+      "member_display_names": [
+        "Luray Landing Subd"
+      ]
+    }
+  },
+  "member_display_to_public": {
+    "Jesse Keyser Subd": "Jesse Keyser Subd",
+    "Shenandoah River Lodge Subd": "Shenandoah River Lodge Subd",
+    "River Heights Subd": "River Heights Subd",
+    "Yager'S Woods Subd": "Yager'S Woods Subd",
+    "Eugene Park Subd": "Eugene Park Subd",
+    "Brown And Campbell Subd": "Brown And Campbell Subd",
+    "Woodland Oaks Townhouses Subd": "Woodland Oaks Townhouses Subd",
+    "Marye Place Subd": "Marye Place Subd",
+    "Hilltop Subd": "Hilltop Subd",
+    "Brookside Park Subd": "Brookside Park Subd",
+    "Hilldale Subd": "Hilldale Subd",
+    "Springview Subd": "Springview Subd",
+    "Skyline Estates Subd": "Skyline Estates Subd",
+    "Blue Ridge View Estates": "Blue Ridge View Estates",
+    "Solanus Hills Subd": "Solanus Hills Subd",
+    "White Pine Subd": "White Pine Subd",
+    "Battle Creek Subd": "Battle Creek Subd",
+    "Charles W. Campbell'S Subd": "Charles W. Campbell'S Subd",
+    "Strickler Subd": "Strickler Subd",
+    "R. V. Dovel'S Addition": "R. V. Dovel'S Addition",
+    "Hilliard Addition": "Hilliard Addition",
+    "R. C. Cave Subd": "R. C. Cave Subd",
+    "Davis Lucas & Jesse Mccoy": "Davis Lucas & Jesse Mccoy",
+    "James L. Comer Subd": "James L. Comer Subd",
+    "Herdman Hilltop Subd": "Herdman Hilltop Subd",
+    "Mountain Home Subd": "Mountain Home Subd",
+    "Cub Run Subd": "Cub Run Subd",
+    "Roundhead Mountain Subd": "Roundhead Mountain Subd",
+    "Shenandoah Rapids Rec. Subd": "Shenandoah Rapids Rec. Subd",
+    "River Hills Subd": "River Hills Subd",
+    "Mill Run Subd": "Mill Run Subd",
+    "Eppard Subd": "Eppard Subd",
+    "Forest Knolls Subd": "Forest Knolls Subd",
+    "Grindstone Mt. Subd": "Grindstone Mt. Subd",
+    "Highland Court Subd": "Highland Court Subd",
+    "Hudson (Spring Valley) Subd": "Hudson (Spring Valley) Subd",
+    "Inn Park Subd": "Inn Park Subd",
+    "Hawksbill Heights Subd": "Hawksbill Heights Subd",
+    "Spring Avenue Quattlander Subd": "Spring Avenue Quattlander Subd",
+    "Leewood Subd": "Leewood Subd",
+    "Sunrise Hills Subd": "Sunrise Hills Subd",
+    "The Meadows Section Ii": "The Meadows Section Ii",
+    "East Gate Subd": "East Gate Subd",
+    "Creekside Subd": "Creekside Subd",
+    "The Ridge At Forest Hills": "The Ridge At Forest Hills",
+    "Fairview Subd": "Fairview Subd",
+    "Luray Landing Subd": "Luray Landing Subd"
+  }
+}
