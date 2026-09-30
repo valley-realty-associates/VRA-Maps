@@ -212,7 +212,7 @@
     </div>
     <h2>Layers</h2>
     <label><input type="checkbox" id="tog-subs" checked> Residential subdivision families</label>
-    <label><input type="checkbox" id="tog-nosub" checked> Residential fabric / no recorded subdivision</label>
+    <label><input type="checkbox" id="tog-nosub"> Residential fabric / no recorded subdivision</label>
     <div class="map-legend" id="map-legend" aria-live="polite"></div>
     <label><input type="checkbox" id="tog-roads" checked> Major roads</label>
     <label><input type="checkbox" id="tog-hd"> Historic districts</label>
@@ -344,6 +344,7 @@ function fitMapToData() {
   }
   refreshSubdivisionLabels();
   refreshNeighborhoodLabel();
+  syncFabricLayerVisibility();
 }
 
 window.addEventListener("load", () => {
@@ -789,6 +790,21 @@ function bindToggle(id, layer) {
   });
 }
 
+/** Fabric parcel circles: checkbox = enabled; zoom gates actual draw at county scale. */
+const FABRIC_MIN_ZOOM = 12;
+
+function syncFabricLayerVisibility() {
+  if (!layers.noSub || !map) return;
+  const el = document.getElementById("tog-nosub");
+  const enabled = !!(el && el.checked);
+  const shouldShow = enabled && map.getZoom() >= FABRIC_MIN_ZOOM;
+  if (shouldShow) {
+    if (!map.hasLayer(layers.noSub)) map.addLayer(layers.noSub);
+  } else if (map.hasLayer(layers.noSub)) {
+    map.removeLayer(layers.noSub);
+  }
+}
+
 function setHeaderText(id, text, muted) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -1125,10 +1141,9 @@ Promise.all([
   });
 
   layers.noSub = L.geoJSON(LAY.no_verified_subdivision, {
-    pointToLayer: (f, latlng) => L.circleMarker(latlng, styles.noSub),
     pointToLayer: (f, latlng) => L.circleMarker(latlng, ((f.properties || {}).fabric_category === "no_verified_identity") ? styles.noSub : styles.fabric),
     onEachFeature: (f, l) => { l.bindPopup(noSubPopup(f)); }
-  }).addTo(map);
+  });
 
   layers.hd = L.geoJSON(LAY.historic_districts, {
     style: () => styles.hd,
@@ -1142,7 +1157,10 @@ Promise.all([
   layers.roads = L.layerGroup(); // replaced by approved Waynesboro street network
 
   bindToggle("tog-subs", layers.subs);
-  bindToggle("tog-nosub", layers.noSub);
+  const nosubTog = document.getElementById("tog-nosub");
+  if (nosubTog && layers.noSub) {
+    nosubTog.addEventListener("change", () => syncFabricLayerVisibility());
+  }
   bindToggle("tog-roads", layers.roads);
 
   const hdTog = document.getElementById("tog-hd");
@@ -1162,6 +1180,7 @@ Promise.all([
     refreshSubdivisionLabels();
     refreshHistoricLabels();
     refreshNeighborhoodLabel();
+    syncFabricLayerVisibility();
   });
 
 
