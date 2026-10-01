@@ -1,30 +1,31 @@
 {
   "qa": {
-    "public_map_families": 47,
+    "public_map_families": 63,
     "directory_only_families": 0,
-    "suppress_families": 74,
-    "drawable_families": 47,
-    "polygon_families": 120,
+    "suppress_families": 53,
+    "drawable_families": 63,
+    "polygon_families": 119,
     "neighborhood_only_polygons": 0,
-    "residential_subdivision_view_excluded": 74,
-    "member_lots": 1312,
+    "residential_subdivision_view_excluded": 53,
+    "member_lots": 2648,
     "vacant_member_lots": 0,
     "no_sub_points": 12117,
-    "modern_subdivision_parcels": 1276,
-    "historic_legal_parcels": 4349,
+    "modern_subdivision_parcels": 1292,
+    "historic_legal_parcels": 4333,
     "true_fabric_parcels": 12117,
     "unidentified_parcels": 12117,
     "conflicts": 0,
     "controlling_gis_status": "OK",
     "parcel_count_in_county": 24996,
     "legal_subdivision_families": 121,
-    "merged_public_families": 121,
-    "phase_alias_consolidations": 0,
+    "merged_public_families": 120,
+    "phase_alias_consolidations": 1,
     "registry_size": 121,
     "public_identity_counts": {
-      "PRIVATE_FAMILY_OWNER_DIVISION": 70,
-      "PUBLIC_RESIDENTIAL_SUBDIVISION": 47,
-      "UNRESOLVED": 4
+      "UNRESOLVED": 20,
+      "PUBLIC_RESIDENTIAL_SUBDIVISION": 67,
+      "PRIVATE_FAMILY_OWNER_DIVISION": 31,
+      "NONRESIDENTIAL_OR_MIXED": 2
     }
   },
   "layers": {
@@ -8753,12 +8754,15 @@
             "residential_parcel_count": 7,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "River Retreat",
+            "canonical_public_key": "RIVER RETREAT",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -8822,7 +8826,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Jesse Keyser Subd",
+            "family": "Jesse Keyser",
             "family_key": "JESSE KEYSER SUBD",
             "raw_names": "JESSE KEYSER SUBD",
             "member_count": 9,
@@ -8830,6 +8834,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Jesse Keyser",
+            "canonical_public_key": "JESSE KEYSER SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -8879,12 +8886,15 @@
             "residential_parcel_count": 6,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "South Fork Farms",
+            "canonical_public_key": "SOUTH FORK FARMS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -9220,6 +9230,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "South Fork Ranches",
+            "canonical_public_key": "SOUTH FORK RANCHES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -10065,14 +10078,17 @@
             "raw_names": "LORELEI ESTATES",
             "member_count": 65,
             "residential_parcel_count": 65,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Lorelei Estates",
+            "canonical_public_key": "LORELEI ESTATES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -10508,6 +10524,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah River Forest",
+            "canonical_public_key": "SHENANDOAH RIVER FOREST",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -10669,14 +10688,17 @@
             "raw_names": "SHENANDOAH RIDGE",
             "member_count": 41,
             "residential_parcel_count": 41,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Shenandoah Ridge",
+            "canonical_public_key": "SHENANDOAH RIDGE",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -10840,6 +10862,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah River Bend",
+            "canonical_public_key": "SHENANDOAH RIVER BEND",
+            "public_parent_key": "",
             "tier": "B",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -11118,6 +11143,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah Outback",
+            "canonical_public_key": "SHENANDOAH OUTBACK",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -11337,14 +11365,17 @@
             "raw_names": "PAGE VALLEY ESTATES",
             "member_count": 127,
             "residential_parcel_count": 127,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Page Valley Estates",
+            "canonical_public_key": "PAGE VALLEY ESTATES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -13439,12 +13470,15 @@
             "residential_parcel_count": 6,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Broad Valley Ranchettes",
+            "canonical_public_key": "BROAD VALLEY RANCHETTES",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -13515,12 +13549,15 @@
             "residential_parcel_count": 58,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Cavalier Farms",
+            "canonical_public_key": "CAVALIER FARMS",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -14016,6 +14053,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "J Allen Williams",
+            "canonical_public_key": "J ALLEN WILLIAMS SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -14067,14 +14107,17 @@
             "raw_names": "SERENITY RIDGE ASSOCIATION",
             "member_count": 45,
             "residential_parcel_count": 45,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Serenity Ridge Association",
+            "canonical_public_key": "SERENITY RIDGE ASSOCIATION",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -14326,7 +14369,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Shenandoah River Lodge Subd",
+            "family": "Shenandoah River Lodge",
             "family_key": "SHENANDOAH RIVER LODGE SUBD",
             "raw_names": "SHENANDOAH RIVER LODGE SUBD",
             "member_count": 23,
@@ -14334,6 +14377,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Shenandoah River Lodge",
+            "canonical_public_key": "SHENANDOAH RIVER LODGE SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -14625,12 +14671,15 @@
             "residential_parcel_count": 13,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "River Lodge Farms",
+            "canonical_public_key": "RIVER LODGE FARMS",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "Polygon",
@@ -14723,12 +14772,15 @@
             "residential_parcel_count": 56,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "NONRESIDENTIAL_OR_MIXED",
+            "canonical_public_name": "Hope Mill Acres",
+            "canonical_public_key": "HOPE MILL ACRES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "legal_tax_fragment"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -15313,14 +15365,17 @@
             "raw_names": "LAZY RIVER ESTATES",
             "member_count": 35,
             "residential_parcel_count": 35,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Lazy River Estates",
+            "canonical_public_key": "LAZY RIVER ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -15486,6 +15541,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah Cliffs",
+            "canonical_public_key": "SHENANDOAH CLIFFS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -15686,6 +15744,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Fort Stover",
+            "canonical_public_key": "FORT STOVER",
+            "public_parent_key": "",
             "tier": "B",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -16347,14 +16408,17 @@
             "raw_names": "SPRINGFIELD ESTATES",
             "member_count": 20,
             "residential_parcel_count": 20,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Springfield Estates",
+            "canonical_public_key": "SPRINGFIELD ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -16432,19 +16496,22 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Burner'S Gap Estates",
+            "family": "Burner's Gap Estates",
             "family_key": "BURNER'S GAP ESTATES",
             "raw_names": "BURNER'S GAP ESTATES",
             "member_count": 37,
             "residential_parcel_count": 37,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Burner's Gap Estates",
+            "canonical_public_key": "BURNER'S GAP ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -16519,14 +16586,17 @@
             "raw_names": "TURKEY RIDGE",
             "member_count": 12,
             "residential_parcel_count": 12,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Turkey Ridge",
+            "canonical_public_key": "TURKEY RIDGE",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -16576,6 +16646,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Cathy's Mountain",
+            "canonical_public_key": "CATHY'S MOUNTAIN",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -17105,14 +17178,17 @@
             "raw_names": "EGYPT BEND ESTATES",
             "member_count": 195,
             "residential_parcel_count": 195,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Egypt Bend Estates",
+            "canonical_public_key": "EGYPT BEND ESTATES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -18921,14 +18997,17 @@
             "raw_names": "RIVERVIEW ESTATES",
             "member_count": 157,
             "residential_parcel_count": 157,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Riverview Estates",
+            "canonical_public_key": "RIVERVIEW ESTATES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -19203,14 +19282,17 @@
             "raw_names": "PARKVIEW ESTATES",
             "member_count": 17,
             "residential_parcel_count": 17,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Parkview Estates",
+            "canonical_public_key": "PARKVIEW ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -19324,6 +19406,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "The Outpost",
+            "canonical_public_key": "THE OUTPOST",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -19466,6 +19551,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Massanutten Forest",
+            "canonical_public_key": "MASSANUTTEN FOREST",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -20080,6 +20168,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah Forest",
+            "canonical_public_key": "SHENANDOAH FOREST",
+            "public_parent_key": "",
             "tier": "B",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -23012,7 +23103,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "River Heights Subd",
+            "family": "River Heights",
             "family_key": "RIVER HEIGHTS SUBD",
             "raw_names": "RIVER HEIGHTS SUBD",
             "member_count": 23,
@@ -23020,6 +23111,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "River Heights",
+            "canonical_public_key": "RIVER HEIGHTS SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -23236,6 +23330,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Oh Shenandoah",
+            "canonical_public_key": "OH SHENANDOAH",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -24428,7 +24525,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Yager'S Woods Subd",
+            "family": "Yager's Woods",
             "family_key": "YAGER'S WOODS SUBD",
             "raw_names": "YAGER'S WOODS SUBD",
             "member_count": 9,
@@ -24436,6 +24533,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Yager's Woods",
+            "canonical_public_key": "YAGER'S WOODS SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -24502,6 +24602,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Westlu Meadows",
+            "canonical_public_key": "WESTLU MEADOWS",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -24770,7 +24873,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Eugene Park Subd",
+            "family": "Eugene Park",
             "family_key": "EUGENE PARK SUBD",
             "raw_names": "EUGENE PARK SUBD",
             "member_count": 30,
@@ -24778,6 +24881,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Eugene Park",
+            "canonical_public_key": "EUGENE PARK SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -25114,7 +25220,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Brown And Campbell Subd",
+            "family": "Brown & Campbell",
             "family_key": "BROWN AND CAMPBELL SUBD",
             "raw_names": "BROWN AND CAMPBELL SUBD",
             "member_count": 45,
@@ -25122,6 +25228,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Brown & Campbell",
+            "canonical_public_key": "BROWN AND CAMPBELL SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -26166,6 +26275,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Mountain View",
+            "canonical_public_key": "MOUNTAIN VIEW",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -26285,14 +26397,17 @@
             "raw_names": "WOODLAND PARK",
             "member_count": 30,
             "residential_parcel_count": 30,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Woodland Park",
+            "canonical_public_key": "WOODLAND PARK",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -26540,7 +26655,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Woodland Oaks Townhouses Subd",
+            "family": "Woodland Oaks Townhouses",
             "family_key": "WOODLAND OAKS TOWNHOUSES SUBD",
             "raw_names": "WOODLAND OAKS TOWNHOUSES SUBD",
             "member_count": 26,
@@ -26548,6 +26663,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Woodland Oaks Townhouses",
+            "canonical_public_key": "WOODLAND OAKS TOWNHOUSES SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -26590,7 +26708,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Marye Place Subd",
+            "family": "Marye Place",
             "family_key": "MARYE PLACE SUBD",
             "raw_names": "MARYE PLACE SUBD",
             "member_count": 7,
@@ -26598,6 +26716,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Marye Place",
+            "canonical_public_key": "MARYE PLACE SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -26678,7 +26799,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Hilltop Subd",
+            "family": "Hilltop",
             "family_key": "HILLTOP SUBD",
             "raw_names": "HILLTOP SUBD",
             "member_count": 9,
@@ -26686,6 +26807,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Hilltop",
+            "canonical_public_key": "HILLTOP SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -26774,7 +26898,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Brookside Park Subd",
+            "family": "Brookside Park",
             "family_key": "BROOKSIDE PARK SUBD",
             "raw_names": "BROOKSIDE PARK SUBD",
             "member_count": 65,
@@ -26782,6 +26906,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Brookside Park",
+            "canonical_public_key": "BROOKSIDE PARK SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -27022,7 +27149,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Hilldale Subd",
+            "family": "Hilldale",
             "family_key": "HILLDALE SUBD",
             "raw_names": "HILLDALE SUBD",
             "member_count": 79,
@@ -27030,6 +27157,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Hilldale",
+            "canonical_public_key": "HILLDALE SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -27326,7 +27456,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Springview Subd",
+            "family": "Springview",
             "family_key": "SPRINGVIEW SUBD",
             "raw_names": "SPRINGVIEW SUBD",
             "member_count": 66,
@@ -27334,6 +27464,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Springview",
+            "canonical_public_key": "SPRINGVIEW SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -27766,7 +27899,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Skyline Estates Subd",
+            "family": "Skyline Estates",
             "family_key": "SKYLINE ESTATES SUBD",
             "raw_names": "SKYLINE ESTATES SUBD",
             "member_count": 10,
@@ -27774,6 +27907,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Skyline Estates",
+            "canonical_public_key": "SKYLINE ESTATES SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -27831,12 +27967,15 @@
             "residential_parcel_count": 83,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Old Farms",
+            "canonical_public_key": "OLD FARMS",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "Polygon",
@@ -27936,6 +28075,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "South Forty",
+            "canonical_public_key": "SOUTH FORTY",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -28045,14 +28187,17 @@
             "raw_names": "BLUE RIDGE VIEW ESTATES",
             "member_count": 5,
             "residential_parcel_count": 5,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Blue Ridge View Estates",
+            "canonical_public_key": "BLUE RIDGE VIEW ESTATES",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "page_insufficient_cluster_evidence"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -28123,12 +28268,15 @@
             "residential_parcel_count": 3,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Crescent Heights",
+            "canonical_public_key": "CRESCENT HEIGHTS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "page_insufficient_cluster_evidence"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -28212,7 +28360,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Solanus Hills Subd",
+            "family": "Solanus Hills",
             "family_key": "SOLANUS HILLS SUBD",
             "raw_names": "SOLANUS HILLS SUBD",
             "member_count": 6,
@@ -28220,6 +28368,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Solanus Hills",
+            "canonical_public_key": "SOLANUS HILLS SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -28332,7 +28483,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "White Pine Subd",
+            "family": "White Pine",
             "family_key": "WHITE PINE SUBD",
             "raw_names": "WHITE PINE SUBD",
             "member_count": 9,
@@ -28340,6 +28491,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "White Pine",
+            "canonical_public_key": "WHITE PINE SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -28463,14 +28617,17 @@
             "raw_names": "PINE HILL ESTATES",
             "member_count": 12,
             "residential_parcel_count": 12,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Pine Hill Estates",
+            "canonical_public_key": "PINE HILL ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -28529,14 +28686,17 @@
             "raw_names": "BLUE RIDGE COVE",
             "member_count": 33,
             "residential_parcel_count": 33,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Blue Ridge Cove",
+            "canonical_public_key": "BLUE RIDGE COVE",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -28652,6 +28812,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shadow Mountain Tracts",
+            "canonical_public_key": "SHADOW MOUNTAIN TRACTS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -28757,14 +28920,17 @@
             "raw_names": "BATTLE CREEK FOREST",
             "member_count": 39,
             "residential_parcel_count": 39,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Battle Creek Forest",
+            "canonical_public_key": "BATTLE CREEK FOREST",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -29228,7 +29394,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Battle Creek Subd",
+            "family": "Battle Creek",
             "family_key": "BATTLE CREEK SUBD",
             "raw_names": "BATTLE CREEK SUBD",
             "member_count": 47,
@@ -29236,6 +29402,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Battle Creek",
+            "canonical_public_key": "BATTLE CREEK SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -29411,14 +29580,17 @@
             "raw_names": "FORT LONG ESTATES",
             "member_count": 21,
             "residential_parcel_count": 21,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Fort Long Estates",
+            "canonical_public_key": "FORT LONG ESTATES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -29559,14 +29731,17 @@
             "raw_names": "MILL CREEK COMMUNITY",
             "member_count": 61,
             "residential_parcel_count": 61,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Mill Creek Community",
+            "canonical_public_key": "MILL CREEK COMMUNITY",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -29881,12 +30056,15 @@
             "residential_parcel_count": 58,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Harper Valley",
+            "canonical_public_key": "HARPER VALLEY",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "Polygon",
@@ -30043,14 +30221,17 @@
             "raw_names": "DEERFIELD ESTATES",
             "member_count": 94,
             "residential_parcel_count": 94,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Deerfield Estates",
+            "canonical_public_key": "DEERFIELD ESTATES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -30383,14 +30564,17 @@
             "raw_names": "CHARLES W. CAMPBELL'S SUBD",
             "member_count": 5,
             "residential_parcel_count": 5,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Charles W. Campbell's",
+            "canonical_public_key": "CHARLES W. CAMPBELL'S SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "page_insufficient_cluster_evidence"
           },
           "geometry": {
             "type": "Polygon",
@@ -30443,12 +30627,15 @@
             "residential_parcel_count": 2,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Walter Huffman Estates",
+            "canonical_public_key": "WALTER HUFFMAN ESTATES",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "under_threshold"
           },
           "geometry": {
             "type": "Polygon",
@@ -30486,7 +30673,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Strickler Subd",
+            "family": "Strickler",
             "family_key": "STRICKLER SUBD",
             "raw_names": "STRICKLER SUBD",
             "member_count": 14,
@@ -30494,6 +30681,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Strickler",
+            "canonical_public_key": "STRICKLER SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -30548,6 +30738,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "George Nelson Pettit",
+            "canonical_public_key": "GEORGE NELSON PETTIT",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -30656,19 +30849,22 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "R. V. Dovel'S Addition",
+            "family": "R. V. Dovel's",
             "family_key": "R. V. DOVEL'S ADDITION",
             "raw_names": "R. V. DOVEL'S ADDITION",
             "member_count": 10,
             "residential_parcel_count": 10,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "R. V. Dovel's",
+            "canonical_public_key": "R. V. DOVEL'S ADDITION",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "owner_correction_suppressed"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -30808,7 +31004,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Hilliard Addition",
+            "family": "Hilliard",
             "family_key": "HILLIARD ADDITION",
             "raw_names": "HILLIARD ADDITION",
             "member_count": 13,
@@ -30816,6 +31012,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Hilliard",
+            "canonical_public_key": "HILLIARD ADDITION",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -30900,6 +31099,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Mack Cubbage & Douglas Will",
+            "canonical_public_key": "MACK CUBBAGE & DOUGLAS WILL",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -30962,19 +31164,22 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "R. C. Cave Subd",
+            "family": "R. C. Cave",
             "family_key": "R. C. CAVE SUBD",
             "raw_names": "R. C. CAVE SUBD",
             "member_count": 6,
             "residential_parcel_count": 6,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "R. C. Cave",
+            "canonical_public_key": "R. C. CAVE SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "owner_correction_suppressed"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -31063,14 +31268,17 @@
             "raw_names": "DAVIS LUCAS & JESSE MCCOY",
             "member_count": 11,
             "residential_parcel_count": 11,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Davis Lucas & Jesse Mccoy",
+            "canonical_public_key": "DAVIS LUCAS & JESSE MCCOY",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -31175,14 +31383,17 @@
             "raw_names": "JAMES L. COMER SUBD",
             "member_count": 3,
             "residential_parcel_count": 3,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "James L. Comer",
+            "canonical_public_key": "JAMES L. COMER SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "page_insufficient_cluster_evidence"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -31319,14 +31530,17 @@
             "raw_names": "SCENIC VIEW ESTATES",
             "member_count": 7,
             "residential_parcel_count": 7,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Scenic View Estates",
+            "canonical_public_key": "SCENIC VIEW ESTATES",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -31368,7 +31582,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Herdman Hilltop Subd",
+            "family": "Herdman Hilltop",
             "family_key": "HERDMAN HILLTOP SUBD",
             "raw_names": "HERDMAN HILLTOP SUBD",
             "member_count": 14,
@@ -31376,6 +31590,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Herdman Hilltop",
+            "canonical_public_key": "HERDMAN HILLTOP SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -31592,7 +31809,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Mountain Home Subd",
+            "family": "Mountain Home",
             "family_key": "MOUNTAIN HOME SUBD",
             "raw_names": "MOUNTAIN HOME SUBD",
             "member_count": 23,
@@ -31600,6 +31817,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Mountain Home",
+            "canonical_public_key": "MOUNTAIN HOME SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -31690,6 +31910,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Mosby's Raiders Hideout",
+            "canonical_public_key": "MOSBY'S RAIDERS HIDEOUT",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -31780,6 +32003,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Helms Mountain",
+            "canonical_public_key": "HELMS MOUNTAIN",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -31890,6 +32116,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Holiday Hill",
+            "canonical_public_key": "HOLIDAY HILL",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -32035,14 +32264,17 @@
             "raw_names": "CUB RUN SUBD",
             "member_count": 5,
             "residential_parcel_count": 5,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Cub Run",
+            "canonical_public_key": "CUB RUN SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "page_insufficient_cluster_evidence"
           },
           "geometry": {
             "type": "Polygon",
@@ -32100,6 +32332,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Ingham Knob",
+            "canonical_public_key": "INGHAM KNOB",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -32253,14 +32488,17 @@
             "raw_names": "CHAPEL VILLAGE",
             "member_count": 10,
             "residential_parcel_count": 10,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Chapel Village",
+            "canonical_public_key": "CHAPEL VILLAGE",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -32332,6 +32570,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Mine Mountain",
+            "canonical_public_key": "MINE MOUNTAIN",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -32524,7 +32765,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Roundhead Mountain Subd",
+            "family": "Roundhead Mountain",
             "family_key": "ROUNDHEAD MOUNTAIN SUBD",
             "raw_names": "ROUNDHEAD MOUNTAIN SUBD",
             "member_count": 120,
@@ -32532,6 +32773,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Roundhead Mountain",
+            "canonical_public_key": "ROUNDHEAD MOUNTAIN SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -32647,14 +32891,17 @@
             "raw_names": "BLUE RIDGE PINES",
             "member_count": 65,
             "residential_parcel_count": 65,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Blue Ridge Pines",
+            "canonical_public_key": "BLUE RIDGE PINES",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -32926,6 +33173,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "The Hawksbill Pines",
+            "canonical_public_key": "THE HAWKSBILL PINES",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -33322,6 +33572,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Turkey Pen Hill",
+            "canonical_public_key": "TURKEY PEN HILL",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -33404,7 +33657,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Shenandoah Rapids Rec. Subd",
+            "family": "Shenandoah Rapids Rec.",
             "family_key": "SHENANDOAH RAPIDS REC. SUBD",
             "raw_names": "SHENANDOAH RAPIDS REC. SUBD",
             "member_count": 25,
@@ -33412,6 +33665,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Shenandoah Rapids Rec.",
+            "canonical_public_key": "SHENANDOAH RAPIDS REC. SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -33604,7 +33860,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "River Hills Subd",
+            "family": "River Hills",
             "family_key": "RIVER HILLS SUBD",
             "raw_names": "RIVER HILLS SUBD",
             "member_count": 121,
@@ -33612,6 +33868,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "River Hills",
+            "canonical_public_key": "RIVER HILLS SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -33804,6 +34063,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah Gap",
+            "canonical_public_key": "SHENANDOAH GAP",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -34896,19 +35158,22 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Tanner'S Ridge Retreat",
+            "family": "Tanner's Ridge Retreat",
             "family_key": "TANNER'S RIDGE RETREAT",
             "raw_names": "TANNER'S RIDGE RETREAT",
             "member_count": 167,
             "residential_parcel_count": 167,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Tanner's Ridge Retreat",
+            "canonical_public_key": "TANNER'S RIDGE RETREAT",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -35380,6 +35645,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Skyline Lakes West",
+            "canonical_public_key": "SKYLINE LAKES WEST",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -35514,6 +35782,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Shenandoah Highlands",
+            "canonical_public_key": "SHENANDOAH HIGHLANDS",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -35759,12 +36030,15 @@
             "residential_parcel_count": 96,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Shipwreck Farms",
+            "canonical_public_key": "SHIPWRECK FARMS",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -36760,7 +37034,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Mill Run Subd",
+            "family": "Mill Run",
             "family_key": "MILL RUN SUBD",
             "raw_names": "MILL RUN SUBD",
             "member_count": 19,
@@ -36768,6 +37042,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Mill Run",
+            "canonical_public_key": "MILL RUN SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -37132,6 +37409,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Fishtrap Hollow",
+            "canonical_public_key": "FISHTRAP HOLLOW",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -37237,12 +37517,15 @@
             "residential_parcel_count": 9,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "NONRESIDENTIAL_OR_MIXED",
+            "canonical_public_name": "Woodland Acres",
+            "canonical_public_key": "WOODLAND ACRES",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "legal_tax_fragment"
           },
           "geometry": {
             "type": "Polygon",
@@ -37292,6 +37575,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Skyline Lakes",
+            "canonical_public_key": "SKYLINE LAKES",
+            "public_parent_key": "",
             "tier": "B",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -37672,7 +37958,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Eppard Subd",
+            "family": "Floyd W. Eppard & Sons",
             "family_key": "EPPARD SUBD",
             "raw_names": "EPPARD SUBD",
             "member_count": 38,
@@ -37680,6 +37966,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Floyd W. Eppard & Sons",
+            "canonical_public_key": "EPPARD SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -38016,7 +38305,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Forest Knolls Subd",
+            "family": "Forest Knolls",
             "family_key": "FOREST KNOLLS SUBD",
             "raw_names": "FOREST KNOLLS SUBD",
             "member_count": 60,
@@ -38024,6 +38313,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Forest Knolls",
+            "canonical_public_key": "FOREST KNOLLS SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -38111,14 +38403,17 @@
             "raw_names": "KANAGY HEIGHTS",
             "member_count": 7,
             "residential_parcel_count": 7,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Kanagy Heights",
+            "canonical_public_key": "KANAGY HEIGHTS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -38208,6 +38503,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Overlook Mountain",
+            "canonical_public_key": "OVERLOOK MOUNTAIN",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -38428,7 +38726,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Grindstone Mt. Subd",
+            "family": "Grindstone Mt.",
             "family_key": "GRINDSTONE MT. SUBD",
             "raw_names": "GRINDSTONE MT. SUBD",
             "member_count": 15,
@@ -38436,6 +38734,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Grindstone Mt.",
+            "canonical_public_key": "GRINDSTONE MT. SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -38534,11 +38835,14 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Bridge of Rocks",
+            "canonical_public_key": "BRIDGE OF ROCKS",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "single_parcel_noise"
+            "public_display_reason": "owner_road_lot_fragment"
           },
           "geometry": {
             "type": "Polygon",
@@ -38576,7 +38880,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Highland Court Subd",
+            "family": "Highland Court",
             "family_key": "HIGHLAND COURT SUBD",
             "raw_names": "HIGHLAND COURT SUBD",
             "member_count": 17,
@@ -38584,6 +38888,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Highland Court",
+            "canonical_public_key": "HIGHLAND COURT SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -38780,19 +39087,22 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Hudson (Spring Valley) Subd",
+            "family": "Hudson (spring Valley)",
             "family_key": "HUDSON (SPRING VALLEY) SUBD",
             "raw_names": "HUDSON (SPRING VALLEY) SUBD",
             "member_count": 89,
             "residential_parcel_count": 89,
-            "residential_subdivision_view": true,
+            "residential_subdivision_view": false,
             "subdivision_class": "modern_subdivision",
-            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Hudson (spring Valley)",
+            "canonical_public_key": "HUDSON (SPRING VALLEY) SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
             "geometry_status": "parcel_union",
-            "public_display_reason": "ok"
+            "public_display_reason": "owner_correction_suppressed"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -39331,12 +39641,15 @@
             "residential_parcel_count": 46,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "NONRESIDENTIAL_OR_MIXED",
+            "canonical_public_name": "Forest Hills",
+            "canonical_public_key": "FOREST HILLS",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "acceptance_gate_suppressed"
           },
           "geometry": {
             "type": "MultiPolygon",
@@ -39737,14 +40050,17 @@
             "raw_names": "BLUE RIDGE TERRACE",
             "member_count": 6,
             "residential_parcel_count": 6,
-            "residential_subdivision_view": false,
+            "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Blue Ridge Terrace",
+            "canonical_public_key": "BLUE RIDGE TERRACE",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok"
           },
           "geometry": {
             "type": "Polygon",
@@ -39778,7 +40094,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Inn Park Subd",
+            "family": "Inn Park",
             "family_key": "INN PARK SUBD",
             "raw_names": "INN PARK SUBD",
             "member_count": 19,
@@ -39786,6 +40102,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Inn Park",
+            "canonical_public_key": "INN PARK SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -40112,7 +40431,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Hawksbill Heights Subd",
+            "family": "Hawksbill Heights",
             "family_key": "HAWKSBILL HEIGHTS SUBD",
             "raw_names": "HAWKSBILL HEIGHTS SUBD",
             "member_count": 12,
@@ -40120,6 +40439,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Hawksbill Heights",
+            "canonical_public_key": "HAWKSBILL HEIGHTS SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -40300,7 +40622,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Spring Avenue Quattlander Subd",
+            "family": "Spring Avenue Quattlander",
             "family_key": "SPRING AVENUE QUATTLANDER SUBD",
             "raw_names": "SPRING AVENUE QUATTLANDER SUBD",
             "member_count": 10,
@@ -40308,6 +40630,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Spring Avenue Quattlander",
+            "canonical_public_key": "SPRING AVENUE QUATTLANDER SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -40424,6 +40749,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Oak Crest",
+            "canonical_public_key": "OAK CREST",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -40580,7 +40908,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Leewood Subd",
+            "family": "Leewood",
             "family_key": "LEEWOOD SUBD",
             "raw_names": "LEEWOOD SUBD",
             "member_count": 7,
@@ -40588,6 +40916,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Leewood",
+            "canonical_public_key": "LEEWOOD SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -40656,7 +40987,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Sunrise Hills Subd",
+            "family": "Sunrise Hills",
             "family_key": "SUNRISE HILLS SUBD",
             "raw_names": "SUNRISE HILLS SUBD",
             "member_count": 17,
@@ -40664,6 +40995,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Sunrise Hills",
+            "canonical_public_key": "SUNRISE HILLS SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -40743,113 +41077,16 @@
           "properties": {
             "layer": "subdivision_families",
             "family": "The Meadows",
-            "family_key": "THE MEADOWS",
-            "raw_names": "THE MEADOWS",
-            "member_count": 16,
-            "residential_parcel_count": 16,
-            "residential_subdivision_view": false,
-            "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
-            "tier": "D",
-            "fill": "#6b4fa8",
-            "stroke": "#3d2a6b",
-            "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
-          },
-          "geometry": {
-            "type": "MultiPolygon",
-            "coordinates": [
-              [
-                [
-                  [
-                    -78.439363511174,
-                    38.661155316341
-                  ],
-                  [
-                    -78.4380053093491,
-                    38.6623416744119
-                  ],
-                  [
-                    -78.4377954426346,
-                    38.6623861383588
-                  ],
-                  [
-                    -78.437772252841,
-                    38.6625503526783
-                  ],
-                  [
-                    -78.4376526072894,
-                    38.6626508409906
-                  ],
-                  [
-                    -78.4371322035232,
-                    38.6622488936134
-                  ],
-                  [
-                    -78.4387888433581,
-                    38.6607997052933
-                  ],
-                  [
-                    -78.439363511174,
-                    38.661155316341
-                  ]
-                ]
-              ],
-              [
-                [
-                  [
-                    -78.4398837078325,
-                    38.66099211463
-                  ],
-                  [
-                    -78.4404732755929,
-                    38.6614034739616
-                  ],
-                  [
-                    -78.4383983259655,
-                    38.6632322372499
-                  ],
-                  [
-                    -78.4377739041534,
-                    38.6627521538462
-                  ],
-                  [
-                    -78.438080818776,
-                    38.6625828315106
-                  ],
-                  [
-                    -78.4381251292054,
-                    38.6624449221058
-                  ],
-                  [
-                    -78.4396811479685,
-                    38.6610599084513
-                  ],
-                  [
-                    -78.4398188361383,
-                    38.6609471312808
-                  ],
-                  [
-                    -78.4398837078325,
-                    38.66099211463
-                  ]
-                ]
-              ]
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "layer": "subdivision_families",
-            "family": "The Meadows Section Ii",
             "family_key": "THE MEADOWS SECTION II",
-            "raw_names": "THE MEADOWS SECTION II",
-            "member_count": 24,
-            "residential_parcel_count": 24,
+            "raw_names": "THE MEADOWS; THE MEADOWS SECTION II",
+            "member_count": 40,
+            "residential_parcel_count": 40,
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "The Meadows",
+            "canonical_public_key": "THE MEADOWS SECTION II",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -40862,8 +41099,20 @@
               [
                 [
                   [
-                    -78.4376526072894,
-                    38.6626508409906
+                    -78.439102104944,
+                    38.6613836468945
+                  ],
+                  [
+                    -78.4380053093491,
+                    38.6623416744119
+                  ],
+                  [
+                    -78.4377954426346,
+                    38.6623861383588
+                  ],
+                  [
+                    -78.437772252841,
+                    38.6625503526783
                   ],
                   [
                     -78.4373079330796,
@@ -40890,16 +41139,32 @@
                     38.6622488936134
                   ],
                   [
-                    -78.4376526072894,
-                    38.6626508409906
+                    -78.4387888433581,
+                    38.6607997052933
+                  ],
+                  [
+                    -78.439363511174,
+                    38.661155316341
+                  ],
+                  [
+                    -78.439102104944,
+                    38.6613836468945
                   ]
                 ]
               ],
               [
                 [
                   [
-                    -78.4383959157871,
-                    38.6632303621641
+                    -78.4398839834272,
+                    38.6609923066577
+                  ],
+                  [
+                    -78.4404732755929,
+                    38.6614034739616
+                  ],
+                  [
+                    -78.4383983259655,
+                    38.6632322372499
                   ],
                   [
                     -78.438979214695,
@@ -40926,28 +41191,48 @@
                     38.6640231641638
                   ],
                   [
-                    -78.4366539955737,
-                    38.6637177442589
+                    -78.436370918619,
+                    38.6638219245821
                   ],
                   [
-                    -78.4377739041534,
-                    38.6627521538462
+                    -78.4367801922144,
+                    38.6636320483672
                   ],
                   [
-                    -78.4383959157871,
-                    38.6632303621641
+                    -78.4379130515747,
+                    38.6626292629088
+                  ],
+                  [
+                    -78.438080818776,
+                    38.6625828315106
+                  ],
+                  [
+                    -78.4381251292054,
+                    38.6624449221058
+                  ],
+                  [
+                    -78.4396811479685,
+                    38.6610599084513
+                  ],
+                  [
+                    -78.4398188361383,
+                    38.6609471312808
+                  ],
+                  [
+                    -78.4398839834272,
+                    38.6609923066577
                   ]
                 ]
               ],
               [
                 [
                   [
-                    -78.4364864328007,
-                    38.6628916998264
+                    -78.4365062380372,
+                    38.6628880728382
                   ],
                   [
-                    -78.4368956705421,
-                    38.662901475761
+                    -78.436916365537,
+                    38.6629065209963
                   ],
                   [
                     -78.4372348410651,
@@ -40966,8 +41251,8 @@
                     38.6631170284814
                   ],
                   [
-                    -78.4364864328007,
-                    38.6628916998264
+                    -78.4365062380372,
+                    38.6628880728382
                   ]
                 ]
               ]
@@ -40978,7 +41263,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "East Gate Subd",
+            "family": "East Gate",
             "family_key": "EAST GATE SUBD",
             "raw_names": "EAST GATE SUBD",
             "member_count": 25,
@@ -40986,6 +41271,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "East Gate",
+            "canonical_public_key": "EAST GATE SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -41154,6 +41442,9 @@
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "canonical_public_name": "Cedar Knoll",
+            "canonical_public_key": "CEDAR KNOLL",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -41266,7 +41557,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Creekside Subd",
+            "family": "Creekside",
             "family_key": "CREEKSIDE SUBD",
             "raw_names": "CREEKSIDE SUBD",
             "member_count": 9,
@@ -41274,6 +41565,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Creekside",
+            "canonical_public_key": "CREEKSIDE SUBD",
+            "public_parent_key": "",
             "tier": "E",
             "fill": "#9ab8b6",
             "stroke": "#2a6b51",
@@ -41324,7 +41618,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "The Ridge At Forest Hills",
+            "family": "The Ridge at Forest Hills",
             "family_key": "THE RIDGE AT FOREST HILLS",
             "raw_names": "THE RIDGE AT FOREST HILLS",
             "member_count": 21,
@@ -41332,6 +41626,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "historic_legal",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "The Ridge at Forest Hills",
+            "canonical_public_key": "THE RIDGE AT FOREST HILLS",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
@@ -41456,7 +41753,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Fairview Subd",
+            "family": "Fairview",
             "family_key": "FAIRVIEW SUBD",
             "raw_names": "FAIRVIEW SUBD",
             "member_count": 66,
@@ -41464,6 +41761,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Fairview",
+            "canonical_public_key": "FAIRVIEW SUBD",
+            "public_parent_key": "",
             "tier": "C",
             "fill": "#7ab8a4",
             "stroke": "#226347",
@@ -41723,12 +42023,15 @@
             "residential_parcel_count": 21,
             "residential_subdivision_view": false,
             "subdivision_class": "historic_legal",
-            "public_identity_class": "PRIVATE_FAMILY_OWNER_DIVISION",
+            "public_identity_class": "UNRESOLVED",
+            "canonical_public_name": "Fox Meadow",
+            "canonical_public_key": "FOX MEADOW",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#6b4fa8",
             "stroke": "#3d2a6b",
             "geometry_status": "parcel_union",
-            "public_display_reason": "owner_person_name"
+            "public_display_reason": "ok_residential_cluster"
           },
           "geometry": {
             "type": "Polygon",
@@ -41858,7 +42161,7 @@
           "type": "Feature",
           "properties": {
             "layer": "subdivision_families",
-            "family": "Luray Landing Subd",
+            "family": "Luray Landing",
             "family_key": "LURAY LANDING SUBD",
             "raw_names": "LURAY LANDING SUBD",
             "member_count": 26,
@@ -41866,6 +42169,9 @@
             "residential_subdivision_view": true,
             "subdivision_class": "modern_subdivision",
             "public_identity_class": "PUBLIC_RESIDENTIAL_SUBDIVISION",
+            "canonical_public_name": "Luray Landing",
+            "canonical_public_key": "LURAY LANDING SUBD",
+            "public_parent_key": "",
             "tier": "D",
             "fill": "#8ab8ae",
             "stroke": "#26674c",
@@ -223793,7 +224099,7 @@
             "community_name": "Luray",
             "community_id": "luray",
             "orientation_only": true,
-            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) · Luray town GEOID 5147528",
+            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) \u00b7 Luray town GEOID 5147528",
             "jurisdiction": "Page County, Virginia",
             "orientation_outside_county": false
           },
@@ -223811,7 +224117,7 @@
             "community_name": "Shenandoah",
             "community_id": "shenandoah",
             "orientation_only": true,
-            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) · Shenandoah town GEOID 5171776",
+            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) \u00b7 Shenandoah town GEOID 5171776",
             "jurisdiction": "Page County, Virginia",
             "orientation_outside_county": false
           },
@@ -223829,7 +224135,7 @@
             "community_name": "Stanley",
             "community_id": "stanley",
             "orientation_only": true,
-            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) · Stanley town GEOID 5175024",
+            "source": "U.S. Census Bureau Gazetteer (Gaz_places_national) \u00b7 Stanley town GEOID 5175024",
             "jurisdiction": "Page County, Virginia",
             "orientation_outside_county": false
           },

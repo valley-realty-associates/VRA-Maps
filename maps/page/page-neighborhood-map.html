@@ -347,7 +347,6 @@ function fitMapToData() {
   }
   refreshSubdivisionLabels();
   refreshNeighborhoodLabel();
-  syncFabricLayerVisibility();
 }
 
 window.addEventListener("load", () => {
@@ -372,6 +371,8 @@ let nbLabelLayer = L.layerGroup().addTo(map);
 let nbOutlineLayer = L.layerGroup().addTo(map);
 let labelsEnabled = true;
 let viewMode = "subdivisions";
+let fabricLayerEnabled = false;
+const FABRIC_MIN_ZOOM = 12;
 let selectedNeighborhood = null;
 let selectedSubdivision = null;
 const subdivisionCatalog = [];
@@ -807,6 +808,16 @@ function buildNeighborhoodOutline(neighborhood) {
   }
 }
 
+function syncFabricLayerVisibility() {
+  if (!layers.noSub) return;
+  const show = fabricLayerEnabled && viewMode === "subdivisions" && map.getZoom() >= FABRIC_MIN_ZOOM;
+  if (show) {
+    if (!map.hasLayer(layers.noSub)) layers.noSub.addTo(map);
+  } else if (map.hasLayer(layers.noSub)) {
+    map.removeLayer(layers.noSub);
+  }
+}
+
 function bindToggle(id, layer) {
   const el = document.getElementById(id);
   if (!el || !layer) return;
@@ -814,21 +825,6 @@ function bindToggle(id, layer) {
     if (el.checked) map.addLayer(layer);
     else map.removeLayer(layer);
   });
-}
-
-/** Fabric parcel circles: checkbox = enabled; zoom gates actual draw at county scale. */
-const FABRIC_MIN_ZOOM = 12;
-
-function syncFabricLayerVisibility() {
-  if (!layers.noSub || !map) return;
-  const el = document.getElementById("tog-nosub");
-  const enabled = !!(el && el.checked);
-  const shouldShow = enabled && map.getZoom() >= FABRIC_MIN_ZOOM;
-  if (shouldShow) {
-    if (!map.hasLayer(layers.noSub)) map.addLayer(layers.noSub);
-  } else if (map.hasLayer(layers.noSub)) {
-    map.removeLayer(layers.noSub);
-  }
 }
 
 function setHeaderText(id, text, muted) {
@@ -1185,6 +1181,7 @@ function setViewMode(mode) {
   viewMode = mode;
   syncFamilyLayerMembership();
   rebuildMemberHitLayer();
+  syncFabricLayerVisibility();
   document.getElementById("view-subs").classList.toggle("is-active", mode === "subdivisions");
   document.getElementById("view-nb").classList.toggle("is-active", mode === "neighborhoods");
   document.getElementById("view-subs").setAttribute("aria-pressed", mode === "subdivisions");
@@ -1314,6 +1311,7 @@ Promise.all([
   });
 
   layers.noSub = L.geoJSON(LAY.no_verified_subdivision, {
+    pointToLayer: (f, latlng) => L.circleMarker(latlng, styles.noSub),
     pointToLayer: (f, latlng) => L.circleMarker(latlng, ((f.properties || {}).fabric_category === "no_verified_identity") ? styles.noSub : styles.fabric),
     onEachFeature: (f, l) => { l.bindPopup(noSubPopup(f)); }
   });
@@ -1332,7 +1330,12 @@ Promise.all([
   bindToggle("tog-subs", layers.subs);
   const nosubTog = document.getElementById("tog-nosub");
   if (nosubTog && layers.noSub) {
-    nosubTog.addEventListener("change", () => syncFabricLayerVisibility());
+    nosubTog.checked = false;
+    fabricLayerEnabled = false;
+    nosubTog.addEventListener("change", () => {
+      fabricLayerEnabled = nosubTog.checked;
+      syncFabricLayerVisibility();
+    });
   }
   bindToggle("tog-roads", layers.roads);
 
@@ -1388,6 +1391,7 @@ Promise.all([
     return _zoomToNeighborhood(name);
   };
 
+  syncFabricLayerVisibility();
   buildPlaceCatalogs();
   renderPlaceList();
 
