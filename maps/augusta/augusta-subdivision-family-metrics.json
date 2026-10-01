@@ -5,103 +5,22 @@
   },
   "families": [
     {
-      "family_key": "VILLAGE ON GOOSE CREEK",
-      "public_name": "Village on Goose Creek",
-      "canonical_public_name": "Village on Goose Creek",
-      "residential_subdivision_view": true,
-      "member_parcels": 17,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 13416.5,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "1B VILLAGE ON GOOSE CREEK SEC",
-        "2A VILLAGE ON GOOSE CREEK SEC"
-      ]
-    },
-    {
-      "family_key": "FOREST SPRINGS ESTATES",
-      "public_name": "Forest Springs Estates",
-      "canonical_public_name": "Forest Springs Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 189,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 19994.0,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "195 FOREST SPRINGS ESTATES SEC",
-        "47 FOREST SPRINGS ESTATE SEC"
-      ]
-    },
-    {
-      "family_key": "21 VIRGINIA MANOR SEC",
-      "public_name": "Virginia Manor",
-      "canonical_public_name": "Virginia Manor",
-      "residential_subdivision_view": true,
-      "member_parcels": 41,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 9583.2,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "21 VIRGINIA MANOR SEC"
-      ]
-    },
-    {
       "family_key": "4 CHETOLA ESTATES SEC",
       "public_name": "Chetola Estates",
       "canonical_public_name": "Chetola Estates",
       "residential_subdivision_view": true,
       "member_parcels": 7,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 217800.0,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
         "4 CHETOLA ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "2 16 DOMINION HEIGHTS SEC",
-      "public_name": "Dominion Heights",
-      "canonical_public_name": "Dominion Heights",
-      "residential_subdivision_view": true,
-      "member_parcels": 29,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 11891.9,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "2 16 DOMINION HEIGHTS SEC"
-      ]
-    },
-    {
-      "family_key": "4 35 CRAWFORD MANOR SEC",
-      "public_name": "Crawford Manor",
-      "canonical_public_name": "Crawford Manor",
-      "residential_subdivision_view": true,
-      "member_parcels": 113,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 22999.7,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "4 35 CRAWFORD MANOR SEC"
-      ]
-    },
-    {
-      "family_key": "1 MARKELS WOODS SEC",
-      "public_name": "Markels Woods",
-      "canonical_public_name": "Markels Woods",
-      "residential_subdivision_view": true,
-      "member_parcels": 20,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 65187.5,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "1 MARKELS WOODS SEC"
       ]
     },
     {
@@ -111,158 +30,16 @@
       "residential_subdivision_view": true,
       "member_parcels": 7,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 19776.2,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "6 3 CRAIG ADDITION",
-        "9 1 CRAIG ADD"
-      ]
-    },
-    {
-      "family_key": "23 HERMITAGE ESTATES SEC",
-      "public_name": "Hermitage Estates",
-      "canonical_public_name": "Hermitage Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 22,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 133250.0,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "23 HERMITAGE ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "EMERALD HILLS SEC",
-      "public_name": "Emerald Hills",
-      "canonical_public_name": "Emerald Hills",
-      "residential_subdivision_view": true,
-      "member_parcels": 170,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 18948.6,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "EMERALD HILLS SEC",
-        "LOT 132 SEC 4 EMERALD HILLS SUBD",
-        "LOT 27 SEC 1 EMERALD HILLS SUBD",
-        "LOT 29 SEC 1 EMERALD HILLS SUBD",
-        "LOT 5 SEC 1 EMERALD HILLS SUBD",
-        "SEC 1 LOT 30 EMERALD HILLS SUBD",
-        "SEC 1 LOT 31 EMERALD HILLS SUBD",
-        "SEC 1 LOT 32 EMERALD HILLS SUBD",
-        "SEC 1 LOT 33 EMERALD HILLS SUBD",
-        "SEC 1 LOT 34 EMERALD HILLS SUBD",
-        "SEC 1 LOT 35 EMERALD HILLS SUBD",
-        "SEC 1 LOT 36 EMERALD HILLS SUBD",
-        "SEC 1 LOT 38 EMERALD HILLS SUBD",
-        "SEC 1 LOT 40 EMERALD HILLS SUBD",
-        "SEC 1 LOT 41 EMERALD HILLS SUBD",
-        "SEC 1 LOT 43 EMERALD HILLS SUBD",
-        "SEC 1 LOT 45 EMERALD HILLS SUBD",
-        "SEC 1 LOT 46 EMERALD HILLS SUBD",
-        "SEC 1 LOT 47 EMERALD HILLS SUBD",
-        "SEC 1 LOT 48 EMERALD HILLS SUBD",
-        "SEC 1 LOT 49 EMERALD HILLS SUBD",
-        "SEC 2 LOT 50 EMERALD HILLS SUBD",
-        "SEC 2 LOT 51 EMERALD HILLS SUBD",
-        "SEC 2 LOT 54 EMERALD HILLS SUBD",
-        "SEC 2 LOT 55 EMERALD HILLS SUBD",
-        "SEC 2 LOT 56 EMERALD HILLS SUBD",
-        "SEC 2 LOT 57 EMERALD HILLS SUBD",
-        "SEC 2 LOT 59 EMERALD HILLS SUBD",
-        "SEC 2 LOT 60 EMERALD HILLS SUBD",
-        "SEC 2 LOT 61 EMERALD HILLS SUBD",
-        "SEC 2 LOT 62 EMERALD HILLS SUBD",
-        "SEC 2 LOT 63 EMERALD HILLS SUBD"
-      ]
-    },
-    {
-      "family_key": "13 ENCHANTED VIEW ESTATES SEC",
-      "public_name": "Enchanted View Estates",
-      "canonical_public_name": "Enchanted View Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 50,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 8864.5,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "13 ENCHANTED VIEW ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "2 32 STRATFORD ESTATES SEC",
-      "public_name": "Stratford Estates",
-      "canonical_public_name": "Stratford Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 10,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 25439.0,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "2 26 STRATFORD EST SEC",
-        "2 32 STRATFORD ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "10 TWIN HILLS ESTATES SEC",
-      "public_name": "Twin Hills Estates",
-      "canonical_public_name": "Twin Hills Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 8,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 217800.0,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "10 TWIN HILLS ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "2 7 MEADOW RIDGE SEC",
-      "public_name": "Meadow Ridge",
-      "canonical_public_name": "Meadow Ridge",
-      "residential_subdivision_view": true,
-      "member_parcels": 37,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 19558.4,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "2 7 MEADOW RIDGE SEC"
-      ]
-    },
-    {
-      "family_key": "65 ROUND HILL ESTATES SEC",
-      "public_name": "Round Hill Estates",
-      "canonical_public_name": "Round Hill Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 42,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 9953.5,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "65 ROUND HILL ESTATES SEC"
-      ]
-    },
-    {
-      "family_key": "3 1 ROSE ADDITION",
-      "public_name": "Rose",
-      "canonical_public_name": "Rose",
-      "residential_subdivision_view": true,
-      "member_parcels": 23,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 9234.7,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "2 1314 ROSE ADD",
-        "3 1 ROSE ADDITION",
-        "9 BLK 1 ROSE ADDITION"
+        "6 3 CRAIG ADDITION"
       ]
     },
     {
@@ -272,67 +49,112 @@
       "residential_subdivision_view": true,
       "member_parcels": 49,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 52707.6,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
         "2 13 CRANBERRY HILLS SEC"
       ]
     },
     {
-      "family_key": "21 WILLOW SPRINGS SEC",
-      "public_name": "Willow Springs",
-      "canonical_public_name": "Willow Springs",
+      "family_key": "4 35 CRAWFORD MANOR SEC",
+      "public_name": "Crawford Manor",
+      "canonical_public_name": "Crawford Manor",
       "residential_subdivision_view": true,
-      "member_parcels": 19,
+      "member_parcels": 113,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
-      "median_lot_sqft": 47828.9,
+      "median_lot_sqft": 22999.7,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "21 WILLOW SPRINGS SEC"
+        "4 35 CRAWFORD MANOR SEC"
       ]
     },
     {
-      "family_key": "32 HUNTINGTON HILLS SEC",
-      "public_name": "Huntington Hills",
-      "canonical_public_name": "Huntington Hills",
+      "family_key": "2 16 DOMINION HEIGHTS SEC",
+      "public_name": "Dominion Heights",
+      "canonical_public_name": "Dominion Heights",
       "residential_subdivision_view": true,
-      "member_parcels": 33,
+      "member_parcels": 29,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
-      "median_lot_sqft": 142876.8,
+      "median_lot_sqft": 11891.9,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "32 HUNTINGTON HILLS SEC"
+        "2 16 DOMINION HEIGHTS SEC"
       ]
     },
     {
-      "family_key": "25 VILLAGE GREEN AT THE LAKE PHASE",
-      "public_name": "Village Green at the Lake",
-      "canonical_public_name": "Village Green at the Lake",
+      "family_key": "EMERALD HILLS SEC",
+      "public_name": "Emerald Hills",
+      "canonical_public_name": "Emerald Hills",
       "residential_subdivision_view": true,
-      "member_parcels": 49,
+      "member_parcels": 170,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
-      "median_lot_sqft": 14157.0,
+      "median_lot_sqft": 18948.6,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "25 VILLAGE GREEN AT THE LAKE PHASE"
+        "EMERALD HILLS SEC"
       ]
     },
     {
-      "family_key": "15 SHANNON LEE AT KENNEDY CREEK SECTION",
-      "public_name": "Shannon Lee at Kennedy Creek",
-      "canonical_public_name": "Shannon Lee at Kennedy Creek",
+      "family_key": "13 ENCHANTED VIEW ESTATES SEC",
+      "public_name": "Enchanted View Estates",
+      "canonical_public_name": "Enchanted View Estates",
       "residential_subdivision_view": true,
-      "member_parcels": 30,
+      "member_parcels": 50,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
-      "median_lot_sqft": 45302.4,
+      "median_lot_sqft": 8864.5,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "15 SHANNON LEE AT KENNEDY CREEK SECTION"
+        "13 ENCHANTED VIEW ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "FOREST SPRINGS ESTATES",
+      "public_name": "Forest Springs Estates",
+      "canonical_public_name": "Forest Springs Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 189,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 19994.0,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "195 FOREST SPRINGS ESTATES SEC",
+        "47 FOREST SPRINGS ESTATE SEC"
       ]
     },
     {
@@ -342,39 +164,16 @@
       "residential_subdivision_view": true,
       "member_parcels": 41,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 57412.1,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
         "27 HAMPTONS AT KENNEDY CREEK SEC"
-      ]
-    },
-    {
-      "family_key": "26 IVY RIDGE TOWNHOMES SEC",
-      "public_name": "Ivy Ridge Townhomes",
-      "canonical_public_name": "Ivy Ridge Townhomes",
-      "residential_subdivision_view": true,
-      "member_parcels": 31,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 8537.8,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "26 IVY RIDGE TOWNHOMES SEC"
-      ]
-    },
-    {
-      "family_key": "9 PANORAMA ESTATES SEC",
-      "public_name": "Panorama Estates",
-      "canonical_public_name": "Panorama Estates",
-      "residential_subdivision_view": true,
-      "member_parcels": 29,
-      "median_sale_price": null,
-      "median_home_sqft": null,
-      "median_lot_sqft": 22999.7,
-      "qualifying_sales_count": 0,
-      "aggregated_from_keys": [
-        "9 PANORAMA ESTATES SEC"
       ]
     },
     {
@@ -384,26 +183,54 @@
       "residential_subdivision_view": true,
       "member_parcels": 13,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 48395.2,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
         "2 HARLEY CROSSING SEC"
       ]
     },
     {
-      "family_key": "39 RIVER HILLS SECTION",
-      "public_name": "River Hills",
-      "canonical_public_name": "River Hills",
+      "family_key": "23 HERMITAGE ESTATES SEC",
+      "public_name": "Hermitage Estates",
+      "canonical_public_name": "Hermitage Estates",
       "residential_subdivision_view": true,
-      "member_parcels": 17,
+      "member_parcels": 22,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
-      "median_lot_sqft": 21388.0,
+      "median_lot_sqft": 133250.0,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "1 RIVER HILLS SEC",
-        "39 RIVER HILLS SECTION"
+        "23 HERMITAGE ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "32 HUNTINGTON HILLS SEC",
+      "public_name": "Huntington Hills",
+      "canonical_public_name": "Huntington Hills",
+      "residential_subdivision_view": true,
+      "member_parcels": 33,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 142876.8,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "32 HUNTINGTON HILLS SEC"
       ]
     },
     {
@@ -413,12 +240,187 @@
       "residential_subdivision_view": true,
       "member_parcels": 26,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 19994.0,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
-        "28 IVY RIDGE ESTATES SEC",
-        "37 IVY RIDGE ESTATES SECTION"
+        "28 IVY RIDGE ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "26 IVY RIDGE TOWNHOMES SEC",
+      "public_name": "Ivy Ridge Townhomes",
+      "canonical_public_name": "Ivy Ridge Townhomes",
+      "residential_subdivision_view": true,
+      "member_parcels": 31,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 8537.8,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "26 IVY RIDGE TOWNHOMES SEC"
+      ]
+    },
+    {
+      "family_key": "1 MARKELS WOODS SEC",
+      "public_name": "Markels Woods",
+      "canonical_public_name": "Markels Woods",
+      "residential_subdivision_view": true,
+      "member_parcels": 20,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 65187.5,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "1 MARKELS WOODS SEC"
+      ]
+    },
+    {
+      "family_key": "2 7 MEADOW RIDGE SEC",
+      "public_name": "Meadow Ridge",
+      "canonical_public_name": "Meadow Ridge",
+      "residential_subdivision_view": true,
+      "member_parcels": 37,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 19558.4,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "2 7 MEADOW RIDGE SEC"
+      ]
+    },
+    {
+      "family_key": "9 PANORAMA ESTATES SEC",
+      "public_name": "Panorama Estates",
+      "canonical_public_name": "Panorama Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 29,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 22999.7,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "9 PANORAMA ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "39 RIVER HILLS SECTION",
+      "public_name": "River Hills",
+      "canonical_public_name": "River Hills",
+      "residential_subdivision_view": true,
+      "member_parcels": 17,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 21388.0,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "39 RIVER HILLS SECTION"
+      ]
+    },
+    {
+      "family_key": "3 1 ROSE ADDITION",
+      "public_name": "Rose",
+      "canonical_public_name": "Rose",
+      "residential_subdivision_view": true,
+      "member_parcels": 23,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 9234.7,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "3 1 ROSE ADDITION"
+      ]
+    },
+    {
+      "family_key": "65 ROUND HILL ESTATES SEC",
+      "public_name": "Round Hill Estates",
+      "canonical_public_name": "Round Hill Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 42,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 9953.5,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "65 ROUND HILL ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "15 SHANNON LEE AT KENNEDY CREEK SECTION",
+      "public_name": "Shannon Lee at Kennedy Creek",
+      "canonical_public_name": "Shannon Lee at Kennedy Creek",
+      "residential_subdivision_view": true,
+      "member_parcels": 30,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 45302.4,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "15 SHANNON LEE AT KENNEDY CREEK SECTION"
+      ]
+    },
+    {
+      "family_key": "2 32 STRATFORD ESTATES SEC",
+      "public_name": "Stratford Estates",
+      "canonical_public_name": "Stratford Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 10,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 25439.0,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "2 32 STRATFORD ESTATES SEC"
       ]
     },
     {
@@ -428,11 +430,112 @@
       "residential_subdivision_view": true,
       "member_parcels": 34,
       "median_sale_price": null,
+      "recent_sale_price": null,
       "median_home_sqft": null,
       "median_lot_sqft": 7927.9,
       "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
       "aggregated_from_keys": [
         "4 THE VILLAGE AT MINT SPRING SEC"
+      ]
+    },
+    {
+      "family_key": "10 TWIN HILLS ESTATES SEC",
+      "public_name": "Twin Hills Estates",
+      "canonical_public_name": "Twin Hills Estates",
+      "residential_subdivision_view": true,
+      "member_parcels": 8,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 217800.0,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "10 TWIN HILLS ESTATES SEC"
+      ]
+    },
+    {
+      "family_key": "25 VILLAGE GREEN AT THE LAKE PHASE",
+      "public_name": "Village Green at the Lake",
+      "canonical_public_name": "Village Green at the Lake",
+      "residential_subdivision_view": true,
+      "member_parcels": 49,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 14157.0,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "25 VILLAGE GREEN AT THE LAKE PHASE"
+      ]
+    },
+    {
+      "family_key": "VILLAGE ON GOOSE CREEK",
+      "public_name": "Village on Goose Creek",
+      "canonical_public_name": "Village on Goose Creek",
+      "residential_subdivision_view": true,
+      "member_parcels": 17,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 13416.5,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "1B VILLAGE ON GOOSE CREEK SEC",
+        "2A VILLAGE ON GOOSE CREEK SEC"
+      ]
+    },
+    {
+      "family_key": "21 VIRGINIA MANOR SEC",
+      "public_name": "Virginia Manor",
+      "canonical_public_name": "Virginia Manor",
+      "residential_subdivision_view": true,
+      "member_parcels": 41,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 9583.2,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "21 VIRGINIA MANOR SEC"
+      ]
+    },
+    {
+      "family_key": "21 WILLOW SPRINGS SEC",
+      "public_name": "Willow Springs",
+      "canonical_public_name": "Willow Springs",
+      "residential_subdivision_view": true,
+      "member_parcels": 19,
+      "median_sale_price": null,
+      "recent_sale_price": null,
+      "median_home_sqft": null,
+      "median_lot_sqft": 47828.9,
+      "qualifying_sales_count": 0,
+      "verified_sale_count": 0,
+      "show_limited_caution": false,
+      "limited_caution_label": "",
+      "sale_label": "Median sale price",
+      "aggregated_from_keys": [
+        "21 WILLOW SPRINGS SEC"
       ]
     }
   ]
