@@ -661,10 +661,15 @@ function showCommunityProfile(name) {
   if (!town || !town.demographics) return false;
   profile.classList.remove("community-profile--unavailable");
   const demo = town.demographics;
-  const established = town.established && town.established.status === "verified" && town.established.value;
-  const context = established
-    ? "Established " + town.established.value + " · Incorporated " + town.incorporated.year + " · Shenandoah County"
-    : "Incorporated " + town.incorporated.year + " · Shenandoah County";
+  let context;
+  if (town.place_type === "Census-Designated Place") {
+    context = "Census-Designated Place · Shenandoah County";
+  } else {
+    const established = town.established && town.established.status === "verified" && town.established.value;
+    context = established
+      ? "Established " + town.established.value + " · Incorporated " + town.incorporated.year + " · Shenandoah County"
+      : "Incorporated " + town.incorporated.year + " · Shenandoah County";
+  }
   const source = (town._sourceLine || "U.S. Census Bureau · ACS 2020–2024 5-Year Estimates");
   document.getElementById("cp-title").textContent = town.town + " · Community profile";
   document.getElementById("cp-context").textContent = context;
