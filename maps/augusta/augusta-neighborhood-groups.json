@@ -1,6 +1,6 @@
 {
   "generated_from": "VRA-AUGUSTA-MAP-2026-09-30",
-  "subdivision_count": 39,
+  "subdivision_count": 32,
   "polygon_count": 0,
   "group_count": 21,
   "crosswalk": {
@@ -193,7 +193,7 @@
       "owner_review_role": "",
       "notes": "Resort CDP that straddles Augusta and Nelson counties. Confirm county, HOA, and ski-resort rules by parcel."
     },
-    "21 Virginia Manor Sec": {
+    "Virginia Manor": {
       "subdivision_family": "21 VIRGINIA MANOR SEC",
       "residential_parcels": 41,
       "parent_neighborhood": "",
@@ -202,7 +202,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "4 Chetola Estates Sec": {
+    "Chetola Estates": {
       "subdivision_family": "4 CHETOLA ESTATES SEC",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -211,7 +211,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2 16 Dominion Heights Sec": {
+    "Dominion Heights": {
       "subdivision_family": "2 16 DOMINION HEIGHTS SEC",
       "residential_parcels": 29,
       "parent_neighborhood": "",
@@ -220,7 +220,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "4 35 Crawford Manor Sec": {
+    "Crawford Manor": {
       "subdivision_family": "4 35 CRAWFORD MANOR SEC",
       "residential_parcels": 113,
       "parent_neighborhood": "",
@@ -229,7 +229,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "1 Markels Woods Sec": {
+    "Markels Woods": {
       "subdivision_family": "1 MARKELS WOODS SEC",
       "residential_parcels": 20,
       "parent_neighborhood": "",
@@ -238,16 +238,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "195 Forest Springs Estates Sec": {
+    "Forest Springs Estates": {
       "subdivision_family": "195 FOREST SPRINGS ESTATES SEC",
-      "residential_parcels": 134,
+      "residential_parcels": 161,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "47 Forest Springs Estate Sec": {
+    "Forest Springs Estate": {
       "subdivision_family": "47 FOREST SPRINGS ESTATE SEC",
       "residential_parcels": 28,
       "parent_neighborhood": "",
@@ -256,7 +256,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "6 3 Craig Addition": {
+    "Craig": {
       "subdivision_family": "6 3 CRAIG ADDITION",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -265,16 +265,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2 14 Forest Springs Est Sec": {
-      "subdivision_family": "2 14 FOREST SPRINGS EST SEC",
-      "residential_parcels": 27,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "23 Hermitage Estates Sec": {
+    "Hermitage Estates": {
       "subdivision_family": "23 HERMITAGE ESTATES SEC",
       "residential_parcels": 22,
       "parent_neighborhood": "",
@@ -283,16 +274,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Emerald Hills Sec": {
+    "Emerald Hills": {
       "subdivision_family": "EMERALD HILLS SEC",
-      "residential_parcels": 139,
+      "residential_parcels": 170,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "13 Enchanted View Estates Sec": {
+    "Enchanted View Estates": {
       "subdivision_family": "13 ENCHANTED VIEW ESTATES SEC",
       "residential_parcels": 50,
       "parent_neighborhood": "",
@@ -301,16 +292,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2 32 Stratford Estates Sec": {
+    "Stratford Estates": {
       "subdivision_family": "2 32 STRATFORD ESTATES SEC",
-      "residential_parcels": 9,
+      "residential_parcels": 10,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "10 Twin Hills Estates Sec": {
+    "Twin Hills Estates": {
       "subdivision_family": "10 TWIN HILLS ESTATES SEC",
       "residential_parcels": 8,
       "parent_neighborhood": "",
@@ -319,7 +310,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2 7 Meadow Ridge Sec": {
+    "Meadow Ridge": {
       "subdivision_family": "2 7 MEADOW RIDGE SEC",
       "residential_parcels": 37,
       "parent_neighborhood": "",
@@ -328,7 +319,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "65 Round Hill Estates Sec": {
+    "Round Hill Estates": {
       "subdivision_family": "65 ROUND HILL ESTATES SEC",
       "residential_parcels": 42,
       "parent_neighborhood": "",
@@ -337,25 +328,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "7 Howes Addition": {
-      "subdivision_family": "7 HOWES ADDITION",
-      "residential_parcels": 6,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "3 1 Rose Addition": {
+    "Rose": {
       "subdivision_family": "3 1 ROSE ADDITION",
-      "residential_parcels": 10,
+      "residential_parcels": 23,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "2 13 Cranberry Hills Sec": {
+    "Cranberry Hills": {
       "subdivision_family": "2 13 CRANBERRY HILLS SEC",
       "residential_parcels": 49,
       "parent_neighborhood": "",
@@ -364,25 +346,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "4 4 Moore Addition": {
-      "subdivision_family": "4 4 MOORE ADDITION",
-      "residential_parcels": 11,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "1 13 Spitler Addition": {
-      "subdivision_family": "1 13 SPITLER ADDITION",
-      "residential_parcels": 19,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "21 Willow Springs Sec": {
+    "Willow Springs": {
       "subdivision_family": "21 WILLOW SPRINGS SEC",
       "residential_parcels": 19,
       "parent_neighborhood": "",
@@ -391,7 +355,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "32 Huntington Hills Sec": {
+    "Huntington Hills": {
       "subdivision_family": "32 HUNTINGTON HILLS SEC",
       "residential_parcels": 33,
       "parent_neighborhood": "",
@@ -400,7 +364,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "25 Village Green At The Lake Phase": {
+    "Village Green at the Lake": {
       "subdivision_family": "25 VILLAGE GREEN AT THE LAKE PHASE",
       "residential_parcels": 49,
       "parent_neighborhood": "",
@@ -409,7 +373,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "15 Shannon Lee At Kennedy Creek Section": {
+    "Shannon Lee at Kennedy Creek": {
       "subdivision_family": "15 SHANNON LEE AT KENNEDY CREEK SECTION",
       "residential_parcels": 30,
       "parent_neighborhood": "",
@@ -418,7 +382,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "27 Hamptons At Kennedy Creek Sec": {
+    "Hamptons at Kennedy Creek": {
       "subdivision_family": "27 HAMPTONS AT KENNEDY CREEK SEC",
       "residential_parcels": 41,
       "parent_neighborhood": "",
@@ -427,7 +391,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "1B Village On Goose Creek Sec": {
+    "B Village on Goose Creek": {
       "subdivision_family": "1B VILLAGE ON GOOSE CREEK SEC",
       "residential_parcels": 8,
       "parent_neighborhood": "",
@@ -436,7 +400,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2A Village On Goose Creek Sec": {
+    "A Village on Goose Creek": {
       "subdivision_family": "2A VILLAGE ON GOOSE CREEK SEC",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -445,7 +409,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "26 Ivy Ridge Townhomes Sec": {
+    "Ivy Ridge Townhomes": {
       "subdivision_family": "26 IVY RIDGE TOWNHOMES SEC",
       "residential_parcels": 31,
       "parent_neighborhood": "",
@@ -454,7 +418,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "20 Ivy Ridge Commer Park Sec": {
+    "Ivy Ridge Commer Park": {
       "subdivision_family": "20 IVY RIDGE COMMER PARK SEC",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -463,7 +427,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "9 Panorama Estates Sec": {
+    "Panorama Estates": {
       "subdivision_family": "9 PANORAMA ESTATES SEC",
       "residential_parcels": 29,
       "parent_neighborhood": "",
@@ -472,7 +436,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "26 Interstate Business Park Sec": {
+    "Interstate Business Park": {
       "subdivision_family": "26 INTERSTATE BUSINESS PARK SEC",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -481,7 +445,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "2 Harley Crossing Sec": {
+    "Harley Crossing": {
       "subdivision_family": "2 HARLEY CROSSING SEC",
       "residential_parcels": 13,
       "parent_neighborhood": "",
@@ -490,52 +454,25 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "39 River Hills Section": {
+    "River Hills": {
       "subdivision_family": "39 RIVER HILLS SECTION",
-      "residential_parcels": 11,
+      "residential_parcels": 17,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "1 River Hills Sec": {
-      "subdivision_family": "1 RIVER HILLS SEC",
-      "residential_parcels": 6,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "37 Ivy Ridge Estates Section": {
-      "subdivision_family": "37 IVY RIDGE ESTATES SECTION",
-      "residential_parcels": 12,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "38 W Rt 631 Ivy Ridge Dev Sec": {
-      "subdivision_family": "38 W RT 631 IVY RIDGE DEV SEC",
-      "residential_parcels": 7,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "28 Ivy Ridge Estates Sec": {
+    "Ivy Ridge Estates": {
       "subdivision_family": "28 IVY RIDGE ESTATES SEC",
-      "residential_parcels": 14,
+      "residential_parcels": 26,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "4 The Village At Mint Spring Sec": {
+    "The Village at Mint Spring": {
       "subdivision_family": "4 THE VILLAGE AT MINT SPRING SEC",
       "residential_parcels": 34,
       "parent_neighborhood": "",

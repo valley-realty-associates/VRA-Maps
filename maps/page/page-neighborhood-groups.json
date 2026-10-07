@@ -1,6 +1,6 @@
 {
   "generated_from": "VRA-PAGE-MAP-2026-09-30",
-  "subdivision_count": 47,
+  "subdivision_count": 67,
   "polygon_count": 0,
   "group_count": 3,
   "crosswalk": {
@@ -31,7 +31,7 @@
       "owner_review_role": "",
       "notes": "Page County town between Luray and Shenandoah on US-340."
     },
-    "Jesse Keyser Subd": {
+    "Jesse Keyser": {
       "subdivision_family": "JESSE KEYSER SUBD",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -40,7 +40,43 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Shenandoah River Lodge Subd": {
+    "Lorelei Estates": {
+      "subdivision_family": "LORELEI ESTATES",
+      "residential_parcels": 65,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Shenandoah Ridge": {
+      "subdivision_family": "SHENANDOAH RIDGE",
+      "residential_parcels": 41,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Page Valley Estates": {
+      "subdivision_family": "PAGE VALLEY ESTATES",
+      "residential_parcels": 127,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Serenity Ridge Association": {
+      "subdivision_family": "SERENITY RIDGE ASSOCIATION",
+      "residential_parcels": 45,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Shenandoah River Lodge": {
       "subdivision_family": "SHENANDOAH RIVER LODGE SUBD",
       "residential_parcels": 23,
       "parent_neighborhood": "",
@@ -49,7 +85,70 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "River Heights Subd": {
+    "Lazy River Estates": {
+      "subdivision_family": "LAZY RIVER ESTATES",
+      "residential_parcels": 35,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Springfield Estates": {
+      "subdivision_family": "SPRINGFIELD ESTATES",
+      "residential_parcels": 20,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Burner's Gap Estates": {
+      "subdivision_family": "BURNER'S GAP ESTATES",
+      "residential_parcels": 37,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Turkey Ridge": {
+      "subdivision_family": "TURKEY RIDGE",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Egypt Bend Estates": {
+      "subdivision_family": "EGYPT BEND ESTATES",
+      "residential_parcels": 195,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Riverview Estates": {
+      "subdivision_family": "RIVERVIEW ESTATES",
+      "residential_parcels": 157,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Parkview Estates": {
+      "subdivision_family": "PARKVIEW ESTATES",
+      "residential_parcels": 17,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "River Heights": {
       "subdivision_family": "RIVER HEIGHTS SUBD",
       "residential_parcels": 23,
       "parent_neighborhood": "",
@@ -58,7 +157,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Yager'S Woods Subd": {
+    "Yager's Woods": {
       "subdivision_family": "YAGER'S WOODS SUBD",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -67,7 +166,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Eugene Park Subd": {
+    "Eugene Park": {
       "subdivision_family": "EUGENE PARK SUBD",
       "residential_parcels": 30,
       "parent_neighborhood": "",
@@ -76,7 +175,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Brown And Campbell Subd": {
+    "Brown and Campbell": {
       "subdivision_family": "BROWN AND CAMPBELL SUBD",
       "residential_parcels": 45,
       "parent_neighborhood": "",
@@ -85,7 +184,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Woodland Oaks Townhouses Subd": {
+    "Woodland Park": {
+      "subdivision_family": "WOODLAND PARK",
+      "residential_parcels": 30,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Woodland Oaks Townhouses": {
       "subdivision_family": "WOODLAND OAKS TOWNHOUSES SUBD",
       "residential_parcels": 26,
       "parent_neighborhood": "",
@@ -94,7 +202,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Marye Place Subd": {
+    "Marye Place": {
       "subdivision_family": "MARYE PLACE SUBD",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -103,7 +211,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Hilltop Subd": {
+    "Hilltop": {
       "subdivision_family": "HILLTOP SUBD",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -112,7 +220,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Brookside Park Subd": {
+    "Brookside Park": {
       "subdivision_family": "BROOKSIDE PARK SUBD",
       "residential_parcels": 65,
       "parent_neighborhood": "",
@@ -121,7 +229,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Hilldale Subd": {
+    "Hilldale": {
       "subdivision_family": "HILLDALE SUBD",
       "residential_parcels": 79,
       "parent_neighborhood": "",
@@ -130,7 +238,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Springview Subd": {
+    "Springview": {
       "subdivision_family": "SPRINGVIEW SUBD",
       "residential_parcels": 66,
       "parent_neighborhood": "",
@@ -139,7 +247,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Skyline Estates Subd": {
+    "Skyline Estates": {
       "subdivision_family": "SKYLINE ESTATES SUBD",
       "residential_parcels": 10,
       "parent_neighborhood": "",
@@ -148,16 +256,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Blue Ridge View Estates": {
-      "subdivision_family": "BLUE RIDGE VIEW ESTATES",
-      "residential_parcels": 5,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "Solanus Hills Subd": {
+    "Solanus Hills": {
       "subdivision_family": "SOLANUS HILLS SUBD",
       "residential_parcels": 6,
       "parent_neighborhood": "",
@@ -166,7 +265,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "White Pine Subd": {
+    "White Pine": {
       "subdivision_family": "WHITE PINE SUBD",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -175,7 +274,34 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Battle Creek Subd": {
+    "Pine Hill Estates": {
+      "subdivision_family": "PINE HILL ESTATES",
+      "residential_parcels": 12,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Blue Ridge Cove": {
+      "subdivision_family": "BLUE RIDGE COVE",
+      "residential_parcels": 33,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Battle Creek Forest": {
+      "subdivision_family": "BATTLE CREEK FOREST",
+      "residential_parcels": 39,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Battle Creek": {
       "subdivision_family": "BATTLE CREEK SUBD",
       "residential_parcels": 47,
       "parent_neighborhood": "",
@@ -184,16 +310,34 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Charles W. Campbell'S Subd": {
-      "subdivision_family": "CHARLES W. CAMPBELL'S SUBD",
-      "residential_parcels": 5,
+    "Fort Long Estates": {
+      "subdivision_family": "FORT LONG ESTATES",
+      "residential_parcels": 21,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "Strickler Subd": {
+    "Mill Creek Community": {
+      "subdivision_family": "MILL CREEK COMMUNITY",
+      "residential_parcels": 61,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Deerfield Estates": {
+      "subdivision_family": "DEERFIELD ESTATES",
+      "residential_parcels": 94,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Strickler": {
       "subdivision_family": "STRICKLER SUBD",
       "residential_parcels": 14,
       "parent_neighborhood": "",
@@ -202,7 +346,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "R. V. Dovel'S Addition": {
+    "R. V. Dovel's": {
       "subdivision_family": "R. V. DOVEL'S ADDITION",
       "residential_parcels": 10,
       "parent_neighborhood": "",
@@ -211,7 +355,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Hilliard Addition": {
+    "Hilliard": {
       "subdivision_family": "HILLIARD ADDITION",
       "residential_parcels": 13,
       "parent_neighborhood": "",
@@ -220,7 +364,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "R. C. Cave Subd": {
+    "R. C. Cave": {
       "subdivision_family": "R. C. CAVE SUBD",
       "residential_parcels": 6,
       "parent_neighborhood": "",
@@ -229,25 +373,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Davis Lucas & Jesse Mccoy": {
-      "subdivision_family": "DAVIS LUCAS & JESSE MCCOY",
-      "residential_parcels": 11,
+    "Scenic View Estates": {
+      "subdivision_family": "SCENIC VIEW ESTATES",
+      "residential_parcels": 7,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "James L. Comer Subd": {
-      "subdivision_family": "JAMES L. COMER SUBD",
-      "residential_parcels": 3,
-      "parent_neighborhood": "",
-      "grouping_status": "SUBDIVISION_PUBLIC",
-      "grouping_source": "County GIS parcel membership",
-      "owner_review_role": "",
-      "notes": ""
-    },
-    "Herdman Hilltop Subd": {
+    "Herdman Hilltop": {
       "subdivision_family": "HERDMAN HILLTOP SUBD",
       "residential_parcels": 14,
       "parent_neighborhood": "",
@@ -256,7 +391,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Mountain Home Subd": {
+    "Mountain Home": {
       "subdivision_family": "MOUNTAIN HOME SUBD",
       "residential_parcels": 23,
       "parent_neighborhood": "",
@@ -265,16 +400,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Cub Run Subd": {
-      "subdivision_family": "CUB RUN SUBD",
-      "residential_parcels": 5,
+    "Chapel Village": {
+      "subdivision_family": "CHAPEL VILLAGE",
+      "residential_parcels": 10,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "Roundhead Mountain Subd": {
+    "Roundhead Mountain": {
       "subdivision_family": "ROUNDHEAD MOUNTAIN SUBD",
       "residential_parcels": 120,
       "parent_neighborhood": "",
@@ -283,7 +418,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Shenandoah Rapids Rec. Subd": {
+    "Blue Ridge Pines": {
+      "subdivision_family": "BLUE RIDGE PINES",
+      "residential_parcels": 65,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Shenandoah Rapids Rec.": {
       "subdivision_family": "SHENANDOAH RAPIDS REC. SUBD",
       "residential_parcels": 25,
       "parent_neighborhood": "",
@@ -292,7 +436,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "River Hills Subd": {
+    "River Hills": {
       "subdivision_family": "RIVER HILLS SUBD",
       "residential_parcels": 121,
       "parent_neighborhood": "",
@@ -301,7 +445,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Mill Run Subd": {
+    "Tanner's Ridge Retreat": {
+      "subdivision_family": "TANNER'S RIDGE RETREAT",
+      "residential_parcels": 167,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Mill Run": {
       "subdivision_family": "MILL RUN SUBD",
       "residential_parcels": 19,
       "parent_neighborhood": "",
@@ -310,7 +463,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Eppard Subd": {
+    "Eppard": {
       "subdivision_family": "EPPARD SUBD",
       "residential_parcels": 38,
       "parent_neighborhood": "",
@@ -319,7 +472,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Forest Knolls Subd": {
+    "Forest Knolls": {
       "subdivision_family": "FOREST KNOLLS SUBD",
       "residential_parcels": 60,
       "parent_neighborhood": "",
@@ -328,7 +481,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Grindstone Mt. Subd": {
+    "Kanagy Heights": {
+      "subdivision_family": "KANAGY HEIGHTS",
+      "residential_parcels": 7,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Grindstone Mt.": {
       "subdivision_family": "GRINDSTONE MT. SUBD",
       "residential_parcels": 15,
       "parent_neighborhood": "",
@@ -337,7 +499,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Highland Court Subd": {
+    "Highland Court": {
       "subdivision_family": "HIGHLAND COURT SUBD",
       "residential_parcels": 17,
       "parent_neighborhood": "",
@@ -346,7 +508,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Hudson (Spring Valley) Subd": {
+    "Hudson (spring Valley)": {
       "subdivision_family": "HUDSON (SPRING VALLEY) SUBD",
       "residential_parcels": 89,
       "parent_neighborhood": "",
@@ -355,7 +517,25 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Inn Park Subd": {
+    "Forest Hills": {
+      "subdivision_family": "FOREST HILLS",
+      "residential_parcels": 46,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Blue Ridge Terrace": {
+      "subdivision_family": "BLUE RIDGE TERRACE",
+      "residential_parcels": 6,
+      "parent_neighborhood": "",
+      "grouping_status": "SUBDIVISION_PUBLIC",
+      "grouping_source": "County GIS parcel membership",
+      "owner_review_role": "",
+      "notes": ""
+    },
+    "Inn Park": {
       "subdivision_family": "INN PARK SUBD",
       "residential_parcels": 19,
       "parent_neighborhood": "",
@@ -364,7 +544,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Hawksbill Heights Subd": {
+    "Hawksbill Heights": {
       "subdivision_family": "HAWKSBILL HEIGHTS SUBD",
       "residential_parcels": 12,
       "parent_neighborhood": "",
@@ -373,7 +553,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Spring Avenue Quattlander Subd": {
+    "Spring Avenue Quattlander": {
       "subdivision_family": "SPRING AVENUE QUATTLANDER SUBD",
       "residential_parcels": 10,
       "parent_neighborhood": "",
@@ -382,7 +562,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Leewood Subd": {
+    "Leewood": {
       "subdivision_family": "LEEWOOD SUBD",
       "residential_parcels": 7,
       "parent_neighborhood": "",
@@ -391,7 +571,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Sunrise Hills Subd": {
+    "Sunrise Hills": {
       "subdivision_family": "SUNRISE HILLS SUBD",
       "residential_parcels": 17,
       "parent_neighborhood": "",
@@ -400,16 +580,16 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "The Meadows Section Ii": {
+    "The Meadows": {
       "subdivision_family": "THE MEADOWS SECTION II",
-      "residential_parcels": 24,
+      "residential_parcels": 40,
       "parent_neighborhood": "",
       "grouping_status": "SUBDIVISION_PUBLIC",
       "grouping_source": "County GIS parcel membership",
       "owner_review_role": "",
       "notes": ""
     },
-    "East Gate Subd": {
+    "East Gate": {
       "subdivision_family": "EAST GATE SUBD",
       "residential_parcels": 25,
       "parent_neighborhood": "",
@@ -418,7 +598,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Creekside Subd": {
+    "Creekside": {
       "subdivision_family": "CREEKSIDE SUBD",
       "residential_parcels": 9,
       "parent_neighborhood": "",
@@ -427,7 +607,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "The Ridge At Forest Hills": {
+    "The Ridge at Forest Hills": {
       "subdivision_family": "THE RIDGE AT FOREST HILLS",
       "residential_parcels": 21,
       "parent_neighborhood": "",
@@ -436,7 +616,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Fairview Subd": {
+    "Fairview": {
       "subdivision_family": "FAIRVIEW SUBD",
       "residential_parcels": 66,
       "parent_neighborhood": "",
@@ -445,7 +625,7 @@
       "owner_review_role": "",
       "notes": ""
     },
-    "Luray Landing Subd": {
+    "Luray Landing": {
       "subdivision_family": "LURAY LANDING SUBD",
       "residential_parcels": 26,
       "parent_neighborhood": "",
