@@ -1,38 +1,904 @@
 {
+  "meta": {
+    "generated": "2026-10-05",
+    "engine": "shenandoah-sale-lot-year-built-v1"
+  },
   "Edinburg": {
     "community_id": "edinburg",
-    "orientation_only": true
+    "display_name": "Edinburg",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Dinges Heights",
+      "Edinburg Square",
+      "Grove",
+      "Massanutten Manor",
+      "Rose Hill Condos",
+      "Waterbrook"
+    ],
+    "member_subdivision_count": 6,
+    "member_parcels": 131,
+    "qualifying_sales_count": 0,
+    "verified_sale_count": 0,
+    "median_sale_price": null,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Not available",
+    "median_lot_sqft": 10236.6,
+    "median_year_built": 2006,
+    "year_built_qualifying_count": 80,
+    "year_built_improved_parcel_count": 84,
+    "year_built_coverage_pct": 95.2381,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 131,
+      "mounted_parcel_count_residential": 131,
+      "sale_qualifying_count": 0,
+      "median_sale_price": null,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 80,
+      "year_built_improved_parcel_count": 84,
+      "year_built_coverage_pct": 95.2381,
+      "median_year_built": 2006,
+      "lot_qualifying_count": 131,
+      "median_lot_sqft": 10236.6,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 131,
+        "year_built_missing_or_invalid": 4,
+        "year_built_unimproved_parcel": 47
+      },
+      "sale_contributing_record_count": 0,
+      "sale_contributing_records_sample": []
+    }
   },
   "Mount Jackson": {
     "community_id": "mount-jackson",
-    "orientation_only": true
+    "display_name": "Mount Jackson",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Avondale Acres",
+      "Biller 2",
+      "Dutch Lane",
+      "Lonas",
+      "Mill Creek Estates",
+      "Montvue",
+      "Old Hickory Heights",
+      "S Jackson Craig"
+    ],
+    "member_subdivision_count": 8,
+    "member_parcels": 321,
+    "qualifying_sales_count": 3,
+    "verified_sale_count": 3,
+    "median_sale_price": null,
+    "limited_sample_median_price": 254900.0,
+    "recent_sale_price": null,
+    "sale_label": "Limited sample",
+    "median_lot_sqft": 11630.5,
+    "median_year_built": 1974,
+    "year_built_qualifying_count": 250,
+    "year_built_improved_parcel_count": 258,
+    "year_built_coverage_pct": 96.8992,
+    "show_limited_caution": true,
+    "limited_caution_label": "Limited sample",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 321,
+      "mounted_parcel_count_residential": 321,
+      "sale_qualifying_count": 3,
+      "median_sale_price": null,
+      "limited_sample_median_price": 254900.0,
+      "year_built_qualifying_count": 250,
+      "year_built_improved_parcel_count": 258,
+      "year_built_coverage_pct": 96.8992,
+      "median_year_built": 1974,
+      "lot_qualifying_count": 321,
+      "median_lot_sqft": 11630.5,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 318,
+        "year_built_missing_or_invalid": 8,
+        "year_built_unimproved_parcel": 63
+      },
+      "sale_contributing_record_count": 3,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "81B-((2))-93A#30480",
+          "price": 350000.0,
+          "class": "A"
+        },
+        {
+          "pid": "91A1-((6))-6#33155",
+          "price": 107000.0,
+          "class": "A"
+        },
+        {
+          "pid": "91A2-((6))-10B#34114",
+          "price": 254900.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "New Market": {
     "community_id": "new-market",
-    "orientation_only": true
+    "display_name": "New Market",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Academy Heights",
+      "C and P",
+      "Century Village",
+      "Fairway Common",
+      "Fairway Manor",
+      "Fairway View Estates",
+      "Heritage Green",
+      "Horseshoe Bend",
+      "Kiblers Crest",
+      "Lincoln's Crossing",
+      "New Market South",
+      "Pleasant View",
+      "The Foothills",
+      "Village at Smith Creek",
+      "W of New Market Shirley Addition"
+    ],
+    "member_subdivision_count": 15,
+    "member_parcels": 419,
+    "qualifying_sales_count": 5,
+    "verified_sale_count": 5,
+    "median_sale_price": 150000.0,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Median home sale price",
+    "median_lot_sqft": 15943.0,
+    "median_year_built": 1993,
+    "year_built_qualifying_count": 352,
+    "year_built_improved_parcel_count": 355,
+    "year_built_coverage_pct": 99.1549,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 419,
+      "mounted_parcel_count_residential": 419,
+      "sale_qualifying_count": 5,
+      "median_sale_price": 150000.0,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 352,
+      "year_built_improved_parcel_count": 355,
+      "year_built_coverage_pct": 99.1549,
+      "median_year_built": 1993,
+      "lot_qualifying_count": 419,
+      "median_lot_sqft": 15943.0,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 413,
+        "year_built_unimproved_parcel": 64,
+        "year_built_missing_or_invalid": 3,
+        "sale_class_B_not_home": 1
+      },
+      "sale_contributing_record_count": 5,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "103C-((2))-29#36415",
+          "price": 135122.0,
+          "class": "A"
+        },
+        {
+          "pid": "104A-((3))-9#37601",
+          "price": 309000.0,
+          "class": "A"
+        },
+        {
+          "pid": "103D-((5))-1#36209",
+          "price": 390000.0,
+          "class": "A"
+        },
+        {
+          "pid": "103C-((3))-3#36423",
+          "price": 150000.0,
+          "class": "A"
+        },
+        {
+          "pid": "103C-((3))-4#36424",
+          "price": 150000.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "Strasburg": {
     "community_id": "strasburg",
-    "orientation_only": true
+    "display_name": "Strasburg",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Cedar Spring Estates",
+      "Charles Street Townhouses",
+      "Crystal Hill",
+      "Crystal Hill Townhouses",
+      "Edgewood",
+      "Founders Landing",
+      "Hupps Ridge",
+      "Lemley",
+      "Madison Heights",
+      "Morris",
+      "Oxbow Estates",
+      "Ram Hill Estates",
+      "Signal Knob Station Condos",
+      "Signal Knolls Condominium",
+      "Smithfield",
+      "Stark",
+      "Stoney Ridge",
+      "Stony Pointe",
+      "Strasburg Station",
+      "Sunlight",
+      "Taylor's Ridge",
+      "Village at Oxbow Estates",
+      "Woodlawn"
+    ],
+    "member_subdivision_count": 23,
+    "member_parcels": 1364,
+    "qualifying_sales_count": 16,
+    "verified_sale_count": 16,
+    "median_sale_price": 307500.0,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Median home sale price",
+    "median_lot_sqft": 8058.6,
+    "median_year_built": 2004,
+    "year_built_qualifying_count": 1269,
+    "year_built_improved_parcel_count": 1278,
+    "year_built_coverage_pct": 99.2958,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 1364,
+      "mounted_parcel_count_residential": 1349,
+      "sale_qualifying_count": 16,
+      "median_sale_price": 307500.0,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 1269,
+      "year_built_improved_parcel_count": 1278,
+      "year_built_coverage_pct": 99.2958,
+      "median_year_built": 2004,
+      "lot_qualifying_count": 1136,
+      "median_lot_sqft": 8058.6,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 1333,
+        "year_built_unimproved_parcel": 71,
+        "year_built_missing_or_invalid": 9,
+        "non_residential_parcel": 15,
+        "lot_missing": 213
+      },
+      "sale_contributing_record_count": 16,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "parcel#1617",
+          "price": 500000.0,
+          "class": "A"
+        },
+        {
+          "pid": "parcel#1913",
+          "price": 310000.0,
+          "class": "A"
+        },
+        {
+          "pid": "parcel#2560",
+          "price": 452500.0,
+          "class": "A"
+        },
+        {
+          "pid": "parcel#2575",
+          "price": 247000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25-((10))-26#5997",
+          "price": 580000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25A2-((5))-12#7399",
+          "price": 314900.0,
+          "class": "A"
+        },
+        {
+          "pid": "25A4-((19))-10#7632",
+          "price": 337400.0,
+          "class": "A"
+        },
+        {
+          "pid": "25A4-((1))-(62)-24#6754",
+          "price": 305000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((3))-FF-9#8292",
+          "price": 190500.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((3))-II-1#9147",
+          "price": 190000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((3))-GG-12#9716",
+          "price": 199000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((3))-HH-5#9717",
+          "price": 187000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((5))-10#8314",
+          "price": 325000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25C-((9))-58#8971",
+          "price": 250000.0,
+          "class": "A"
+        },
+        {
+          "pid": "25A5-((2))-51#9077",
+          "price": 489000.0,
+          "class": "A"
+        },
+        {
+          "pid": "16D-((2))-36#2603",
+          "price": 300000.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "Toms Brook": {
     "community_id": "toms-brook",
-    "orientation_only": true
+    "display_name": "Toms Brook",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Toms Brook Creek"
+    ],
+    "member_subdivision_count": 1,
+    "member_parcels": 30,
+    "qualifying_sales_count": 0,
+    "verified_sale_count": 0,
+    "median_sale_price": null,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Not available",
+    "median_lot_sqft": 2134.4,
+    "median_year_built": 2007,
+    "year_built_qualifying_count": 17,
+    "year_built_improved_parcel_count": 17,
+    "year_built_coverage_pct": 100.0,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 30,
+      "mounted_parcel_count_residential": 30,
+      "sale_qualifying_count": 0,
+      "median_sale_price": null,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 17,
+      "year_built_improved_parcel_count": 17,
+      "year_built_coverage_pct": 100.0,
+      "median_year_built": 2007,
+      "lot_qualifying_count": 30,
+      "median_lot_sqft": 2134.4,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 30,
+        "year_built_unimproved_parcel": 13
+      },
+      "sale_contributing_record_count": 0,
+      "sale_contributing_records_sample": []
+    }
   },
   "Woodstock": {
     "community_id": "woodstock",
-    "orientation_only": true
+    "display_name": "Woodstock",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Beverly Place",
+      "Camelot Estates",
+      "Craig",
+      "Crestview Heights",
+      "Delwood Heights",
+      "Devinshire Village",
+      "Elise Court",
+      "Ellendell",
+      "Epard Estates",
+      "Falcon Place",
+      "Grand View Estates",
+      "Henry Drive Extended",
+      "Hill Crest Heights",
+      "Hillcrest Heights Two",
+      "Hilltop Homes",
+      "Hisey Park",
+      "Lakeview Farms Development",
+      "Lakeview Heights",
+      "Meghann Heights",
+      "Miller Heights",
+      "Mountainview",
+      "Muellerstadt Heights",
+      "North Summit Heights",
+      "Orchard View",
+      "Park Manor Estates",
+      "Parkside Village",
+      "Pleasant Valley Estates",
+      "Pleasant Valley Estates Condominiums",
+      "Shenandoah Estates",
+      "Shenwood East",
+      "South Church Street Town Homes",
+      "Southridge Villas",
+      "Summit Crest Estates",
+      "Towering Heights",
+      "Valley View",
+      "Village Commons",
+      "W North St Stonewall Terrace",
+      "Waterbrook Homes",
+      "Wellington Estates",
+      "West Winds Townhouses",
+      "Woodlawn Estates",
+      "Woodstock Acres",
+      "Woodstock Commons",
+      "Woodstock Manor",
+      "Woodstock Mews"
+    ],
+    "member_subdivision_count": 45,
+    "member_parcels": 1286,
+    "qualifying_sales_count": 28,
+    "verified_sale_count": 28,
+    "median_sale_price": 320550.0,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Median home sale price",
+    "median_lot_sqft": 8799.1,
+    "median_year_built": 1998,
+    "year_built_qualifying_count": 1172,
+    "year_built_improved_parcel_count": 1177,
+    "year_built_coverage_pct": 99.5752,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 1286,
+      "mounted_parcel_count_residential": 1286,
+      "sale_qualifying_count": 28,
+      "median_sale_price": 320550.0,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 1172,
+      "year_built_improved_parcel_count": 1177,
+      "year_built_coverage_pct": 99.5752,
+      "median_year_built": 1998,
+      "lot_qualifying_count": 1214,
+      "median_lot_sqft": 8799.1,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 1249,
+        "year_built_unimproved_parcel": 109,
+        "sale_class_B_not_home": 9,
+        "year_built_missing_or_invalid": 5,
+        "lot_missing": 72
+      },
+      "sale_contributing_record_count": 28,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "91A2-((1))-30#33834",
+          "price": 269900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A2-((25))-3#13571",
+          "price": 410000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A5-((32))-(B)-8#15854",
+          "price": 538000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((13))-19#13699",
+          "price": 385000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A7-((1))-11#16502",
+          "price": 217500.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-26A#13688",
+          "price": 349900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-28#13689",
+          "price": 349900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((9))-2A#14250",
+          "price": 316100.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-25A#14267",
+          "price": 342000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-26#14268",
+          "price": 349900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-28A#14269",
+          "price": 349900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-1A#14705",
+          "price": 325000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-2#15303",
+          "price": 315000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A3-((11))-27A#15317",
+          "price": 329900.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A1-((21))-8#13020",
+          "price": 485000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A1-((16))-12#13841",
+          "price": 400000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((4))-2#16637",
+          "price": 325000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(A)-2#15875",
+          "price": 143000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(B)-1#15878",
+          "price": 139000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(B)-2#15879",
+          "price": 135000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(B)-3#15198",
+          "price": 94000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(C)-1#15202",
+          "price": 139000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A6-((1))-(F)-2#16469",
+          "price": 130000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A4-((11))-7#14606",
+          "price": 300000.0,
+          "class": "A"
+        },
+        {
+          "pid": "45A7-((6))-11#16523",
+          "price": 260000.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "Basye": {
     "community_id": "basye",
-    "orientation_only": true
+    "display_name": "Basye",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Bird Haven",
+      "Bluebird Court",
+      "Bryce Mountain Resort",
+      "Bryce Mountain Ski & Country Club",
+      "Country Club Court",
+      "Creekside Village",
+      "Falcon Haven",
+      "Lakeside Condominium",
+      "Mountain View Estates",
+      "Sunrise Ridge",
+      "The Ridge Townhomes",
+      "The Riles Run Estates"
+    ],
+    "member_subdivision_count": 12,
+    "member_parcels": 2532,
+    "qualifying_sales_count": 24,
+    "verified_sale_count": 24,
+    "median_sale_price": 375000.0,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Median home sale price",
+    "median_lot_sqft": 15638.0,
+    "median_year_built": 1990,
+    "year_built_qualifying_count": 1008,
+    "year_built_improved_parcel_count": 1031,
+    "year_built_coverage_pct": 97.7692,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 2532,
+      "mounted_parcel_count_residential": 2532,
+      "sale_qualifying_count": 24,
+      "median_sale_price": 375000.0,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 1008,
+      "year_built_improved_parcel_count": 1031,
+      "year_built_coverage_pct": 97.7692,
+      "median_year_built": 1990,
+      "lot_qualifying_count": 2523,
+      "median_lot_sqft": 15638.0,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 2479,
+        "year_built_unimproved_parcel": 1501,
+        "year_built_missing_or_invalid": 23,
+        "sale_class_B_not_home": 29,
+        "lot_missing": 9
+      },
+      "sale_contributing_record_count": 24,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "64-((3))-3#21783",
+          "price": 500000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A1-((1))-166#22015",
+          "price": 410000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A1-((1))-170#22662",
+          "price": 625000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A1-((1))-45#21985",
+          "price": 365000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A1-((2))-(B)-23#22824",
+          "price": 245900.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A3-((1))-93#23825",
+          "price": 400000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A3-((2))-118#23424",
+          "price": 315000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A3-((2))-127#24296",
+          "price": 384999.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A4-((1))-(1)-23#23475",
+          "price": 431250.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A5-((2))-(A)-150#24048",
+          "price": 410000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65A6-((1))-274#24564",
+          "price": 616500.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((1))-155#25052",
+          "price": 550000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((1))-240#25073",
+          "price": 440000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((1))-250#24906",
+          "price": 329900.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((1))-375#25674",
+          "price": 215000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((2))-494#25526",
+          "price": 350000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A1-((2))-524#24973",
+          "price": 315000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A2-((1))-115#25197",
+          "price": 318900.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A2-((1))-165#25210",
+          "price": 300000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A2-((1))-27#24991",
+          "price": 407000.0,
+          "class": "A"
+        },
+        {
+          "pid": "66A2-((1))-272#25612",
+          "price": 430000.0,
+          "class": "A"
+        },
+        {
+          "pid": "64D1-((3))-929C#21300",
+          "price": 235000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65-((6))-4#21961",
+          "price": 320000.0,
+          "class": "A"
+        },
+        {
+          "pid": "65-((6))-8#22609",
+          "price": 229900.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "Maurertown": {
     "community_id": "maurertown",
-    "orientation_only": true
+    "display_name": "Maurertown",
+    "grouping_status": "GROUPED",
+    "member_subdivisions": [
+      "Char-Mar",
+      "Dumar",
+      "Hillview",
+      "Madison Estates",
+      "Mar-View",
+      "Oak Ridge",
+      "Shrum-Helsley"
+    ],
+    "member_subdivision_count": 7,
+    "member_parcels": 207,
+    "qualifying_sales_count": 4,
+    "verified_sale_count": 4,
+    "median_sale_price": null,
+    "limited_sample_median_price": 327000.0,
+    "recent_sale_price": null,
+    "sale_label": "Limited sample",
+    "median_lot_sqft": 15289.6,
+    "median_year_built": 2001,
+    "year_built_qualifying_count": 193,
+    "year_built_improved_parcel_count": 194,
+    "year_built_coverage_pct": 99.4845,
+    "show_limited_caution": true,
+    "limited_caution_label": "Limited sample",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 207,
+      "mounted_parcel_count_residential": 205,
+      "sale_qualifying_count": 4,
+      "median_sale_price": null,
+      "limited_sample_median_price": 327000.0,
+      "year_built_qualifying_count": 193,
+      "year_built_improved_parcel_count": 194,
+      "year_built_coverage_pct": 99.4845,
+      "median_year_built": 2001,
+      "lot_qualifying_count": 205,
+      "median_lot_sqft": 15289.6,
+      "unmatched_parcels": 1,
+      "excluded_record_counts": {
+        "sale_not_in_window_or_missing": 201,
+        "year_built_unimproved_parcel": 11,
+        "year_built_missing_or_invalid": 1,
+        "non_residential_parcel": 1,
+        "unmatched_source_parcel": 1
+      },
+      "sale_contributing_record_count": 4,
+      "sale_contributing_records_sample": [
+        {
+          "pid": "33A-((6))-12#9833",
+          "price": 165000.0,
+          "class": "A"
+        },
+        {
+          "pid": "33A-((8))-28#10267",
+          "price": 334000.0,
+          "class": "A"
+        },
+        {
+          "pid": "33-((8))-16#10848",
+          "price": 320000.0,
+          "class": "A"
+        },
+        {
+          "pid": "parcel#11453",
+          "price": 425000.0,
+          "class": "A"
+        }
+      ]
+    }
   },
   "Mount Clifton": {
     "community_id": "mount-clifton",
-    "orientation_only": true
+    "display_name": "Mount Clifton",
+    "grouping_status": "IDENTITY_ONLY",
+    "member_subdivisions": [],
+    "member_subdivision_count": 0,
+    "member_parcels": 0,
+    "qualifying_sales_count": 0,
+    "verified_sale_count": 0,
+    "median_sale_price": null,
+    "limited_sample_median_price": null,
+    "recent_sale_price": null,
+    "sale_label": "Not available",
+    "median_lot_sqft": null,
+    "median_year_built": null,
+    "year_built_qualifying_count": 0,
+    "year_built_improved_parcel_count": 0,
+    "year_built_coverage_pct": null,
+    "show_limited_caution": false,
+    "limited_caution_label": "",
+    "_engine_audit": {
+      "mounted_parcel_count_total": 0,
+      "mounted_parcel_count_residential": 0,
+      "sale_qualifying_count": 0,
+      "median_sale_price": null,
+      "limited_sample_median_price": null,
+      "year_built_qualifying_count": 0,
+      "year_built_improved_parcel_count": 0,
+      "year_built_coverage_pct": null,
+      "median_year_built": null,
+      "lot_qualifying_count": 0,
+      "median_lot_sqft": null,
+      "unmatched_parcels": 0,
+      "excluded_record_counts": {},
+      "sale_contributing_record_count": 0,
+      "sale_contributing_records_sample": []
+    }
   }
 }

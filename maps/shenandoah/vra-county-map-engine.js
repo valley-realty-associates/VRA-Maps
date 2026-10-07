@@ -1,284 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shenandoah subdivisions map | Valley Realty Associates</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<style>
-  :root {
-    --green: #2f5a3f; --vra-green: #0B4636; --gold: #FECD2A; --parchment: #f4f1e8; --ink: #1e2a22;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; font: 14px/1.45 system-ui, sans-serif; background: var(--parchment); color: var(--ink); }
-  header { padding: 12px 16px; background: var(--vra-green); color: #fff; }
-  header strong { color: var(--gold); }
-  .wrap { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 52px); }
-  .map-col { display: flex; flex-direction: column; min-width: 0; }
-  .data-header {
-    display: flex; flex-wrap: wrap; gap: 0; background: var(--vra-green); color: #fff;
-    border-bottom: 2px solid var(--gold); font-size: 12px;
-  }
-  .data-header__cell {
-    flex: 1 1 120px; min-width: 110px; padding: 8px 12px;
-    border-right: 1px solid rgba(255,255,255,.12);
-  }
-  .data-header__cell:last-child { border-right: none; }
-  .data-header__label {
-    display: block; font-size: 9px; font-weight: 700; letter-spacing: .08em;
-    text-transform: uppercase; color: rgba(255,255,255,.72); margin-bottom: 3px;
-  }
-  .data-header__value {
-    display: block; font-size: 14px; font-weight: 600; line-height: 1.2; color: #fff;
-  }
-  .data-header__cell--name { flex: 1.4 1 160px; }
-  .data-header__cell--name .data-header__value {
-    font-size: 16px; font-weight: 700; color: var(--gold);
-  }
-  .data-header__value.is-muted { color: rgba(255,255,255,.55); font-weight: 500; font-size: 12px; }
-  .data-header__note {
-    display: block; font-size: 9px; color: rgba(255,255,255,.55); margin-top: 2px;
-  }
-  .data-header__cell.is-hidden { display: none; }
-  .data-header__includes {
-    flex: 1 1 100%; padding: 4px 12px 8px; font-size: 11px; color: rgba(255,255,255,.78);
-    border-top: 1px solid rgba(255,255,255,.08);
-  }
-  .data-header__includes.is-hidden { display: none; }
-  .panel-about-dates {
-    margin-top: 16px; padding-top: 12px; border-top: 1px solid #d7ccb0;
-  }
-  .panel-about-dates button {
-    background: transparent; border: none; padding: 0; cursor: pointer;
-    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-    color: #9a7a10;
-  }
-  .panel-about-dates button span {
-    color: var(--gold); font-size: 13px; margin-left: 3px;
-  }
-  .panel-about-dates button:hover { text-decoration: underline; }
-  .place-search { margin-bottom: 6px; }
-  .place-search input {
-    width: 100%; padding: 8px 10px; font-size: 12px; border: 1px solid #c9c2ad;
-    border-radius: 4px; background: #fff; color: var(--ink);
-  }
-  .place-search input:focus {
-    outline: 2px solid rgba(254,205,42,.45); border-color: var(--gold);
-  }
-  .place-list {
-    list-style: none; margin: 0; padding: 0; overflow-y: auto;
-    max-height: min(38vh, 360px); min-height: 100px;
-  }
-  .place-list li { margin: 0 0 2px; }
-  .place-list button {
-    width: 100%; text-align: left; padding: 7px 8px; border: none; border-radius: 3px;
-    background: transparent; color: var(--ink); cursor: pointer; font-size: 12px; line-height: 1.25;
-  }
-  .place-list button:hover { background: rgba(11,70,54,.08); }
-  .place-list li.is-selected button {
-    background: rgba(254,205,42,.28); font-weight: 600;
-  }
-  .place-list__name { display: block; }
-  .place-list__meta {
-    display: block; font-size: 10px; font-weight: 500; color: #5a6b60; margin-top: 1px;
-  }
-  .place-list__empty {
-    padding: 10px 8px; font-size: 11px; color: #5a6b60; font-style: italic;
-  }
-  .visually-hidden {
-    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-  }
-  @media (max-width: 900px) {
-    .wrap { grid-template-columns: 1fr; }
-    .data-header__cell { flex: 1 1 45%; min-width: 0; }
-    aside {
-      display: none; position: fixed; z-index: 9000; top: 52px; left: 0; bottom: 0;
-      width: min(300px, 88vw); max-height: none; box-shadow: 4px 0 24px rgba(0,0,0,.18);
-    }
-    .wrap.panel-open aside { display: flex; }
-    .panel-toggle {
-      display: inline-flex; align-items: center; gap: 6px;
-      margin: 8px 12px 0; padding: 7px 12px; font-size: 12px; font-weight: 600;
-      border: 1px solid #b8b0a0; border-radius: 4px; background: #faf7ef; color: var(--ink); cursor: pointer;
-    }
-  }
-  .panel-toggle { display: none; }
-  aside {
-    padding: 14px 16px; border-right: 1px solid #c9c2ad; background: #faf7ef;
-    max-height: calc(100vh - 52px); display: flex; flex-direction: column; min-height: 0;
-  }
-  .panel-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
-  aside h1 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 6px; color: var(--vra-green); }
-  .panel-intro { font-size: 12px; color: #4a5346; margin: 0 0 14px; line-height: 1.4; }
-  aside h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; margin: 14px 0 8px; color: var(--green); }
-  aside h2:first-of-type { margin-top: 0; }
-  label { display: block; font-size: 12px; margin: 6px 0; cursor: pointer; }
-  .view-toggle { display: flex; gap: 6px; margin-bottom: 4px; }
-  .view-toggle button {
-    flex: 1; font-size: 11px; font-weight: 600; padding: 7px 8px; border-radius: 4px;
-    border: 1px solid #b8b0a0; background: #fff; color: var(--ink); cursor: pointer;
-  }
-  .view-toggle button.is-active {
-    background: var(--vra-green); color: var(--gold); border-color: var(--vra-green);
-  }
-  #map { min-height: 620px; height: calc(100vh - 52px - 52px); width: 100%; flex: 1 1 auto; }
-  #map-error { display: none; margin: 8px 16px; padding: 10px 12px; background: #fde8dc; color: #6b1d1d; border: 1px solid #c45c26; font-size: 13px; }
+/* VRA county map engine — single runtime (vision + Rockingham). Generated by assemble_county_html.py */
+(function (global) {
+  "use strict";
 
-  .sub-map-label, .hd-map-label, .nb-map-label {
-    background: transparent !important; border: none !important; box-shadow: none !important;
-  }
-  .sub-map-label span, .hd-map-label span, .nb-map-label span {
-    display: block; white-space: nowrap; pointer-events: none;
-    font-family: system-ui, -apple-system, sans-serif; line-height: 1.15; letter-spacing: 0.01em;
-    text-shadow: 0 0 2px #f4f1e8, 0 0 4px #f4f1e8, 1px 0 0 #f4f1e8, -1px 0 0 #f4f1e8, 0 1px 0 #f4f1e8, 0 -1px 0 #f4f1e8;
-  }
-  .sub-map-label--tier-a span { font-size: 12px; font-weight: 700; color: #1a2e22; }
-  .sub-map-label--tier-b span { font-size: 11px; font-weight: 600; color: #1e3228; }
-  .sub-map-label--tier-c span { font-size: 10px; font-weight: 500; color: #243528; }
-  .sub-map-label--tier-d span { font-size: 9px; font-weight: 500; color: #2a3a30; }
-  .sub-map-label--tier-e span { font-size: 8.5px; font-weight: 500; color: #334038; }
-  .sub-map-label--lakeview span { font-weight: 700; color: #0f2418; }
-  .hd-map-label span {
-    font-size: 10px; font-weight: 600; font-style: italic; color: #4a1a6b;
-  }
-  .nb-map-label span {
-    font-size: 13px; font-weight: 700; color: #1a2e22;
-  }
-  .about-dates-backdrop {
-    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 10000;
-    align-items: center; justify-content: center; padding: 16px;
-  }
-  .about-dates-backdrop.is-open { display: flex; }
-  .about-dates-panel {
-    max-width: 420px; background: #fff; border: 2px solid var(--gold); border-radius: 6px;
-    padding: 16px 18px; box-shadow: 0 8px 32px rgba(0,0,0,.2);
-  }
-  .about-dates-panel h3 { margin: 0 0 8px; color: var(--vra-green); font-size: 15px; }
-  .about-dates-panel p { margin: 0 0 10px; font-size: 13px; line-height: 1.45; color: #333; }
-  .about-dates-panel button {
-    margin-top: 4px; background: var(--vra-green); color: var(--gold); border: none;
-    padding: 6px 12px; font-weight: 600; border-radius: 4px; cursor: pointer;
+  function normalizeMetricsRow(row) {
+    if (!row || typeof row !== "object") return row;
+    const m = Object.assign({}, row);
+    const q = m.qualifying_sales_count != null ? Number(m.qualifying_sales_count) : 0;
+    m.verified_sale_count = q;
+    if (m.recent_sale_price != null && q === 0) {
+      m.recent_sale_price = null;
+      m.sale_price_display = null;
+    }
+    if (!m.sale_price_display && m.recent_sale_price != null && q === 1) {
+      m.sale_price_display = "$" + Math.round(Number(m.recent_sale_price)).toLocaleString();
+    }
+    if (!m.sale_price_display && m.median_sale_price != null && q >= 5) {
+      m.sale_price_display = "$" + Math.round(Number(m.median_sale_price)).toLocaleString();
+    }
+    if (q === 1 && m.recent_sale_price != null) {
+      m.sale_price_display = "$" + Math.round(Number(m.recent_sale_price)).toLocaleString();
+      m.show_limited_caution = true;
+      m.limited_caution_label = m.limited_caution_label || "Limited sample";
+      if (!m.sale_label) m.sale_label = "Recent verified home sale";
+    }
+    if (q > 1 && q < 5) {
+      const lim = m.limited_sample_median_price != null ? m.limited_sample_median_price : m.median_sale_price;
+      if (lim != null) {
+        m.sale_price_display = "$" + Math.round(Number(lim)).toLocaleString();
+        m.show_limited_caution = true;
+        m.limited_caution_label = m.limited_caution_label || "Limited sample";
+        m.sale_label = "Limited sample";
+      }
+    }
+    return m;
   }
 
-  .vra-street-label-marker, .vra-connector-label-marker {
-    background: transparent !important; border: 0 !important; box-shadow: none !important;
-    width: 0 !important; height: 0 !important; overflow: visible !important;
-  }
-  .vra-street-label-text.vra-street-label--local {
-    display: inline-block; position: absolute; left: 0; top: 0;
-    transform-origin: center center; white-space: nowrap; pointer-events: none;
-    color: #244038; font: 500 8.75px/1.05 Georgia, "Times New Roman", serif;
-    text-shadow: -1px 0 #F3EADB, 1px 0 #F3EADB, 0 -1px #F3EADB, 0 1px #F3EADB,
-      -1px -1px 0 #F3EADB, 1px -1px 0 #F3EADB, -1px 1px 0 #F3EADB, 1px 1px 0 #F3EADB;
-  }
-  .vra-street-label-text.vra-street-label--major {
-    display: inline-block; position: absolute; left: 0; top: 0;
-    transform-origin: center center; white-space: nowrap; pointer-events: none;
-    font-size: 12.5px; font-weight: 700; color: #102E25;
-    text-shadow: -1px 0 #F3EADB, 1px 0 #F3EADB, 0 -1px #F3EADB, 0 1px #F3EADB,
-      -1px -1px 0 #F3EADB, 1px -1px 0 #F3EADB, -1px 1px 0 #F3EADB, 1px 1px 0 #F3EADB;
-  }
-  .vra-connector-label-text {
-    display: inline-block; position: absolute; left: 0; top: 0;
-    transform-origin: center center; white-space: nowrap; pointer-events: none;
-    color: #082B21; font: 800 14px/1.05 Georgia, "Times New Roman", serif;
-    letter-spacing: .015em;
-    text-shadow: -1px 0 #F3EADB, 1px 0 #F3EADB, 0 -1px #F3EADB, 0 1px #F3EADB,
-      -1px -1px 0 #F3EADB, 1px -1px 0 #F3EADB, -1px 1px 0 #F3EADB, 1px 1px 0 #F3EADB;
-  }
-</style>
-</head>
-<body>
-<header>
-  <div><strong>Shenandoah</strong> — residential subdivisions map</div>
-</header>
-<div id="map-error" role="alert"></div>
-<div class="wrap">
-<aside id="panel">
-  <div class="panel-scroll">
-    <h1>Shenandoah</h1>
-    <p class="panel-intro">Explore Shenandoah County residential subdivisions and documented communities. Subdivision shapes from county GIS parcel records.</p>
-    <h2>View</h2>
-    <div class="view-toggle" role="group" aria-label="Map view">
-      <button type="button" id="view-subs" class="is-active" aria-pressed="true">Subdivisions</button>
-      <button type="button" id="view-nb" aria-pressed="false">Communities</button>
-    </div>
-    <h2>Layers</h2>
-    <label><input type="checkbox" id="tog-subs" checked> Residential subdivision families</label>
-    <label><input type="checkbox" id="tog-nosub"> Residential fabric / no recorded subdivision</label>
-    <label><input type="checkbox" id="tog-roads" checked> Major roads</label>
-    <label><input type="checkbox" id="tog-hd"> Historic districts</label>
-    <h2>Find a place</h2>
-    <div class="place-search">
-      <label class="visually-hidden" for="place-search-input">Search communities or subdivisions</label>
-      <input type="search" id="place-search-input" placeholder="Search communities or subdivisions" autocomplete="off" spellcheck="false">
-    </div>
-    <ul id="place-list" class="place-list" role="listbox" aria-label="Places"></ul>
-    <div class="panel-about-dates">
-      <button type="button" id="btn-about-dates" aria-haspopup="dialog">About dates <span aria-hidden="true">ⓘ</span></button>
-    </div>
-  </div>
-</aside>
-<div class="map-col">
-  <button type="button" class="panel-toggle" id="panel-toggle" aria-expanded="false" aria-controls="panel">Places</button>
-  <div class="data-header" id="data-header" aria-live="polite">
-    <div class="data-header__cell data-header__cell--name">
-      <span class="data-header__label">Selected place</span>
-      <span class="data-header__value is-muted" id="hdr-name">Select a subdivision to view details.</span>
-    </div>
-    <div class="data-header__cell">
-      <span class="data-header__label" id="hdr-sale-label">Median sale price</span>
-      <span class="data-header__value is-muted" id="hdr-sale">—</span>
-      <span class="data-header__note" id="hdr-sale-note"></span>
-    </div>
-    <div class="data-header__cell">
-      <span class="data-header__label">Recent sales</span>
-      <span class="data-header__value is-muted" id="hdr-sales-n">—</span>
-    </div>
-    <div class="data-header__cell">
-      <span class="data-header__label">Median year built</span>
-      <span class="data-header__value is-muted" id="hdr-home">—</span>
-    </div>
-    <div class="data-header__cell">
-      <span class="data-header__label">Median lot size</span>
-      <span class="data-header__value is-muted" id="hdr-lot">—</span>
-    </div>
-    <div class="data-header__cell is-hidden" id="hdr-established-cell">
-      <span class="data-header__label" id="hdr-established-label">Date established</span>
-      <span class="data-header__value" id="hdr-established">—</span>
-    </div>
-    <div class="data-header__includes is-hidden" id="hdr-includes"></div>
-  </div>
-  <div id="map"></div>
-</div>
-</div>
-<div class="about-dates-backdrop" id="about-dates" role="dialog" aria-labelledby="about-dates-title" aria-modal="true">
-  <div class="about-dates-panel">
-    <h3 id="about-dates-title">About dates</h3>
-    <p>Shenandoah County includes incorporated towns, census places, and rural county addresses. Residential subdivisions shown here are built from county GIS parcels and official plat labels.</p><p>Where available, the map uses verified plat, development, or building-era records.</p>
-    <button type="button" id="btn-close-about">Close</button>
-  </div>
-</div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
-<script>
-const DATA_PATH = "shenandoah-subdivision-truth-data.json";
-const METRICS_PATH = "shenandoah-subdivision-family-metrics.json";
-const GROUPS_PATH = "shenandoah-neighborhood-groups.json";
-const NB_METRICS_PATH = "shenandoah-neighborhood-housing-metrics.json";
-const STREETS_PATH = "shenandoah-streets-official.geojson";
-const STREET_LABELS_PATH = "shenandoah-street-labels-official.geojson";
-const CONNECTOR_LABELS_PATH = "shenandoah-connector-labels-official.geojson";
-const STREET_CARTO_PATH = "shenandoah-street-cartography.json";
-const MEMBERS_PATH = "shenandoah-subdivision-all-member-parcels.geojson";
+  function bootVision(cfg) {
+
+  const DATA_PATH = cfg.dataPath;
+  const METRICS_PATH = cfg.metricsPath;
+  const GROUPS_PATH = cfg.groupsPath;
+  const NB_METRICS_PATH = cfg.nbMetricsPath;
+  const STREETS_PATH = cfg.streetsPath;
+  const STREET_LABELS_PATH = cfg.streetLabelsPath;
+  const CONNECTOR_LABELS_PATH = cfg.connectorLabelsPath;
+  const COMMUNITY_PROFILE_PATH = "shenandoah-community-profile-data.json";
+  const STREET_CARTO_PATH = cfg.streetCartoPath;
+  const MEMBERS_PATH = cfg.membersPath;
+  const IDENTITY_CROSSWALK_PATH = cfg.crosswalkPath;
+  const COUNTY_CENTER = cfg.countyCenter;
+  const STAUNTON_CENTER = COUNTY_CENTER;
+  const FABRIC_MIN_ZOOM = cfg.fabricMinZoom != null ? cfg.fabricMinZoom : 12;
+
 const memberByFamily = {};
-const IDENTITY_CROSSWALK_PATH = "shenandoah-subdivision-public-identity-crosswalk.json";
 const publicIdentityMembers = {};
 const memberDisplayToPublic = {};
 const publicIdentityMemberKeys = {};
 const VRA_GOLD = "#FECD2A";
+const VRA_GREEN = "#0B4636";
 
 const TIER_LABEL = {
   A: { minZoom: 11, fontSize: 12, fontWeight: 700, priority: 1 },
@@ -288,8 +67,6 @@ const TIER_LABEL = {
   E: { minZoom: 17, fontSize: 8.5, fontWeight: 500, priority: 5 },
 };
 
-const COUNTY_CENTER = [38.85, -78.5];
-const STAUNTON_CENTER = COUNTY_CENTER;
 const mapEl = document.getElementById("map");
 if (mapEl._leaflet_id) {
   mapEl._leaflet_id = undefined;
@@ -302,9 +79,13 @@ map.getPane("subdivisionLabels").style.zIndex = 650;
 map.createPane("historicLabels");
 map.getPane("historicLabels").style.zIndex = 640;
 map.createPane("neighborhoodLabels");
-map.getPane("neighborhoodLabels").style.zIndex = 645;
+map.getPane("neighborhoodLabels").style.zIndex = 720;
 map.createPane("neighborhoodOutline");
 map.getPane("neighborhoodOutline").style.zIndex = 455;
+map.createPane("municipalityContext");
+map.getPane("municipalityContext").style.zIndex = 620;
+map.getPane("municipalityContext").style.pointerEvents = "none";
+map.getPane("popupPane").style.zIndex = 730;
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap",
@@ -350,6 +131,8 @@ window.addEventListener("load", () => {
 });
 
 const layers = {};
+let syncCommunityPointVisibility = function () {};
+const communityOrientationByName = {};
 const familyLayers = {};
 const familyProps = {};
 const familyMetrics = {};
@@ -361,13 +144,25 @@ const neighborhoodGroups = {};
 const labelCandidates = [];
 const hdLabelCandidates = [];
 let labelLayer = L.layerGroup().addTo(map);
+let muniLabelLayer = L.layerGroup().addTo(map);
+const municipalityContext = [];
+const subdivisionsOrientationContext = [];
+const MUNICIPALITY_CONTEXT_NAMES = {
+  "Strasburg": true,
+  "Toms Brook": true,
+  "Woodstock": true,
+  "Edinburg": true,
+  "Mount Jackson": true,
+  "New Market": true
+};
 let hdLabelLayer = L.layerGroup().addTo(map);
 let nbLabelLayer = L.layerGroup().addTo(map);
 let nbOutlineLayer = L.layerGroup().addTo(map);
 let labelsEnabled = true;
 let viewMode = "subdivisions";
+let selectedMunicipality = null;
+const communityProfiles = {};
 let fabricLayerEnabled = false;
-const FABRIC_MIN_ZOOM = 12;
 let selectedNeighborhood = null;
 let selectedSubdivision = null;
 const subdivisionCatalog = [];
@@ -424,10 +219,54 @@ function boxesCollide(a, b, pad) {
            a.bottom + pad < b.top || a.top - pad > b.bottom);
 }
 
+function latLngInsideLayer(layer, latlng) {
+  if (!layer || !latlng || !layer.getBounds || !layer.getBounds().contains(latlng)) return false;
+  try {
+    if (typeof layer._containsPoint === "function") {
+      return layer._containsPoint(map.latLngToLayerPoint(latlng));
+    }
+  } catch (e) { /* ignore */ }
+  return false;
+}
+
 function labelPoint(layer) {
   const b = layer.getBounds();
   if (!b.isValid()) return null;
-  return b.getCenter();
+  const center = b.getCenter();
+  if (latLngInsideLayer(layer, center)) return center;
+  const sw = b.getSouthWest();
+  const ne = b.getNorthEast();
+  let best = null;
+  for (let i = 0; i <= 12; i++) {
+    for (let j = 0; j <= 12; j++) {
+      const lat = sw.lat + (ne.lat - sw.lat) * (i / 12);
+      const lng = sw.lng + (ne.lng - sw.lng) * (j / 12);
+      const ll = L.latLng(lat, lng);
+      if (!latLngInsideLayer(layer, ll)) continue;
+      const dLat = lat - center.lat;
+      const dLng = lng - center.lng;
+      const d = dLat * dLat + dLng * dLng;
+      if (!best || d < best.d) best = { ll, d };
+    }
+  }
+  return best ? best.ll : center;
+}
+
+function updateSubdivisionLayerInteractivity() {
+  Object.keys(familyLayers).forEach(name => {
+    const lg = familyLayers[name];
+    if (!lg || !lg.eachLayer) return;
+    // Subdivisions mode: member parcels are the only hit target, so a display shape cannot select a different identity.
+    const clickable = viewMode === "neighborhoods";
+    lg.eachLayer(l => {
+      l.options.interactive = clickable;
+      const path = l._path;
+      if (!path) return;
+      path.style.pointerEvents = clickable ? "auto" : "none";
+      if (clickable) L.DomUtil.addClass(path, "leaflet-interactive");
+      else L.DomUtil.removeClass(path, "leaflet-interactive");
+    });
+  });
 }
 
 function escapeHtml(text) {
@@ -685,6 +524,7 @@ function applySubdivisionStyles() {
     }
     lg.setStyle(style);
   });
+  updateSubdivisionLayerInteractivity();
 }
 
 function refreshHistoricLabels() {
@@ -713,7 +553,138 @@ function refreshHistoricLabels() {
   });
 }
 
+function municipalityFontSize(zoom) {
+  const narrow = map.getSize().x <= 700;
+  if (zoom < 11) return narrow ? 11 : 13;
+  if (zoom < 13) return narrow ? 12 : 15;
+  if (zoom < 15) return narrow ? 14 : 17;
+  return narrow ? 15 : 18;
+}
+
+function refreshMunicipalityLabels() {
+  muniLabelLayer.clearLayers();
+  if (viewMode !== "subdivisions") return;
+  const orientationItems = municipalityContext.concat(subdivisionsOrientationContext);
+  if (!orientationItems.length) return;
+  const fontSize = municipalityFontSize(map.getZoom());
+  orientationItems.forEach(item => {
+    const label = item.name.toUpperCase();
+    const dims = measureText(label, fontSize, 700);
+    const width = dims.width + Math.ceil(label.length * fontSize * 0.08) + 4;
+    const height = dims.height;
+    const icon = L.divIcon({
+      className: "muni-context-label",
+      html: "<span style=\"font-size:" + fontSize + "px\">" + label + "</span>",
+      iconSize: [width, height],
+      iconAnchor: [width / 2, height + Math.round(fontSize * 0.9)],
+    });
+    L.marker(item.latlng, {
+      icon: icon,
+      interactive: false,
+      keyboard: false,
+      pane: "municipalityContext",
+    }).addTo(muniLabelLayer);
+  });
+}
+
+function hideCommunityProfile() {
+  const profile = document.getElementById("community-profile");
+  const header = document.getElementById("data-header");
+  if (profile) {
+    profile.classList.add("is-hidden");
+    profile.classList.remove("community-profile--unavailable");
+  }
+  if (header) header.classList.remove("is-hidden");
+  selectedMunicipality = null;
+}
+
+function profileText(estimate, kind) {
+  const n = Number(estimate);
+  if (kind === "population") return n.toLocaleString("en-US");
+  if (kind === "age") return n.toFixed(1);
+  if (kind === "income") return "$" + n.toLocaleString("en-US");
+  if (kind === "household") return n.toFixed(2);
+  if (kind === "percent") return n.toFixed(1) + "%";
+  return String(estimate);
+}
+
+function fillCommunityHousingStrip(name, group) {
+  hideCommunityProfile();
+  setHeaderText("hdr-name", name, false);
+  const nm = neighborhoodMetrics[name] || {};
+  if (nm.status === "insufficient" || nm.source === "identity_only") {
+    setSalePriceLabel(null);
+    setHeaderText("hdr-sale", "Not available", true);
+    setHeaderText("hdr-sales-n", "Not available", true);
+    setHeaderText("hdr-home", "Not available", true);
+    setHeaderText("hdr-lot", "Not available", true);
+    document.getElementById("hdr-established-cell").classList.add("is-hidden");
+    document.getElementById("hdr-sale-note").textContent = nm.sale_note || "Identity only — no defensible neighborhood geometry.";
+  } else {
+    setSalePriceLabel(nm);
+    setHeaderText("hdr-sale", nm.sale_price_display || "Not available", !nm.sale_price_display);
+    setHeaderText("hdr-sales-n", nm.verified_sale_count != null ? String(nm.verified_sale_count) : "Not available", nm.verified_sale_count == null);
+    setHeaderText("hdr-home", nm.year_built_display || "Not available", !nm.year_built_display);
+    setHeaderText("hdr-lot", nm.lot_size_display || "Not available", !nm.lot_size_display);
+    const estCell = document.getElementById("hdr-established-cell");
+    document.getElementById("hdr-established-label").textContent = "Date established";
+    if (nm.date_established_display) {
+      estCell.classList.remove("is-hidden");
+      setHeaderText("hdr-established", nm.date_established_display, false);
+    } else {
+      estCell.classList.add("is-hidden");
+    }
+    const noteEl = document.getElementById("hdr-sale-note");
+    if (nm.show_limited_caution && nm.sale_price_display) {
+      noteEl.textContent = nm.limited_caution_label || "Limited sample";
+    } else if (nm.sale_note) {
+      noteEl.textContent = nm.sale_note;
+    } else {
+      noteEl.textContent = "";
+    }
+  }
+  const inc = document.getElementById("hdr-includes");
+  if (group && group.members.length > 1) {
+    inc.textContent = "Includes: " + group.members.join(", ");
+    inc.classList.remove("is-hidden");
+  } else {
+    inc.classList.add("is-hidden");
+  }
+}
+
+function showCommunityProfile(name) {
+  if (viewMode !== "neighborhoods") return false;
+  const profile = document.getElementById("community-profile");
+  const header = document.getElementById("data-header");
+  if (!profile || !header) return false;
+  const town = communityProfiles[name];
+  if (!town || !town.demographics) return false;
+  profile.classList.remove("community-profile--unavailable");
+  const demo = town.demographics;
+  const established = town.established && town.established.status === "verified" && town.established.value;
+  const context = established
+    ? "Established " + town.established.value + " · Incorporated " + town.incorporated.year + " · Shenandoah County"
+    : "Incorporated " + town.incorporated.year + " · Shenandoah County";
+  const source = (town._sourceLine || "U.S. Census Bureau · ACS 2020–2024 5-Year Estimates");
+  document.getElementById("cp-title").textContent = town.town + " · Community profile";
+  document.getElementById("cp-context").textContent = context;
+  document.getElementById("cp-source").textContent = source;
+  document.getElementById("cp-source-mobile").textContent = source;
+  document.getElementById("cp-population").textContent = profileText(demo.population.estimate, "population");
+  document.getElementById("cp-age").textContent = profileText(demo.median_age.estimate, "age");
+  document.getElementById("cp-income").textContent = profileText(demo.median_household_income.estimate, "income");
+  document.getElementById("cp-income-cell").dataset.dollarBasis = demo.median_household_income.unit || "";
+  document.getElementById("cp-household").textContent = profileText(demo.persons_per_household.estimate, "household");
+  document.getElementById("cp-education").textContent = profileText(demo.bachelors_or_higher.estimate, "percent");
+  document.getElementById("hdr-includes").classList.add("is-hidden");
+  header.classList.add("is-hidden");
+  profile.classList.remove("is-hidden");
+  selectedMunicipality = name;
+  return true;
+}
+
 function refreshSubdivisionLabels() {
+  refreshMunicipalityLabels();
   labelLayer.clearLayers();
   if (!labelsEnabled || viewMode !== "subdivisions") return;
   const zoom = map.getZoom();
@@ -742,31 +713,44 @@ function refreshSubdivisionLabels() {
       iconSize: [dims.width, dims.height],
       iconAnchor: [dims.width / 2, dims.height / 2],
     });
-    L.marker(item.point, { icon, interactive: false, pane: "subdivisionLabels" }).addTo(labelLayer);
+    const marker = L.marker(item.point, { icon, interactive: true, pane: "subdivisionLabels" });
+    marker.on("click", ev => {
+      if (L.DomEvent && L.DomEvent.stopPropagation) L.DomEvent.stopPropagation(ev);
+      handlePlaceClick(item.name);
+    });
+    marker.addTo(labelLayer);
   });
 }
 
 function refreshNeighborhoodLabel() {
   nbLabelLayer.clearLayers();
-  if (viewMode !== "neighborhoods" || !selectedNeighborhood) return;
-  const group = neighborhoodGroups[selectedNeighborhood];
-  if (!group) return;
-  const bounds = L.latLngBounds([]);
-  group.members.forEach(m => {
-    const lg = familyLayers[m];
-    if (lg) bounds.extend(lg.getBounds());
+  if (viewMode !== "neighborhoods") return;
+  Object.keys(communityOrientationByName).forEach(name => {
+    const pt = communityOrientationByName[name];
+    if (!pt) return;
+    const dims = measureText(name, 13, 700);
+    const icon = L.divIcon({
+      className: "nb-map-label",
+      html: "<span>" + name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</span>",
+      iconSize: [dims.width, dims.height],
+      iconAnchor: [dims.width / 2, dims.height + 28],
+    });
+    const marker = L.marker(pt, {
+      icon,
+      interactive: true,
+      pane: "neighborhoodLabels",
+      bubblingMouseEvents: false,
+      zIndexOffset: name === selectedNeighborhood ? 500 : 0,
+    });
+    marker.on("click", ev => {
+      if (L.DomEvent) {
+        L.DomEvent.stopPropagation(ev);
+        if (ev.originalEvent) L.DomEvent.stop(ev.originalEvent);
+      }
+      selectNeighborhood(name);
+    });
+    marker.addTo(nbLabelLayer);
   });
-  if (!bounds.isValid()) return;
-  const pt = bounds.getCenter();
-  const name = selectedNeighborhood;
-  const dims = measureText(name, 13, 700);
-  const icon = L.divIcon({
-    className: "nb-map-label",
-    html: "<span>" + name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</span>",
-    iconSize: [dims.width, dims.height],
-    iconAnchor: [dims.width / 2, dims.height / 2],
-  });
-  L.marker(pt, { icon, interactive: false, pane: "neighborhoodLabels" }).addTo(nbLabelLayer);
 }
 
 function buildNeighborhoodOutline(neighborhood) {
@@ -848,6 +832,13 @@ function formatLotSize(value) {
   return Math.round(sqft).toLocaleString("en-US") + " sq ft";
 }
 
+function formatYearBuilt(value) {
+  if (value == null || Number.isNaN(Number(value))) return null;
+  const y = Math.round(Number(value));
+  if (y < 1850) return null;
+  return String(y);
+}
+
 function normalizeMetricsRow(row) {
   if (!row || typeof row !== "object") return {};
   const m = Object.assign({}, row);
@@ -857,14 +848,26 @@ function normalizeMetricsRow(row) {
   if (!m.sale_price_display && m.recent_sale_price != null) {
     m.sale_price_display = formatCurrency(m.recent_sale_price);
   }
+  const qSales = m.qualifying_sales_count != null ? Number(m.qualifying_sales_count) : null;
+  if (!m.sale_price_display && qSales >= 2 && qSales <= 4 && m.limited_sample_median_price != null) {
+    m.sale_price_display = formatCurrency(m.limited_sample_median_price);
+  }
   if (m.verified_sale_count == null && m.qualifying_sales_count != null) {
     m.verified_sale_count = m.qualifying_sales_count;
   }
   if (m.verified_sale_count == null && m.recent_sales_count != null) {
     m.verified_sale_count = m.recent_sales_count;
   }
+  const qCount = m.qualifying_sales_count != null ? Number(m.qualifying_sales_count) : null;
+  const vCount = m.verified_sale_count != null ? Number(m.verified_sale_count) : null;
+  if (qCount != null && qCount > 0 && (vCount == null || vCount < qCount)) {
+    m.verified_sale_count = qCount;
+  }
+  if (m.recent_sale_price != null && (m.verified_sale_count == null || Number(m.verified_sale_count) === 0)) {
+    m.verified_sale_count = qCount != null && qCount > 0 ? qCount : 1;
+  }
   if (!m.year_built_display && m.median_year_built != null) {
-    m.year_built_display = String(Math.round(Number(m.median_year_built)));
+    m.year_built_display = formatYearBuilt(m.median_year_built);
   }
   if (!m.lot_size_display && m.median_lot_sqft != null) {
     m.lot_size_display = formatLotSize(m.median_lot_sqft);
@@ -1019,22 +1022,14 @@ function rebuildMemberHitLayer() {
   });
 }
 
-function setSalePriceLabel(metrics) {
+function setSalePriceLabel() {
   const labelEl = document.getElementById("hdr-sale-label");
   if (!labelEl) return;
-  let label = "Median sale price";
-  if (metrics) {
-    const saleN = metrics.verified_sale_count;
-    if (saleN === 1 || metrics.recent_sale_price != null && metrics.median_sale_price == null) {
-      label = metrics.sale_label === "Recent verified sale" ? "Recent verified sale" : "Recent sale price";
-    } else if (metrics.sale_label && metrics.sale_label !== "Median sale price" && metrics.sale_label !== "Recent sales") {
-      label = metrics.sale_label;
-    }
-  }
-  labelEl.textContent = label;
+  labelEl.textContent = "Median sale price";
 }
 
 function clearHeader() {
+  hideCommunityProfile();
   setHeaderText("hdr-name", viewMode === "neighborhoods" ?
     "Select a neighborhood to view details." : "Select a subdivision to view details.", true);
   setSalePriceLabel(null);
@@ -1049,6 +1044,7 @@ function clearHeader() {
 }
 
 function selectSubdivision(name) {
+  hideCommunityProfile();
   selectedSubdivision = name ? (resolvePublicSubdivision(name) || name) : null;
   selectedNeighborhood = null;
   if (!selectedSubdivision) { clearHeader(); applySubdivisionStyles(); nbOutlineLayer.clearLayers(); syncListSelection(); rebuildMemberHitLayer(); return; }
@@ -1087,6 +1083,7 @@ function selectNeighborhood(name) {
   selectedSubdivision = null;
   if (!name || !neighborhoodGroups[name]) {
     selectedNeighborhood = null;
+    hideCommunityProfile();
     clearHeader();
     applySubdivisionStyles();
     nbOutlineLayer.clearLayers();
@@ -1095,45 +1092,12 @@ function selectNeighborhood(name) {
     return;
   }
   const group = neighborhoodGroups[name];
-  setHeaderText("hdr-name", name, false);
-  const nm = neighborhoodMetrics[name] || {};
-  if (nm.status === "insufficient" || nm.source === "identity_only") {
-    setSalePriceLabel(null);
-    setHeaderText("hdr-sale", "Not available", true);
-    setHeaderText("hdr-sales-n", "Not available", true);
-    setHeaderText("hdr-home", "Not available", true);
-    setHeaderText("hdr-lot", "Not available", true);
-    document.getElementById("hdr-established-cell").classList.add("is-hidden");
-    document.getElementById("hdr-sale-note").textContent = nm.sale_note || "Identity only — no defensible neighborhood geometry.";
-  } else {
-    setSalePriceLabel(nm);
-    setHeaderText("hdr-sale", nm.sale_price_display || "Not available", !nm.sale_price_display);
-    setHeaderText("hdr-sales-n", nm.verified_sale_count != null ? String(nm.verified_sale_count) : "Not available", nm.verified_sale_count == null);
-    setHeaderText("hdr-home", nm.year_built_display || "Not available", !nm.year_built_display);
-    setHeaderText("hdr-lot", nm.lot_size_display || "Not available", !nm.lot_size_display);
-    const estCell = document.getElementById("hdr-established-cell");
-    document.getElementById("hdr-established-label").textContent = "Date established";
-    if (nm.date_established_display) {
-      estCell.classList.remove("is-hidden");
-      setHeaderText("hdr-established", nm.date_established_display, false);
-    } else {
-      estCell.classList.add("is-hidden");
+  if (viewMode === "neighborhoods") {
+    if (!showCommunityProfile(name)) {
+      fillCommunityHousingStrip(name, group);
     }
-    const noteEl = document.getElementById("hdr-sale-note");
-    if (nm.show_limited_caution && nm.sale_price_display) {
-      noteEl.textContent = nm.limited_caution_label || "Limited sample";
-    } else if (nm.sale_note) {
-      noteEl.textContent = nm.sale_note;
-    } else {
-      noteEl.textContent = "";
-    }
-  }
-  const inc = document.getElementById("hdr-includes");
-  if (group.members.length > 1) {
-    inc.textContent = "Includes: " + group.members.join(", ");
-    inc.classList.remove("is-hidden");
   } else {
-    inc.classList.add("is-hidden");
+    hideCommunityProfile();
   }
   applySubdivisionStyles();
   buildNeighborhoodOutline(name);
@@ -1142,6 +1106,7 @@ function selectNeighborhood(name) {
 }
 
 function selectUnparentedSubdivisionInNeighborhoodMode(name) {
+  hideCommunityProfile();
   selectedSubdivision = name;
   selectedNeighborhood = null;
   if (!name) {
@@ -1222,6 +1187,8 @@ function setViewMode(mode) {
   const carrySub = selectedSubdivision;
   const carryNb = selectedNeighborhood;
   viewMode = mode;
+  hideCommunityProfile();
+  syncCommunityPointVisibility();
   syncFamilyLayerMembership();
   rebuildMemberHitLayer();
   syncFabricLayerVisibility();
@@ -1295,7 +1262,23 @@ Promise.all([
   fetch(STREET_CARTO_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + STREET_CARTO_PATH); return r.json(); }),
   fetch(MEMBERS_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + MEMBERS_PATH); return r.json(); }),
   fetch(IDENTITY_CROSSWALK_PATH).then(r => { if (!r.ok) throw new Error("Failed to load " + IDENTITY_CROSSWALK_PATH); return r.json(); }),
-]).then(([DATA, METRICS, GROUPS, NB_METRICS, STREETS, STREET_LABELS, CONNECTOR_LABELS, STREET_CARTO, MEMBERS, IDENTITY_CROSSWALK]) => {
+  fetch(COMMUNITY_PROFILE_PATH).then(r => {
+    if (!r.ok) {
+      console.error("Community Profile dataset failed to load: " + COMMUNITY_PROFILE_PATH + " (HTTP " + r.status + ")");
+      return null;
+    }
+    return r.json();
+  }).catch(err => {
+    console.error("Community Profile dataset failed to load: " + COMMUNITY_PROFILE_PATH, err);
+    return null;
+  }),
+]).then(([DATA, METRICS, GROUPS, NB_METRICS, STREETS, STREET_LABELS, CONNECTOR_LABELS, STREET_CARTO, MEMBERS, IDENTITY_CROSSWALK, PROFILE]) => {
+  const sourceLine = PROFILE && PROFILE.meta && PROFILE.meta.public_source_line;
+  (PROFILE && PROFILE.towns || []).forEach(town => {
+    if (!town || !town.town) return;
+    town._sourceLine = sourceLine;
+    communityProfiles[town.town] = town;
+  });
   (MEMBERS.features || []).forEach(f => {
     const p = f.properties || {};
     const srcKey = memberFeatureSourceKey(p);
@@ -1346,6 +1329,7 @@ Promise.all([
   });
   layers.subs.addTo(map);
   syncFamilyLayerMembership();
+  updateSubdivisionLayerInteractivity();
 
   layers.public = L.geoJSON(LAY.public51_outline, { style: () => styles.publicOutline });
   layers.cityGis = L.geoJSON(LAY.city_gis_context, { style: () => styles.cityGis });
@@ -1405,9 +1389,33 @@ Promise.all([
   });
 
 
-  // VRA county community orientation points (not legal boundaries; Waynesboro shell + data adapter)
+  syncCommunityPointVisibility = function () {
+    if (!layers.commPoints || !map) return;
+    const show = viewMode === "neighborhoods";
+    const on = map.hasLayer(layers.commPoints);
+    if (show && !on) layers.commPoints.addTo(map);
+    else if (!show && on) map.removeLayer(layers.commPoints);
+  };
+
+  // VRA county community orientation points (not legal boundaries; Communities mode only)
+  map.createPane("communityOrientation");
+  map.getPane("communityOrientation").style.zIndex = 700;
   var commPointByName = {};
   layers.commPoints = L.layerGroup();
+  function bindCommunityOrientation(layer, name, latlng) {
+    layer.options.bubblingMouseEvents = false;
+    layer.bindPopup("<strong>" + name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</strong><br><span style=\"font-size:11px;color:#5a6b60\">Orientation only — not a legal boundary.</span>");
+    layer.on("click", function (ev) {
+      if (L.DomEvent) {
+        L.DomEvent.stopPropagation(ev);
+        if (ev.originalEvent) L.DomEvent.stop(ev.originalEvent);
+      }
+      if (viewMode !== "neighborhoods") setViewMode("neighborhoods");
+      selectNeighborhood(name);
+      map.setView(latlng, 12);
+      syncListSelection();
+    });
+  }
   (LAY.community_points && LAY.community_points.features || []).forEach(function (f) {
     var p = f.properties || {};
     var g = f.geometry;
@@ -1415,17 +1423,36 @@ Promise.all([
     var name = p.community_name || "";
     var latlng = L.latLng(g.coordinates[1], g.coordinates[0]);
     commPointByName[name] = latlng;
-    var m = L.circleMarker(latlng, { radius: 9, color: VRA_GOLD, weight: 2, fillColor: VRA_GOLD, fillOpacity: 0.35, pane: "neighborhoodOutline" });
-    m.bindPopup("<strong>" + name.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</strong><br><span style=\"font-size:11px;color:#5a6b60\">Orientation only — not a legal boundary.</span>");
-    m.on("click", function () {
-      if (viewMode !== "neighborhoods") setViewMode("neighborhoods");
-      selectNeighborhood(name);
-      map.setView(latlng, 12);
-      syncListSelection();
+    communityOrientationByName[name] = latlng;
+    if (MUNICIPALITY_CONTEXT_NAMES[name]) municipalityContext.push({ name: name, latlng: latlng });
+    if (name === "Basye") subdivisionsOrientationContext.push({ name: name, latlng: latlng });
+    var halo = L.circleMarker(latlng, {
+      radius: 22,
+      color: "#FFE56A",
+      weight: 0,
+      fillColor: "#FFE56A",
+      fillOpacity: 0.38,
+      pane: "communityOrientation",
+      bubblingMouseEvents: false,
+      vraRole: "community-orientation-halo",
     });
+    var m = L.circleMarker(latlng, {
+      radius: 12,
+      color: VRA_GREEN,
+      weight: 2.5,
+      fillColor: VRA_GOLD,
+      fillOpacity: 0.95,
+      pane: "communityOrientation",
+      bubblingMouseEvents: false,
+      vraRole: "community-orientation",
+    });
+    bindCommunityOrientation(halo, name, latlng);
+    bindCommunityOrientation(m, name, latlng);
+    halo.addTo(layers.commPoints);
     m.addTo(layers.commPoints);
   });
-  layers.commPoints.addTo(map);
+  syncCommunityPointVisibility();
+  refreshNeighborhoodLabel();
   var _zoomToNeighborhood = zoomToNeighborhood;
   zoomToNeighborhood = function (name) {
     if (commPointByName[name]) {
@@ -1442,6 +1469,7 @@ Promise.all([
   try { initWaynesboroStreets(STREETS, STREET_LABELS, CONNECTOR_LABELS, STREET_CARTO); } catch (streetErr) { console.warn(streetErr); }
   requestAnimationFrame(() => {
     fitMapToData();
+    try { global.__VRA_MAP_API__ = { selectFromList, selectSubdivision, familyMetrics, setViewMode, showCommunityProfile }; } catch (e) {}
     setTimeout(fitMapToData, 150);
   });
 }).catch(err => {
@@ -1880,6 +1908,496 @@ buildPlaceCatalogs = function() {
     if (extra) extra.forEach(function (t) { item.terms.add(t); });
   });
 };
-</script>
-</body>
-</html>
+
+  }
+
+  function bootRockingham(cfg) {
+
+  const DATA_PATH = cfg.dataPath;
+  const METRICS_PATH = cfg.metricsPath;
+  const COMM_PATH = cfg.commPath;
+  const COMM_METRICS_PATH = cfg.commMetricsPath;
+  const MEMBERS_PATH = cfg.membersPath;
+  const DISPLAY_PATH = cfg.displayPath;
+  const STREETS_PATH = cfg.streetsPath;
+  const STREET_CARTO_PATH = cfg.streetCartoPath;
+  const COUNTY_CENTER = cfg.countyCenter;
+  const FABRIC_MIN_ZOOM = cfg.fabricMinZoom != null ? cfg.fabricMinZoom : 12;
+
+const VRA_GREEN = "#0B4636";
+const VRA_GOLD = "#FECD2A";
+var mode = "subdivisions";
+let selected = null;
+let truth = null;
+let metricsByKey = {};
+let communityCatalog = [];
+let communityMetricsByName = {};
+let memberByFamily = {};
+let familyLayers = {};
+let familyProps = {};
+let labelCandidates = [];
+let labelLayer = L.layerGroup();
+let selectedLabelLayer = L.layerGroup();
+let communityLayers = {};
+let communityCatalogByName = {};
+let fabricEnabled = false;
+const map = L.map("map", { preferCanvas: true, zoomControl: true }).setView(COUNTY_CENTER, 10);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap" }).addTo(map);
+const layers = {
+  county: null,
+  subs: L.layerGroup(),
+  members: L.layerGroup(),
+  roads: L.layerGroup(),
+  fabric: L.layerGroup(),
+  comm: L.layerGroup(),
+};
+layers.subs.addTo(map);
+layers.roads.addTo(map);
+
+function showError(msg) {
+  const el = document.getElementById("map-error");
+  el.style.display = "block";
+  el.textContent = msg;
+}
+if (location.protocol === "file:") showError("Open via local HTTP server — file:// blocks JSON sidecars.");
+
+function fmt(n, suffix="") {
+  if (n == null || n === "") return "—";
+  if (typeof n === "number") return n.toLocaleString() + suffix;
+  return String(n);
+}
+
+const NA_METRIC = "Not available";
+const SQFT_PER_ACRE = 43560;
+const LOT_ACRE_THRESHOLD_SQFT = 0.25 * SQFT_PER_ACRE;
+const BLOCKED_METRIC_TOKENS = new Set(["OK", "PASS", "TRUE", "FALSE", "VALID", "VERIFIED", "SUCCESS", "DEVELOPMENT_ERA"]);
+
+function isFiniteNumber(n) {
+  return typeof n === "number" && Number.isFinite(n);
+}
+
+function isBlockedMetricText(value) {
+  if (value == null) return true;
+  const text = String(value).trim();
+  if (!text) return true;
+  return BLOCKED_METRIC_TOKENS.has(text.toUpperCase());
+}
+
+function fmtMedianSalePrice(m) {
+  if (!m || !isFiniteNumber(m.median_sale_price)) return NA_METRIC;
+  return "$" + Math.round(m.median_sale_price).toLocaleString();
+}
+
+function fmtRecentSales(m, kind) {
+  if (!m) return NA_METRIC;
+  const count = kind === "community" ? m.qualifying_sale_count : m.qualifying_sales_count;
+  if (!isFiniteNumber(count)) return NA_METRIC;
+  return String(count);
+}
+
+function fmtMedianHomeSize(m) {
+  if (!m || !isFiniteNumber(m.median_home_sqft)) return NA_METRIC;
+  return Math.round(m.median_home_sqft).toLocaleString() + " sq ft";
+}
+
+function fmtMedianLotSize(m) {
+  if (!m || !isFiniteNumber(m.median_lot_sqft)) return NA_METRIC;
+  const sqft = m.median_lot_sqft;
+  if (sqft < LOT_ACRE_THRESHOLD_SQFT) return Math.round(sqft).toLocaleString() + " sq ft";
+  const acres = sqft / SQFT_PER_ACRE;
+  const rounded = acres >= 10 ? acres.toFixed(1) : acres.toFixed(2);
+  const trimmed = rounded.replace(/(\.\d*?)0+$/, "$1").replace(/\.$/, "");
+  return trimmed + (parseFloat(trimmed) === 1 ? " acre" : " acres");
+}
+
+function fmtDateEstablished(m) {
+  if (!m) return NA_METRIC;
+  const display = m.date_established_display || m.date_established || m.established_display || m.verified_development_start;
+  if (display != null && !isBlockedMetricText(display)) return String(display);
+  return NA_METRIC;
+}
+
+function syncDateEstablishedVisibility() {
+  const dateCell = document.querySelector(".data-header__cell--date");
+  const val = document.getElementById("hdr-date")?.textContent || "";
+  if (!dateCell) return;
+  const hide = val === NA_METRIC || val === "—";
+  dateCell.classList.toggle("data-header__cell--hide-unavailable", hide);
+}
+
+function syncMetricPanelVisibility() {
+  const hdr = document.querySelector(".data-header");
+  if (!hdr) return;
+  hdr.classList.toggle("data-header--idle", selected == null);
+}
+
+function resetMetricStrip() {
+  ["hdr-sale", "hdr-recent", "hdr-home", "hdr-lot", "hdr-date"].forEach(id => {
+    document.getElementById(id).textContent = "—";
+  });
+  syncDateEstablishedVisibility();
+}
+
+function applyMetricStrip(m, kind) {
+  document.getElementById("hdr-sale").textContent = fmtMedianSalePrice(m);
+  document.getElementById("hdr-recent").textContent = fmtRecentSales(m, kind);
+  document.getElementById("hdr-home").textContent = fmtMedianHomeSize(m);
+  document.getElementById("hdr-lot").textContent = fmtMedianLotSize(m);
+  document.getElementById("hdr-date").textContent = fmtDateEstablished(m);
+  syncDateEstablishedVisibility();
+}
+
+function defaultSubStyle(props, selectedName) {
+  const name = props.public_name || props.family || "";
+  const on = selectedName && name === selectedName;
+  return {
+    color: on ? VRA_GOLD : VRA_GREEN,
+    weight: on ? 2.4 : 1.1,
+    fillColor: on ? VRA_GOLD : "#c8ddd3",
+    fillOpacity: on ? 0.48 : 0.32,
+  };
+}
+
+function defaultCommStyle(name, selectedName) {
+  const on = selectedName && name === selectedName;
+  return {
+    color: on ? VRA_GOLD : "#2a6496",
+    weight: on ? 2.6 : 1.4,
+    fillColor: on ? VRA_GOLD : "#b8d4e8",
+    fillOpacity: on ? 0.42 : 0.22,
+  };
+}
+
+function targetMaxZoom(memberCount) {
+  if (memberCount <= 3) return 17;
+  if (memberCount <= 15) return 16;
+  if (memberCount <= 75) return 15;
+  if (memberCount <= 200) return 14;
+  return 13;
+}
+
+function focusSelection(layer, props) {
+  const currentZoom = map.getZoom();
+  const members = props.member_count || 0;
+  const maxZ = targetMaxZoom(members);
+  let bounds = layer.getBounds();
+  if (props.fit_west != null) {
+    bounds = L.latLngBounds([[props.fit_south, props.fit_west], [props.fit_north, props.fit_east]]);
+  }
+  const visible = map.getBounds().contains(bounds);
+  if (visible && currentZoom >= 13) {
+    map.fitBounds(bounds, { maxZoom: Math.max(currentZoom, maxZ), padding: [28, 28] });
+  } else {
+    map.fitBounds(bounds, { maxZoom: maxZ, padding: [28, 28] });
+  }
+  if (map.getZoom() < 13 && currentZoom >= 14) map.setZoom(14);
+}
+
+function communitySummary(name) {
+  const meta = communityCatalogByName[name] || {};
+  const metrics = communityMetricsByName[name] || {};
+  const subs = (truth.subdivisions_master || []).filter(r => r.residential_drawable && r.parent_community === name);
+  return {
+    entity_type: meta.entity_type || "community",
+    population_2020: meta.population_2020,
+    grouped_subdivisions: metrics.subdivision_family_count != null ? metrics.subdivision_family_count : subs.length,
+    grouped_parcels: metrics.member_parcels != null ? metrics.member_parcels : subs.reduce((s, r) => s + (r.member_count || 0), 0),
+  };
+}
+
+function catalog() {
+  if (mode === "subdivisions") {
+    return (truth.subdivisions_master || []).filter(r => r.residential_drawable).map(r => ({
+      name: r.canonical_name, meta: r.member_count + " parcels · tier " + (r.label_tier || "E"),
+      kind: "subdivision", key: r.family_key,
+    }));
+  }
+  return communityCatalog.map(c => ({ name: c.public_name, meta: c.entity_type.replaceAll("_"," "), kind: "community" }));
+}
+
+function renderList(q="") {
+  const ul = document.getElementById("place-list");
+  ul.innerHTML = "";
+  const query = q.trim().toLowerCase();
+  catalog().filter(i => !query || i.name.toLowerCase().includes(query) || (i.meta||"").toLowerCase().includes(query))
+    .forEach(i => {
+      const li = document.createElement("li");
+      if (selected === i.name) li.className = "is-selected";
+      const btn = document.createElement("button");
+      btn.innerHTML = '<span class="roster-name">' + i.name + '</span><span class="roster-meta">' + (i.meta || "") + "</span>";
+      btn.onclick = () => i.kind === "subdivision" ? selectSub(i.name) : selectCommunity(i.name);
+      li.appendChild(btn); ul.appendChild(li);
+    });
+}
+
+function setHeader(name, m, kind) {
+  document.getElementById("hdr-name").textContent = name;
+  if (m) applyMetricStrip(m, kind);
+  else resetMetricStrip();
+}
+
+function showMemberLots(familyKey) {
+  layers.members.clearLayers();
+  const feats = memberByFamily[familyKey] || [];
+  if (!feats.length) return;
+  L.geoJSON({ type: "FeatureCollection", features: feats }, {
+    style: () => ({ color: VRA_GOLD, weight: 1.6, fillColor: VRA_GOLD, fillOpacity: 0.55 }),
+  }).eachLayer(l => layers.members.addLayer(l));
+  layers.members.addTo(map);
+}
+
+function selectSub(name) {
+  selected = name;
+  const row = (truth.subdivisions_master || []).find(r => r.canonical_name === name);
+  const m = row ? metricsByKey[row.family_key] : null;
+  setHeader(name, m, "subdivision");
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  Object.entries(familyLayers).forEach(([fam, layer]) => {
+    const props = familyProps[fam] || {};
+    const on = props.public_name === name;
+    layer.setStyle(defaultSubStyle(props, on ? name : null));
+    if (on) {
+      showMemberLots(fam);
+      focusSelection(layer, props);
+    }
+  });
+  if (!row) layers.members.clearLayers();
+  refreshLabels();
+  addSelectedSubLabel(name);
+}
+
+function selectCommunity(name) {
+  selected = name;
+  const summary = communitySummary(name);
+  const m = communityMetricsByName[name] || null;
+  setHeader(name, m, "community");
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  layers.members.clearLayers();
+  Object.entries(communityLayers).forEach(([n, layer]) => {
+    layer.setStyle(defaultCommStyle(n, n === name ? name : null));
+  });
+  const layer = communityLayers[name];
+  if (layer) {
+    focusSelection(layer, { member_count: summary.grouped_parcels || 50 });
+  }
+  refreshCommunityLabels();
+}
+
+function syncFabricVisibility() {
+  if (fabricEnabled && mode === "subdivisions" && map.getZoom() >= FABRIC_MIN_ZOOM) {
+    if (!map.hasLayer(layers.fabric)) layers.fabric.addTo(map);
+  } else if (map.hasLayer(layers.fabric)) {
+    layers.fabric.remove();
+  }
+}
+
+function updateBrowseHeading() {
+  const el = document.getElementById("browse-heading");
+  if (el) el.textContent = mode === "communities" ? "Browse communities" : "Browse subdivisions";
+}
+
+function setMode(next) {
+  mode = next;
+  document.getElementById("mode-sub").classList.toggle("is-active", mode === "subdivisions");
+  document.getElementById("mode-com").classList.toggle("is-active", mode === "communities");
+  updateBrowseHeading();
+  layers.members.clearLayers();
+  if (mode === "communities") {
+    layers.subs.remove(); layers.fabric.remove(); labelLayer.remove(); selectedLabelLayer.remove();
+    layers.comm.addTo(map);
+  } else {
+    layers.comm.remove(); layers.subs.addTo(map); labelLayer.addTo(map); selectedLabelLayer.addTo(map);
+    syncFabricVisibility();
+  }
+  selected = null;
+  setHeader("Rockingham County", null, null);
+  syncMetricPanelVisibility();
+  renderList(document.getElementById("search").value);
+  refreshLabels();
+}
+
+function tierMinZoom(tier) {
+  return { A: 10, B: 11, C: 12, D: 14, E: 16 }[tier] || 16;
+}
+
+function maxLabelsForZoom(z) {
+  if (z >= 16) return 9999;
+  if (z >= 14) return 90;
+  if (z >= 12) return 45;
+  if (z >= 10) return 20;
+  return 0;
+}
+
+function addSelectedSubLabel(name) {
+  selectedLabelLayer.clearLayers();
+  if (!name) return;
+  let point = null;
+  const cand = labelCandidates.find(c => c.name === name);
+  if (cand) point = cand.point;
+  else {
+    const row = (truth.subdivisions_master || []).find(r => r.canonical_name === name);
+    const props = row ? familyProps[row.family_key] : null;
+    if (props && props.label_lat != null) point = L.latLng(props.label_lat, props.label_lon);
+  }
+  if (!point) return;
+  L.marker(point, {
+    icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="sub-label is-selected">' + name + '</span>', iconSize: [0, 0] }),
+    interactive: false,
+    zIndexOffset: 1000,
+  }).addTo(selectedLabelLayer);
+}
+
+function refreshLabels() {
+  labelLayer.clearLayers();
+  if (mode !== "subdivisions") return;
+  const z = map.getZoom();
+  const cap = maxLabelsForZoom(z);
+  const placed = [];
+  const minPx = z >= 15 ? 36 : z >= 13 ? 44 : 56;
+  const sorted = labelCandidates.slice().sort((a, b) => {
+    const ta = tierMinZoom(a.tier), tb = tierMinZoom(b.tier);
+    if (ta !== tb) return ta - tb;
+    return (b.resCount || 0) - (a.resCount || 0);
+  });
+  for (const c of sorted) {
+    if (c.name === selected) continue;
+    if (!cap || placed.length >= cap) continue;
+    if (z < tierMinZoom(c.tier)) continue;
+    const pt = map.latLngToContainerPoint(c.point);
+    const hit = placed.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < minPx);
+    if (hit) continue;
+    placed.push(pt);
+    L.marker(c.point, {
+      icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="sub-label">' + c.name + '</span>', iconSize: [0, 0] }),
+      interactive: false,
+    }).addTo(labelLayer);
+  }
+}
+
+function refreshCommunityLabels() {
+  selectedLabelLayer.clearLayers();
+  if (mode !== "communities" || !selected) return;
+  const layer = communityLayers[selected];
+  if (!layer) return;
+  const center = layer.getBounds().getCenter();
+  L.marker(center, {
+    icon: L.divIcon({ className: "sub-label-wrap", html: '<span class="comm-label is-selected">' + selected + '</span>', iconSize: [0, 0] }),
+    interactive: false,
+    zIndexOffset: 1000,
+  }).addTo(selectedLabelLayer);
+}
+
+document.getElementById("mode-sub").onclick = () => setMode("subdivisions");
+document.getElementById("mode-com").onclick = () => setMode("communities");
+document.getElementById("search").oninput = e => renderList(e.target.value);
+document.getElementById("toggle-fabric").onchange = e => {
+  fabricEnabled = e.target.checked;
+  syncFabricVisibility();
+};
+map.on("zoomend moveend", () => { refreshLabels(); if (mode === "subdivisions") addSelectedSubLabel(selected); refreshCommunityLabels(); syncFabricVisibility(); });
+
+Promise.all([
+  fetch(DATA_PATH).then(r => { if (!r.ok) throw new Error(DATA_PATH); return r.json(); }),
+  fetch(METRICS_PATH).then(r => { if (!r.ok) throw new Error(METRICS_PATH); return r.json(); }),
+  fetch(COMM_PATH).then(r => { if (!r.ok) throw new Error(COMM_PATH); return r.json(); }),
+  fetch(COMM_METRICS_PATH).then(r => { if (!r.ok) throw new Error(COMM_METRICS_PATH); return r.json(); }),
+  fetch(MEMBERS_PATH).then(r => { if (!r.ok) throw new Error(MEMBERS_PATH); return r.json(); }),
+  fetch(DISPLAY_PATH).then(r => { if (!r.ok) throw new Error(DISPLAY_PATH); return r.json(); }),
+  fetch(STREETS_PATH).then(r => { if (!r.ok) throw new Error(STREETS_PATH); return r.json(); }),
+  fetch(STREET_CARTO_PATH).then(r => { if (!r.ok) throw new Error(STREET_CARTO_PATH); return r.json(); }),
+]).then(([DATA, METRICS, COMM, COMM_METRICS, MEMBERS, DISPLAY, STREETS, CARTO]) => {
+  truth = DATA;
+  (METRICS.families || []).forEach(f => { metricsByKey[f.family_key] = f; });
+  communityCatalog = COMM.communities || [];
+  communityCatalog.forEach(c => { communityCatalogByName[c.public_name] = c; });
+  (COMM_METRICS.communities || []).forEach(c => { communityMetricsByName[c.display_name] = c; });
+  (MEMBERS.features || []).forEach(f => {
+    const fam = (f.properties || {}).family_key || (f.properties || {}).family || "";
+    if (!memberByFamily[fam]) memberByFamily[fam] = [];
+    memberByFamily[fam].push(f);
+  });
+
+  const legend = document.getElementById("map-legend");
+  const q = DATA.qa || {};
+  legend.innerHTML = "<strong>Parcel classes</strong>" +
+    "Modern subdivision: " + (q.modern_subdivision_parcels || 0) + "<br>" +
+    "Historic / legal subdivision: " + (q.historic_legal_parcels || 0) + "<br>" +
+    "Residential fabric — no verified subdivision: " + (q.fabric_parcels || 0);
+
+  if (DATA.layers && DATA.layers.county) {
+    layers.county = L.geoJSON(DATA.layers.county, { style: () => ({ color: VRA_GREEN, weight: 2.5, fillOpacity: 0.04 }), interactive: false }).addTo(map);
+  }
+
+  const subFc = DISPLAY.features ? DISPLAY : (DATA.layers.subdivision_display || DATA.layers.subdivisions);
+  (subFc.features || []).forEach(f => {
+    const p = f.properties || {};
+    const fam = p.family_key || p.family || "";
+    familyProps[fam] = p;
+    const layer = L.geoJSON(f, { style: () => defaultSubStyle(p, null) });
+    layer.eachLayer(l => {
+      l.on("click", () => selectSub(p.public_name || fam));
+      const lat = p.label_lat, lon = p.label_lon;
+      if (lat != null && lon != null) {
+        labelCandidates.push({ name: p.public_name || fam, tier: p.tier || "E", resCount: p.member_count || 0, point: L.latLng(lat, lon) });
+      }
+    });
+    familyLayers[fam] = layer;
+    layers.subs.addLayer(layer);
+  });
+
+  if (DATA.layers && DATA.layers.fabric_points) {
+    L.geoJSON(DATA.layers.fabric_points, {
+      pointToLayer: (f, ll) => L.circleMarker(ll, { radius: 4, color: "#8a6d3b", weight: 1, fillColor: "#d4a843", fillOpacity: 0.65 }),
+      onEachFeature: (f, l) => {
+        const pid = (f.properties || {}).pid || "—";
+        l.bindPopup("<strong>Residential fabric</strong><br>No verified subdivision membership.<br>Parcel: " + pid);
+        l.on("click", () => setHeader("Residential fabric", null, null));
+      },
+    }).eachLayer(l => layers.fabric.addLayer(l));
+  }
+
+  const roadStyle = (CARTO.roadStyles || {})["1"] || { color: VRA_GREEN, weight: 3, opacity: 0.85 };
+  L.geoJSON(STREETS, { style: () => roadStyle, interactive: false }).eachLayer(l => layers.roads.addLayer(l));
+
+  if (COMM.layers && COMM.layers.communities) {
+    (COMM.layers.communities.features || []).forEach(f => {
+      const p = f.properties || {};
+      const name = p.public_name || "";
+      const layer = L.geoJSON(f, { style: () => defaultCommStyle(name, null) });
+      layer.eachLayer(l => l.on("click", () => selectCommunity(name)));
+      communityLayers[name] = layer;
+      layers.comm.addLayer(layer);
+    });
+  }
+
+  const grid = document.getElementById("summary-grid");
+  grid.innerHTML = [
+    ["Residential parcels", q.in_scope_residential_parcels],
+    ["Drawable subdivisions", q.publicly_drawable_families],
+    ["Fabric parcels", q.fabric_parcels],
+    ["Grouped to community", (truth.subdivisions_master || []).filter(r => r.parent_community).length],
+  ].map(([k,v]) => "<div><strong>" + k + "</strong><br>" + v + "</div>").join("");
+
+  labelLayer.addTo(map);
+  selectedLabelLayer.addTo(map);
+  if (layers.county) map.fitBounds(layers.county.getBounds(), { padding: [20, 20] });
+  else if (layers.subs.getLayers().length) map.fitBounds(layers.subs.getBounds(), { padding: [20, 20] });
+  updateBrowseHeading();
+  syncMetricPanelVisibility();
+  renderList();
+  refreshLabels();
+  try { global.__VRA_MAP_API__ = { selectSub, selectCommunity, setMode, metricsByKey, mode }; } catch (e) {}
+}).catch(err => showError("Failed to load sidecars: " + err.message));
+
+  }
+
+  function boot(cfg) {
+    if (!cfg || !cfg.variant) throw new Error("VraCountyMapEngine: missing config.variant");
+    if (cfg.variant === "rockingham") return bootRockingham(cfg);
+    return bootVision(cfg);
+  }
+
+  global.VraCountyMapEngine = { boot, normalizeMetricsRow };
+})(typeof window !== "undefined" ? window : globalThis);
